@@ -1,11 +1,18 @@
+<script>
+	import Navbar from '$lib/components/Navbar.svelte';
+</script>
+
+<Navbar />
+
 <slot></slot>
 
+
 <style lang="scss">
-	:global(body) {
-		margin: 0;
-		padding: 0;
-		background-color: var(--bg);
-		color: var(--text);
+  :global(body) {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
     font-family: var(--font);
   }
 
