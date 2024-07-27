@@ -1,5 +1,9 @@
+<script>
+	import Hero from '$lib/components/Hero.svelte';
+</script>
+
 <div>
-	<h1>SaMoTech Robotics</h1>
+	<Hero title="SaMoTech Robotics" />
 
 	<p>
 		SaMoTech is a 501c3 community-based robotics team competing in the FIRST Tech Challenge (FTC). Based in Santa
