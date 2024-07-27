@@ -1,7 +1,8 @@
 <script lang="ts">
 	export let title: string;
+	export let img: string = '';
 </script>
-<div class="wrapper">
+<div class="wrapper" class:img={img !== ""} style={img ? `background-image: url(${img})` : ""}>
 	<div class="content">
 		<h1>{title}</h1>
 		<slot />
@@ -11,12 +12,17 @@
 
 <style lang="scss">
   .wrapper {
-    padding: 2rem 2rem;
+    padding: 20rem 2rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &.img {
+      background-size: cover;
+      background-position: center;
+    }
 
     .content {
       text-align: center;

@@ -3,7 +3,7 @@
 </script>
 
 <div>
-	<Hero title="SaMoTech Robotics" />
+	<Hero title="SaMoTech Robotics" img="images/photos/team/samotech-team1.jpg" />
 
 	<p>
 		SaMoTech is a 501c3 community-based robotics team competing in the FIRST Tech Challenge (FTC). Based in Santa
@@ -24,10 +24,6 @@
   div {
     background-color: var(--primary);
     height: 100%;
-
-    h1 {
-      font-size: 3rem;
-    }
 
     p {
       font-size: 1.2rem;
