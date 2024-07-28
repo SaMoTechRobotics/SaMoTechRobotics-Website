@@ -14,18 +14,18 @@
 
 <style lang="scss">
   .card {
-    width: 100%;
     height: 100%;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 
-    background-color: var(--bg-secondary);
-    box-shadow: var(--box-shadow);
+    background-color: var(--bg);
 
     border-radius: 1rem;
     overflow: hidden;
+
+    padding: 2rem;
 
     &.right {
       flex-direction: row-reverse;
@@ -37,8 +37,17 @@
       object-fit: cover;
     }
 
-    &:hover {
-      box-shadow: var(--box-shadow-hover);
+    .text {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
   }
 </style>
