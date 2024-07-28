@@ -1,1 +1,5 @@
-<h1>Our Sponsors</h1>
+<script>
+	import Sponsors from '$lib/components/Sponsors.svelte';
+</script>
+
+<Sponsors />
