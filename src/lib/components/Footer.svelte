@@ -1,5 +1,16 @@
+<script>
+	import { page } from '$app/stores';
+	import SocialButton from '$lib/components/SocialButton.svelte';
+</script>
+
 <div class="wrapper">
 	<div class="socials">
+		<SocialButton icon="akar-icons:instagram-fill" white={$page.url.pathname !== "/"}
+									to="https://www.instagram.com/samotechrobotics/" />
+		<SocialButton icon="akar-icons:github-fill" white={$page.url.pathname !== "/"}
+									to="https://github.com/SaMoTechRobotics" />
+		<SocialButton icon="akar-icons:youtube-fill" white={$page.url.pathname !== "/"}
+									to="https://www.youtube.com/@samotechrobotics" />
 	</div>
 	<p>SaMoTech Robotics #21936</p>
 	<p>Contact us at <a href="mailto:samotechrobotics@gmail.com">samotechrobotics@gmail.com</a></p>
@@ -31,6 +42,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 1rem;
     }
   }
 </style>
