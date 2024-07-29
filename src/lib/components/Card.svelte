@@ -20,7 +20,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 
-    background-color: var(--bg);
+    //background-color: var(--bg);
+    background: transparent;
 
     border-radius: 1rem;
     overflow: hidden;

@@ -3,11 +3,13 @@
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<Navbar />
+<div class="layout">
+	<Navbar />
 
-<slot></slot>
+	<slot></slot>
 
-<Footer />
+	<Footer />
+</div>
 
 <style lang="scss">
   :global(body) {
@@ -18,10 +20,26 @@
     font-family: var(--font);
   }
 
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background: rgb(0, 221, 255);
+    background: radial-gradient(circle, rgba(0, 221, 255, 1) 19%, rgba(13, 111, 133, 1) 65%, rgba(10, 98, 117, 1) 83%, rgba(0, 50, 64, 1) 99%);
+
+    :global(> :last-child) {
+      margin-top: auto;
+    }
+  }
+
   :root {
     --bg: rgb(239, 253, 255);
     --bg-hover: rgb(203, 222, 228);
     --bg-secondary: #f5f5f5;
+
+    --bg-primary: #66DEF0;
+    --bg-dark: #01172C;
 
     --primary: rgba(0, 200, 255, 1);
     --secondary: rgb(77, 216, 254);
