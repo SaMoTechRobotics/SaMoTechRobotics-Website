@@ -38,7 +38,9 @@
 
 		<div class="divider" />
 
-		<button>Support</button>
+		<a href="/support" class="support">
+			Support
+		</a>
 	</div>
 </div>
 
@@ -72,10 +74,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.5rem 2rem;
+      padding: 0.5rem 1rem;
       color: var(--text);
-
-      gap: 0.5rem;
 
       background-color: transparentize($primary-dark, 0.6);
       backdrop-filter: blur(2px);
@@ -94,11 +94,16 @@
         padding: 1rem 1rem;
         border-radius: 0.5rem;
         text-decoration: none;
+        margin: 0 0.5rem;
         color: var(--text-inv);
 
         &.active {
           background-color: var(--bg-dark-transparent);
           color: var(--primary);
+        }
+
+        &.support {
+          @include button(false, true);
         }
       }
 
@@ -110,10 +115,6 @@
       h2 {
         font-size: 0.8rem;
         margin: 0;
-      }
-
-      button {
-        @include button(true);
       }
     }
   }

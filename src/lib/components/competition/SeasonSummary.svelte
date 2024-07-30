@@ -1,6 +1,16 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	export let game: string;
 	export let year: string;
+
+	onMount(() => {
+		fetch(`https://api.ftcscout.org/rest/v1/teams/21936/events/2023`)
+			.then(res => res.json())
+			.then(data => {
+				console.log(data);
+			});
+	});
 </script>
 
 <div class="wrapper">

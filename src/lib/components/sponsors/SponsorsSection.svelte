@@ -21,7 +21,7 @@
 		<div class="logos">
 			<SponsorLogo to="https://www.ziprecruiter.com/" sponsor="ZipRecruiter" />
 			<SponsorLogo to="" sponsor="Boeing" />
-			<SponsorLogo to="" sponsor="RotaryClub-GEAR" />
+			<SponsorLogo to="" sponsor="RotaryClub" />
 			<SponsorLogo to="" sponsor="Yahoo" />
 			<SponsorLogo to="https://www.na.panasonic.com/" sponsor="Panasonic" />
 			<SponsorLogo to="" sponsor="Czeh" />
