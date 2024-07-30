@@ -1,12 +1,14 @@
 <script>
-	import Hero from '$lib/components/Hero.svelte';
-	import Card from '$lib/components/Card.svelte';
-	import Sponsors from '$lib/components/Sponsors.svelte';
+	import Hero from '$lib/components/sections/Hero.svelte';
+	import SplitSection from '$lib/components/sections/SplitSection.svelte';
+	import SponsorsSection from '$lib/components/sponsors/SponsorsSection.svelte';
 </script>
 
 <Hero title="SaMoTech Robotics" img="images/photos/team/samotech-team1.jpg" />
 
-<Card img="images/photos/samotech-winning1.webp" title="About Us" textSide="right">
+<SponsorsSection small />
+
+<SplitSection img="images/photos/samotech-winning1.webp" title="About Us" textSide="right">
 	<p>
 		FIRST (For Inspiration and Recognition of Science and Technology) is a global organization that hosts robotics
 		competitions for over 600,000 students across more than 100 countries. The world's leading youth-serving nonprofit
@@ -18,10 +20,10 @@
 		concludes with inter-league, regional, and world championships. Participants also gain access to education
 		opportunities including $80M+ in college scholarships.
 	</p>
-</Card>
+</SplitSection>
 
 
-<Card img="images/photos/samotech-winning1.webp" title="About Us" textSide="left">
+<SplitSection img="images/photos/samotech-winning1.webp" title="About Us" textSide="left">
 	<p>
 		FIRST (For Inspiration and Recognition of Science and Technology) is a global organization that hosts robotics
 		competitions for over 600,000 students across more than 100 countries. The world's leading youth-serving nonprofit
@@ -33,12 +35,10 @@
 		concludes with inter-league, regional, and world championships. Participants also gain access to education
 		opportunities including $80M+ in college scholarships.
 	</p>
-</Card>
-
-<Sponsors />
+</SplitSection>
 
 <style lang="scss">
   :global(.layout) {
-    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--primary) 15%, var(--primary) 25%, white 35%, white 70%, var(--primary) 80%, var(--bg-dark) 100%);
+    background: linear-gradient(180deg, $primary-darker 0%, $primary 20%, $primary 35%, white 50%, white 70%, $primary 80%, $primary-darker 100%);
   }
 </style>

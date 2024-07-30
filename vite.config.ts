@@ -8,6 +8,7 @@ export default defineConfig({
 			scss: {
 				additionalData: `
           @use '$lib/scss/_mixins' as *;
+          @use '$lib/scss/_variables' as *;
         `
 			}
 		}

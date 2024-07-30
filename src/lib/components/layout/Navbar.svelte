@@ -15,7 +15,7 @@
 
 <div class="spacer" />
 
-<div class="wrapper" class:scrolled={scrollY > 100}>
+<div class="wrapper" class:scrolled={scrollY > 30}>
 	<div class="navbar">
 		<a href="/">
 			<h1>SaMoTech Robotics</h1>
@@ -57,13 +57,14 @@
     align-items: center;
     padding: 1rem;
 
+    transition: height 300ms ease-in-out, padding 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+
     &.scrolled {
       height: 4rem;
       padding: 0.5rem 1rem;
 
       .navbar {
-        background-color: var(--bg-dark-transparent);
-        padding: 0.5rem 1rem;
+        background-color: transparentize($primary-dark, 0.1);
       }
     }
 
@@ -76,8 +77,9 @@
 
       gap: 0.5rem;
 
-      background-color: var(--bg-dark-transparent);
+      background-color: transparentize($primary-dark, 0.6);
       backdrop-filter: blur(2px);
+      box-shadow: $shadow;
 
       border-radius: 1rem;
 

@@ -2,9 +2,10 @@
 	export let img: string;
 	export let title: string;
 	export let textSide: 'right' | 'left' = 'right';
+	export let dark: boolean = false;
 </script>
 
-<div class="card" class:reverse={textSide === 'left'}>
+<div class="card" class:reverse={textSide === 'left'} class:dark>
 	<img src={img} alt="" />
 	<div class="text">
 		<h2>{title}</h2>

@@ -1,5 +1,5 @@
 <script>
-	import Card from '$lib/components/Card.svelte';
+	import Card from '$lib/components/sections/SplitSection.svelte';
 </script>
 
 <h1>About Us</h1>

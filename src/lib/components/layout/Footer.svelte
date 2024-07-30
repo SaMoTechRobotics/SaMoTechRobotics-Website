@@ -1,15 +1,14 @@
 <script>
-	import { page } from '$app/stores';
-	import SocialButton from '$lib/components/SocialButton.svelte';
+	import SocialButton from '$lib/components/layout/SocialButton.svelte';
 </script>
 
 <div class="wrapper">
 	<div class="socials">
-		<SocialButton icon="akar-icons:instagram-fill" white={$page.url.pathname !== "/"}
+		<SocialButton icon="akar-icons:instagram-fill"
 									to="https://www.instagram.com/samotechrobotics/" />
-		<SocialButton icon="akar-icons:github-fill" white={$page.url.pathname !== "/"}
+		<SocialButton icon="akar-icons:github-fill"
 									to="https://github.com/SaMoTechRobotics" />
-		<SocialButton icon="akar-icons:youtube-fill" white={$page.url.pathname !== "/"}
+		<SocialButton icon="akar-icons:youtube-fill"
 									to="https://www.youtube.com/@samotechrobotics" />
 	</div>
 	<p>SaMoTech Robotics #21936</p>
@@ -18,9 +17,9 @@
 
 <style lang="scss">
   .wrapper {
-    background-color: var(--bg-dark-transparent);
+    background-color: transparentize($primary-dark, 0.5);
     border-top: 2px solid var(--border);
-    color: var(--text-inv);
+    color: $text-light;
 
     height: 10rem;
     width: 100vw;
@@ -31,7 +30,7 @@
     align-items: center;
 
     a {
-      color: var(--text-inv);
+      color: $text-light;
       text-decoration: none;
 
       &:hover {
