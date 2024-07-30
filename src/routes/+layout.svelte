@@ -1,7 +1,7 @@
 <script>
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import '$lib/scss/mixins.scss';
+	import '$lib/scss/_mixins.scss';
 </script>
 
 <div class="layout">
@@ -41,6 +41,7 @@
 
     --bg-primary: #66DEF0;
     --bg-dark: #01172C;
+    --bg-dark-transparent: rgba(0.392%, 9.02%, 17.3%, 0.5);
 
     --primary: rgba(0, 200, 255, 1);
     --secondary: rgb(77, 216, 254);

@@ -7,7 +7,7 @@ export default defineConfig({
 		preprocessorOptions: {
 			scss: {
 				additionalData: `
-          @import '$lib/scss/mixins.scss';
+          @use '$lib/scss/_mixins' as *;
         `
 			}
 		}
