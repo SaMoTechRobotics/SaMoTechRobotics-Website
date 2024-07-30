@@ -21,15 +21,19 @@
     border-top: 1px solid $border;
     color: $text-light;
 
-    padding: 2rem;
-
     height: 10rem;
-    width: 100vw;
+    width: 100%;
+
+    padding: 1rem 0;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    p {
+      margin: 1rem 0 0;
+    }
 
     a {
       color: $text-light;

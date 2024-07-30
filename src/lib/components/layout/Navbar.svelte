@@ -26,14 +26,14 @@
 		<a href="/" class:active={path===''}>
 			<h2>Home</h2>
 		</a>
-		<a href="/competition" class:active={path==='competition'}>
-			<h2>Competition</h2>
-		</a>
 		<a href="/about" class:active={path==='about'}>
 			<h2>About Us</h2>
 		</a>
+		<a href="/competition" class:active={path==='competition'}>
+			<h2>Competition</h2>
+		</a>
 		<a href="/sponsors" class:active={path==='sponsors'}>
-			<h2>Our Sponsors</h2>
+			<h2>Sponsors</h2>
 		</a>
 
 		<div class="divider" />
@@ -47,12 +47,13 @@
 <style lang="scss">
   .spacer {
     height: 6rem;
+    width: $page-padding;
   }
 
   .wrapper {
     position: fixed;
-    width: 100%;
-    height: 5rem;
+    width: 100vw;
+    height: $navbar-height;
 
     display: flex;
     justify-content: center;
@@ -98,8 +99,8 @@
         color: var(--text-inv);
 
         &.active {
-          background-color: var(--bg-dark-transparent);
-          color: var(--primary);
+          background-color: transparentize(lighten($primary-dark, 10%), 0.5);
+          color: $primary;
         }
 
         &.support {

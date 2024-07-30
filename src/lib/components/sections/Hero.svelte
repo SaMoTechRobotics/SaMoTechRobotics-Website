@@ -7,18 +7,17 @@
 		<h1>{title}</h1>
 		<slot />
 	</div>
-	<div />
 </div>
 
 <style lang="scss">
   .wrapper {
     margin: 1rem 2rem;
     border-radius: 1rem;
-    padding: 20rem 2rem;
+    height: calc(100vh - $navbar-height - 4rem);
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 
     &.img {
@@ -30,8 +29,7 @@
       text-align: center;
       margin-bottom: 2rem;
 
-      color: var(--text-inv);
-      text-shadow: var(--text-shadow);
+      color: $text-light;
 
       h1 {
         font-size: 3rem;
