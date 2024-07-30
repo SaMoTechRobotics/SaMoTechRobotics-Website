@@ -1,9 +1,12 @@
 <script>
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import { page } from '$app/stores';
+
+	$: path = $page.url.pathname.replace('/', '');
 </script>
 
-<div class="layout">
+<div class="layout {path}">
 	<Navbar />
 
 	<slot></slot>
@@ -24,9 +27,6 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
-    background: var(--bg-dark);
-    //background: radial-gradient(circle, rgba(0, 221, 255, 1) 19%, rgba(13, 111, 133, 1) 65%, rgba(10, 98, 117, 1) 83%, rgba(0, 50, 64, 1) 99%);
 
     :global(> :last-child) {
       margin-top: auto;

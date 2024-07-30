@@ -39,6 +39,6 @@
 
 <style lang="scss">
   :global(.layout) {
-    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--primary) 15%, var(--primary) 25%, white 35%, white 70%, var(--primary) 80%, var(--bg-dark) 100%) !important;
+    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--primary) 15%, var(--primary) 25%, white 35%, white 70%, var(--primary) 80%, var(--bg-dark) 100%);
   }
 </style>

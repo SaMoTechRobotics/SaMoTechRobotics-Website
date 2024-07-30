@@ -18,3 +18,9 @@
 		and engage with our community. In particular, we dedicate many hours to helping other teams and schools.
 	</p>
 </Card>
+
+<style lang="scss">
+  :global(.layout.about) {
+    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--primary) 50%, var(--bg-dark) 100%);
+  }
+</style>
