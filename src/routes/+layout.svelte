@@ -21,6 +21,7 @@
     background-color: var(--bg);
     color: var(--text);
     font-family: var(--font);
+    line-height: 1.6;
   }
 
   .layout {
@@ -31,6 +32,11 @@
     :global(> :last-child) {
       margin-top: auto;
     }
+  }
+
+  :global(h1) {
+    font-size: 2rem;
+    font-weight: bold;
   }
 
   :root {

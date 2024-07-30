@@ -5,4 +5,9 @@ $primary-darker: rgb(0, 27, 37);
 $text: rgb(33, 71, 84);
 $text-light: rgb(255, 255, 255);
 
+$border: darken($primary, 20%);
+
 $shadow: 0 1px 0.5rem 0rem transparentize($primary-darker, 0.5);
+
+$page-padding: 2rem;
+$navbar-height: 5rem;

@@ -6,10 +6,14 @@
 </script>
 
 <div class="card" class:reverse={textSide === 'left'} class:dark>
-	<img src={img} alt="" />
+	<div class="img">
+		<img src={img} alt="" />
+	</div>
 	<div class="text">
 		<h2>{title}</h2>
-		<slot />
+		<p>
+			<slot />
+		</p>
 	</div>
 </div>
 
@@ -18,7 +22,7 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.8fr 1fr;
     grid-template-rows: 1fr;
 
     //background-color: var(--bg);
@@ -27,7 +31,7 @@
     border-radius: 1rem;
     overflow: hidden;
 
-    padding: 2rem;
+    padding: 0 $page-padding;
 
     &.reverse {
       grid-template-columns: 1fr 1fr;
@@ -36,13 +40,19 @@
         order: 1;
       }
 
-      > img {
+      > .img {
         order: 2;
       }
     }
 
-    img {
-      @include image();
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        @include image();
+      }
     }
 
     .text {
@@ -51,11 +61,19 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-left: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        text-align: left;
+      }
     }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
   }
 </style>

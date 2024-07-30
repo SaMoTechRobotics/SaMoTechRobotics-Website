@@ -18,8 +18,10 @@
 <style lang="scss">
   .wrapper {
     background-color: transparentize($primary-dark, 0.5);
-    border-top: 2px solid var(--border);
+    border-top: 1px solid $border;
     color: $text-light;
+
+    padding: 2rem;
 
     height: 10rem;
     width: 100vw;

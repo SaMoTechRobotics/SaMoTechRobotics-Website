@@ -2,9 +2,7 @@
 	import Card from '$lib/components/sections/SplitSection.svelte';
 </script>
 
-<h1>About Us</h1>
-
-<Card img="images/photos/samotech-winning1.webp" title="About Us" textSide="left">
+<Card img="images/photos/team/samotech-team1.jpg" title="About Us" textSide="right">
 	<p>
 		SaMoTech is a 501c3 community-based robotics team competing in the FIRST Tech Challenge (FTC). Based in Santa
 		Monica, CA, our mission is to inspire young people to be the science and technology leaders of the future. Through
@@ -21,6 +19,6 @@
 
 <style lang="scss">
   :global(.layout.about) {
-    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--primary) 50%, var(--bg-dark) 100%);
+    background: linear-gradient(180deg, $primary-dark 0%, $primary 10%, white 30%, white 60%, $primary 80%, $primary-darker 100%);
   }
 </style>
