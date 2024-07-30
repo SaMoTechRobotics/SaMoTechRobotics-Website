@@ -12,6 +12,8 @@
 
 <style lang="scss">
   .wrapper {
+    margin: 1rem 2rem;
+    border-radius: 1rem;
     padding: 20rem 2rem;
 
     display: flex;

@@ -27,7 +27,6 @@
 
     background: var(--bg-dark);
     //background: radial-gradient(circle, rgba(0, 221, 255, 1) 19%, rgba(13, 111, 133, 1) 65%, rgba(10, 98, 117, 1) 83%, rgba(0, 50, 64, 1) 99%);
-    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--primary) 15%, var(--bg-dark) 100%);
 
     :global(> :last-child) {
       margin-top: auto;

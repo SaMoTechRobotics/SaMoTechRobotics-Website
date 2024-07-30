@@ -4,7 +4,7 @@
 	export let textSide: 'right' | 'left' = 'right';
 </script>
 
-<div class="card" class:right={textSide === 'right'}>
+<div class="card" class:reverse={textSide === 'left'}>
 	<img src={img} alt="" />
 	<div class="text">
 		<h2>{title}</h2>
@@ -28,8 +28,16 @@
 
     padding: 2rem;
 
-    &.right {
-      flex-direction: row-reverse;
+    &.reverse {
+      grid-template-columns: 1fr 1fr;
+
+      > .text {
+        order: 1;
+      }
+
+      > img {
+        order: 2;
+      }
     }
 
     img {
