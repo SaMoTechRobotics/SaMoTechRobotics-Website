@@ -18,7 +18,8 @@
 
 <style lang="scss">
   .wrapper {
-    background-color: var(--primary);
+    background-color: var(--bg-dark-transparent);
+    border-top: 2px solid var(--border);
     color: var(--text-inv);
 
     height: 10rem;

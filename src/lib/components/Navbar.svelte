@@ -36,12 +36,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
+      padding: 0.5rem 2rem;
       color: var(--text);
 
       gap: 1rem;
 
-      background-color: rgba(7, 58, 85, 0.2);
+      background-color: var(--bg-dark-transparent);
       backdrop-filter: blur(10px);
 
       border-radius: 1rem;
@@ -69,7 +69,7 @@
       }
 
       button {
-        @include button();
+        @include button(true);
       }
     }
   }

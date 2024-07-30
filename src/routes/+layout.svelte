@@ -1,7 +1,6 @@
 <script>
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import '$lib/scss/_mixins.scss';
 </script>
 
 <div class="layout">
@@ -26,8 +25,9 @@
     flex-direction: column;
     min-height: 100vh;
 
-    background: rgb(0, 221, 255);
-    background: radial-gradient(circle, rgba(0, 221, 255, 1) 19%, rgba(13, 111, 133, 1) 65%, rgba(10, 98, 117, 1) 83%, rgba(0, 50, 64, 1) 99%);
+    background: var(--bg-dark);
+    //background: radial-gradient(circle, rgba(0, 221, 255, 1) 19%, rgba(13, 111, 133, 1) 65%, rgba(10, 98, 117, 1) 83%, rgba(0, 50, 64, 1) 99%);
+    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--primary) 15%, var(--bg-dark) 100%);
 
     :global(> :last-child) {
       margin-top: auto;
@@ -40,14 +40,16 @@
     --bg-secondary: #f5f5f5;
 
     --bg-primary: #66DEF0;
-    --bg-dark: #01172C;
-    --bg-dark-transparent: rgba(0.392%, 9.02%, 17.3%, 0.5);
+    --bg-dark: #011f2c;
+    --bg-dark-transparent: rgba(3, 77, 91, 0.5);
+
+    --border: #0A627C;
 
     --primary: rgba(0, 200, 255, 1);
     --secondary: rgb(77, 216, 254);
     --dark: rgba(2, 145, 184, 1);
 
-    --text: rgb(10, 100, 124);
+    --text: rgb(5, 81, 100);
     --text-gray: rgb(54, 89, 98);
     --text-muted: rgb(0, 139, 177);
     --text-inv: #fff;
