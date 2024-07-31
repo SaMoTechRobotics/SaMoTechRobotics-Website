@@ -77,7 +77,7 @@
     align-items: center;
     padding: 1rem;
 
-    transition: height 300ms ease-in-out, padding 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    transition: height 300ms ease-in-out, padding 500ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
 
     &.scrolled {
       height: 4rem;

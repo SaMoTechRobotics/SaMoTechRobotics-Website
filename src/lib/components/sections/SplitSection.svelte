@@ -33,6 +33,10 @@
 
     padding: 0 $page-padding;
 
+    &.dark {
+      color: $text-light;
+    }
+
     &.reverse {
       grid-template-columns: 1fr 1fr;
 
