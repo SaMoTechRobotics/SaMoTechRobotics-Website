@@ -15,6 +15,8 @@
 </div>
 
 <style lang="scss">
+  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
   :global(body) {
     margin: 0;
     padding: 0;
@@ -66,6 +68,6 @@
 
     --img-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 
-    --font: "Roboto", sans-serif;
+    --font: 'Inter', sans-serif;
   }
 </style>
