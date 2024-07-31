@@ -126,6 +126,12 @@
           width: 6.4rem;
         }
 
+        &.support > .glider {
+          transform: translateX(27.5rem);
+          width: 5.8rem;
+          opacity: 0;
+        }
+
         .glider {
           position: absolute;
           top: 0.5rem;
@@ -137,7 +143,7 @@
           pointer-events: none;
           background-color: transparentize(lighten($primary-dark, 10%), 0.5);
 
-          transition: transform 150ms ease-in-out, width 50ms ease-in-out;
+          transition: transform 150ms ease-in-out, width 50ms ease-in-out, opacity 150ms ease-in-out;
         }
       }
 

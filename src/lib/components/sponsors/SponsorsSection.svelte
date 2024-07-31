@@ -18,6 +18,7 @@
 	</div>
 {:else}
 	<div class="wrapper small">
+		<h1>Our Sponsors</h1>
 		<div class="logos">
 			<SponsorLogo to="https://www.ziprecruiter.com/" sponsor="ZipRecruiter" />
 			<SponsorLogo to="" sponsor="Boeing" />
@@ -52,6 +53,10 @@
 
     display: flex;
     flex-direction: column;
+
+    h1 {
+      font-size: 1.2rem;
+    }
 
     .logos {
       grid-gap: 2rem;

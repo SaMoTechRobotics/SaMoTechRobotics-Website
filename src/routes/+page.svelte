@@ -3,6 +3,7 @@
 	import SplitSection from '$lib/components/sections/SplitSection.svelte';
 	import SponsorsSection from '$lib/components/sponsors/SponsorsSection.svelte';
 	import SupportSection from '$lib/components/sections/SupportSection.svelte';
+	import Icon from '@iconify/svelte';
 </script>
 
 <Hero title="SaMoTech Robotics" img="images/2024-25/Regionals_06_FinalQ.jpg" />
@@ -10,28 +11,28 @@
 <SponsorsSection small />
 
 <SplitSection img="images/photos/samotech-winning1.webp" title="About Us" textSide="right">
-	FIRST (For Inspiration and Recognition of Science and Technology) is a global organization that hosts robotics
-	competitions for over 600,000 students across more than 100 countries. The world's leading youth-serving nonprofit
-	advancing STEM education, FIRST inspires young people to be technology innovators by engaging them in exciting
-	mentor-based programs that build science, engineering, and technology skills.
+	SaMoTech is a 501c3 community-based robotics team competing in the FIRST Tech Challenge (FTC). Based in Santa Monica,
+	CA, our mission is to inspire young people to be the science and technology leaders of the future. Through
+	participation in FTC, we develop hands-on skills in engineering, robotics, and coding while improving life-skills like
+	teamwork and self-confidence.
 
-	FIRST Tech Challenge teams, comprised of students grades 7-12, learn to think like engineers. Teams design, build,
-	and code autonomous and driver-operated robots that compete in head-to-head competitions. Each unique season
-	concludes with inter-league, regional, and world championships. Participants also gain access to education
-	opportunities including $80M+ in college scholarships.
+	SaMoTech currently has 9 members, aged 14-16, all hard-working and high-achieving students from diverse backgrounds
+	and with varied interests, each bringing a vital perspective necessary for our success. We students are responsible
+	for the design and construction of our robots, using a variety of tools and techniques, with guidance from our
+	volunteer coaches and mentors. We also collaborate on marketing and outreach efforts, helping to promote the team and
+	engage with our community. In particular, we dedicate many hours to helping other teams and schools.
 </SplitSection>
 
 
 <SplitSection img="images/photos/samotech-winning1.webp" title="FIRST Tech Challenge" textSide="left">
-	FIRST (For Inspiration and Recognition of Science and Technology) is a global organization that hosts robotics
-	competitions for over 600,000 students across more than 100 countries. The world's leading youth-serving nonprofit
-	advancing STEM education, FIRST inspires young people to be technology innovators by engaging them in exciting
-	mentor-based programs that build science, engineering, and technology skills.
-
-	FIRST Tech Challenge teams, comprised of students grades 7-12, learn to think like engineers. Teams design, build,
-	and code autonomous and driver-operated robots that compete in head-to-head competitions. Each unique season
-	concludes with inter-league, regional, and world championships. Participants also gain access to education
-	opportunities including $80M+ in college scholarships.
+	FIRST challenges teams of students, grades 7-12, to design, build, and program autonomous & driver-operated robots
+	that compete in head-to-head competitions. Each unique season concludes with inter-league, regional, and world
+	championships. Participants also gain access to education opportunities, exclusivescholarships, and potential dream
+	employers.
+	FIRST organizes robotics competitions involving more than 600,000 students in over 100 countries through programs
+	sponsored by the likes of Amazon, Disney & NASA.
+	
+	<a href="https://www.firstinspires.org/robotics/ftc" target="_blank">Learn More</a>
 </SplitSection>
 
 <SupportSection>
@@ -45,6 +46,6 @@
 
 <style lang="scss">
   :global(.layout) {
-    background: linear-gradient(180deg, $primary-darker 0%, $primary 20%, $primary 25%, white 40%, white 72%, $primary 82%, $primary-darker 100%);
+    background: linear-gradient(180deg, $primary-darker 0%, $primary 20%, $primary 26%, white 42%, white 72%, $primary 82%, $primary-darker 100%);
   }
 </style>
