@@ -1,26 +1,36 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import type { Snapshot } from '@sveltejs/kit';
 
-	let scrollY = 0;
+	let scrollY = -100;
 	let miniNav = false;
 
-	onMount(() => {
-		window.addEventListener('scroll', () => {
-			scrollY = window.scrollY;
-		});
+	// onMount(() => {
+	// 	scrollY = window.scrollY;
+	// 	window.addEventListener('scroll', () => {
+	// 		scrollY = window.scrollY;
+	// 	});
+	//
+	// 	window.addEventListener('resize', () => {
+	// 		miniNav = window.innerWidth < 810;
+	// 	});
+	// });
 
-		window.addEventListener('resize', () => {
-			miniNav = window.innerWidth < 810;
-		});
-	});
+	export const snapshot: Snapshot = {
+		capture: () => scrollY,
+		restore: (value: number) => {
+			scrollY = value;
+			console.log('yay');
+		}
+	};
 
 	$: path = $page.url.pathname.replace('/', '');
 </script>
 
 <div class="spacer" />
 
-<div class="wrapper" class:scrolled={scrollY > 30}>
+<div class="wrapper" class:scrolled={scrollY > 30} class:loading={scrollY === -100}>
 	{#if !miniNav}
 		<div class="navbar">
 			<a href="/">
@@ -57,6 +67,8 @@
 	{/if}
 </div>
 
+<svelte:window bind:scrollY />
+
 <style lang="scss">
   .spacer {
     height: 6rem;
@@ -81,7 +93,14 @@
 
     &.scrolled {
       height: 4rem;
-      padding: 0.5rem 1rem;
+      padding: 0.2rem 1rem;
+
+      .navbar {
+        background-color: transparentize($primary-dark, 0.1);
+      }
+    }
+
+    &.loading {
 
       .navbar {
         background-color: transparentize($primary-dark, 0.1);
@@ -102,6 +121,8 @@
       box-shadow: $shadow;
 
       border-radius: 1rem;
+
+      transition: background-color 200ms ease-in-out;
 
       .divider {
         margin: 0 1rem;

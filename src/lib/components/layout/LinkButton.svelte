@@ -6,7 +6,7 @@
 	export let transparent: boolean = false;
 </script>
 
-<a href={to} target={newTab ? '_blank' : '_self'} class:dark class:transparent>
+<a href={to} target={newTab ? '_blank' : ''} class:dark class:transparent>
 	<slot />
 </a>
 
