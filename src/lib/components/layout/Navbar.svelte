@@ -3,10 +3,15 @@
 	import { onMount } from 'svelte';
 
 	let scrollY = 0;
+	let miniNav = false;
 
 	onMount(() => {
 		window.addEventListener('scroll', () => {
 			scrollY = window.scrollY;
+		});
+
+		window.addEventListener('resize', () => {
+			miniNav = window.innerWidth < 810;
 		});
 	});
 
@@ -16,32 +21,40 @@
 <div class="spacer" />
 
 <div class="wrapper" class:scrolled={scrollY > 30}>
-	<div class="navbar">
-		<a href="/">
-			<h1>SaMoTech Robotics</h1>
-		</a>
+	{#if !miniNav}
+		<div class="navbar">
+			<a href="/">
+				<h1>SaMoTech Robotics</h1>
+			</a>
 
-		<div class="divider" />
+			<div class="divider" />
 
-		<a href="/" class:active={path===''}>
-			<h2>Home</h2>
-		</a>
-		<a href="/about" class:active={path==='about'}>
-			<h2>About Us</h2>
-		</a>
-		<a href="/competition" class:active={path==='competition'}>
-			<h2>Competition</h2>
-		</a>
-		<a href="/sponsors" class:active={path==='sponsors'}>
-			<h2>Sponsors</h2>
-		</a>
+			<div class="tabs {path}">
+				<div class="glider" />
+				<a href="/" class:active={path===''}>
+					Home
+				</a>
+				<a href="/about" class:active={path==='about'}>
+					About Us
+				</a>
+				<a href="/competition" class:active={path==='competition'}>
+					Competition
+				</a>
+				<a href="/sponsors" class:active={path==='sponsors'}>
+					Sponsors
+				</a>
+			</div>
 
-		<div class="divider" />
+			<div class="divider" />
 
-		<a href="/support" class="support">
-			Support
-		</a>
-	</div>
+			<a href="/support" class="support">
+				Support
+			</a>
+		</div>
+	{:else}
+		<div class="navbar mini">
+		</div>
+	{/if}
 </div>
 
 <style lang="scss">
@@ -50,9 +63,13 @@
     width: $page-padding;
   }
 
+  $bar-height: 3rem;
+
   .wrapper {
     position: fixed;
-    width: 100vw;
+    top: 0;
+    left: 0;
+    width: calc(100vw - $page-padding);
     height: $navbar-height;
 
     display: flex;
@@ -76,7 +93,9 @@
       justify-content: space-between;
       align-items: center;
       padding: 0.5rem 1rem;
-      color: var(--text);
+      color: $text-light;
+
+      height: $bar-height;
 
       background-color: transparentize($primary-dark, 0.6);
       backdrop-filter: blur(2px);
@@ -91,30 +110,63 @@
         width: 1px;
       }
 
+      .tabs {
+        &.about > .glider {
+          transform: translateX(5rem);
+          width: 6rem;
+        }
+
+        &.competition > .glider {
+          transform: translateX(11rem);
+          width: 7.5rem;
+        }
+
+        &.sponsors > .glider {
+          transform: translateX(18.5rem);
+          width: 6.4rem;
+        }
+
+        .glider {
+          position: absolute;
+          top: 0.5rem;
+          left: 14.4rem;
+          width: 5rem;
+          height: $bar-height;
+          border-radius: 0.5rem;
+          z-index: -1;
+          pointer-events: none;
+          background-color: transparentize(lighten($primary-dark, 10%), 0.5);
+
+          transition: transform 150ms ease-in-out, width 50ms ease-in-out;
+        }
+      }
+
       a {
-        padding: 1rem 1rem;
+        padding: 1rem 0.5rem;
         border-radius: 0.5rem;
-        text-decoration: none;
         margin: 0 0.5rem;
+        text-decoration: none;
+        font-size: 0.9rem;
         color: var(--text-inv);
 
+        transition: color 200ms ease-in-out;
+
         &.active {
-          background-color: transparentize(lighten($primary-dark, 10%), 0.5);
+          color: $primary;
+        }
+
+        &:hover {
           color: $primary;
         }
 
         &.support {
+          margin: 0 0 0 1rem;
           @include button(false, true);
         }
       }
 
       h1 {
         font-size: 1rem;
-        margin: 0;
-      }
-
-      h2 {
-        font-size: 0.8rem;
         margin: 0;
       }
     }
