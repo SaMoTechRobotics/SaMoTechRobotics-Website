@@ -23,6 +23,16 @@
     &.img {
       background-size: cover;
       background-position: center;
+      //
+      //&::before {
+      //  content: '';
+      //  z-index: 10;
+      //  width: calc(100% - $page-padding * 2);
+      //  height: 100%;
+      //  display: block;
+      //  position: absolute;
+      //  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%);
+      //}
     }
 
     .content {
