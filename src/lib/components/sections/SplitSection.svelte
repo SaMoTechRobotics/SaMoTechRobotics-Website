@@ -14,6 +14,9 @@
 		<p>
 			<slot />
 		</p>
+		<div class="buttons">
+			<slot name="buttons" />
+		</div>
 	</div>
 </div>
 
@@ -79,5 +82,12 @@
       }
     }
 
+    .buttons {
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 </style>

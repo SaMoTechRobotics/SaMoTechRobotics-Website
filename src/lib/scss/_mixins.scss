@@ -9,21 +9,34 @@
   font-size: 0.9rem;
   text-decoration: none;
 
+  transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+
   @if $transparent {
     color: $text-light;
-    background-color: transparentize($primary-dark, 0.5);
+    background-color: transparentize($primary-dark, 0.7);
+
+    &:hover {
+      background-color: transparentize($primary-dark, 0.5);
+    }
   } @else {
     @if $light {
-      color: $primary-dark;
-      background: linear-gradient(180deg, lighten($primary, 20), $primary);
+      color: $text;
+      font-weight: 500;
+      background: linear-gradient(180deg, transparentize(lighten($primary, 20), 0.2), transparentize($primary, 0.1));
+
+      &:hover {
+        background-color: $primary;
+      }
     } @else {
-      background-color: $primary-dark;
+      color: $text-light;
+      background: linear-gradient(180deg, transparentize(lighten($primary-dark, 10), 0.2), transparentize($primary-dark, 0.2));
+
+      &:hover {
+        background-color: $primary-dark;
+      }
     }
   }
 
-  &:hover {
-    background-color: $primary-dark;
-  }
 }
 
 @mixin image() {

@@ -1,3 +1,7 @@
+<script>
+	import LinkButton from '$lib/components/layout/LinkButton.svelte';
+</script>
+
 <div class="wrapper">
 	<h1>Support Us</h1>
 
@@ -6,8 +10,8 @@
 	</p>
 
 	<div class="buttons">
-		<a href="/" class="donate">Donate via Paypal</a>
-		<a href="/" class="learn">Learn More</a>
+		<LinkButton to="" newTab>Donate via Paypal</LinkButton>
+		<LinkButton to="/support" transparent>Learn More</LinkButton>
 	</div>
 </div>
 
@@ -40,14 +44,6 @@
       justify-content: center;
       align-items: center;
       gap: 1rem;
-
-      a.donate {
-        @include button(false, true);
-      }
-
-      a.learn {
-        @include button(true, true);
-      }
     }
   }
 </style>

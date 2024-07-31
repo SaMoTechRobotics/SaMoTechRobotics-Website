@@ -3,7 +3,7 @@
 	import SplitSection from '$lib/components/sections/SplitSection.svelte';
 	import SponsorsSection from '$lib/components/sponsors/SponsorsSection.svelte';
 	import SupportSection from '$lib/components/sections/SupportSection.svelte';
-	import Icon from '@iconify/svelte';
+	import LinkButton from '$lib/components/layout/LinkButton.svelte';
 </script>
 
 <Hero title="SaMoTech Robotics" img="images/2024-25/Regionals_06_FinalQ.jpg" />
@@ -21,6 +21,11 @@
 	for the design and construction of our robots, using a variety of tools and techniques, with guidance from our
 	volunteer coaches and mentors. We also collaborate on marketing and outreach efforts, helping to promote the team and
 	engage with our community. In particular, we dedicate many hours to helping other teams and schools.
+
+	<div slot="buttons">
+		<LinkButton to="/support">Support Us</LinkButton>
+		<LinkButton to="/about" dark>Learn More</LinkButton>
+	</div>
 </SplitSection>
 
 
@@ -31,8 +36,10 @@
 	employers.
 	FIRST organizes robotics competitions involving more than 600,000 students in over 100 countries through programs
 	sponsored by the likes of Amazon, Disney & NASA.
-	
-	<a href="https://www.firstinspires.org/robotics/ftc" target="_blank">Learn More</a>
+
+	<div slot="buttons">
+		<LinkButton to="https://www.firstinspires.org/robotics/ftc" newTab dark>Learn More</LinkButton>
+	</div>
 </SplitSection>
 
 <SupportSection>
@@ -46,6 +53,6 @@
 
 <style lang="scss">
   :global(.layout) {
-    background: linear-gradient(180deg, $primary-darker 0%, $primary 20%, $primary 26%, white 42%, white 72%, $primary 82%, $primary-darker 100%);
+    background: linear-gradient(180deg, $primary-darker 0%, $primary 20%, $primary 26%, white 42%, white 72%, $primary 82%, darken($primary, 20) 88%, $primary-dark 95%, $primary-darker 100%);
   }
 </style>
