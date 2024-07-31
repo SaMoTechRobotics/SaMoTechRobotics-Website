@@ -2,6 +2,9 @@
 	import Navbar from '$lib/components/layout/Navbar.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 	import { page } from '$app/stores';
+	import '@fontsource/inter';
+	import '@fontsource/inter/500.css';
+	import '@fontsource/inter/700.css';
 
 	$: path = $page.url.pathname.replace('/', '');
 </script>
@@ -15,14 +18,12 @@
 </div>
 
 <style lang="scss">
-  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
   :global(body) {
     margin: 0;
     padding: 0;
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: var(--font);
+    background-color: $primary-dark;
+    color: $text;
+    font-family: $font;
     line-height: 1.6;
   }
 
