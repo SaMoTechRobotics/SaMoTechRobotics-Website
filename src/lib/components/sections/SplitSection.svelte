@@ -5,12 +5,12 @@
 	export let dark: boolean = false;
 </script>
 
-<div class="card" class:reverse={textSide === 'left'} class:dark>
+<div class="wrapper" class:reverse={textSide === 'left'} class:dark>
 	<div class="img">
 		<img src={img} alt="" />
 	</div>
 	<div class="text">
-		<h2>{title}</h2>
+		<h1>{title}</h1>
 		<p>
 			<slot />
 		</p>
@@ -21,14 +21,14 @@
 </div>
 
 <style lang="scss">
-  .card {
+  .wrapper {
     height: 100%;
 
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: 1fr;
 
-    //background-color: var(--bg);
+
     background: transparent;
 
     border-radius: 1rem;
@@ -40,15 +40,17 @@
       color: $text-light;
     }
 
-    &.reverse {
-      grid-template-columns: 1fr 1fr;
+    @media(min-width: 810px) {
+      &.reverse {
+        grid-template-columns: 1fr 1fr;
 
-      > .text {
-        order: 1;
-      }
+        > .text {
+          order: 1;
+        }
 
-      > .img {
-        order: 2;
+        > .img {
+          order: 2;
+        }
       }
     }
 
@@ -56,6 +58,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
 
       img {
         @include image();
@@ -69,7 +72,7 @@
       justify-content: center;
       align-items: center;
 
-      h2 {
+      h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
       }
@@ -88,6 +91,39 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &:empty {
+        display: none;
+      }
+    }
+
+    @media(max-width: 810px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 0;
+
+      padding: 0 $mobile-padding;
+
+
+      .text {
+        padding: 2rem 0;
+
+        h1 {
+          margin-top: 0;
+        }
+
+        p {
+          margin-left: 0;
+          text-align: center;
+        }
+      }
+
+      .buttons {
+        margin-bottom: 1rem;
+      }
     }
   }
 </style>

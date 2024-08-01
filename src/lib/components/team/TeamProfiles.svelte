@@ -28,20 +28,14 @@
 
 <style lang="scss">
   .wrapper {
-    //background-color: transparentize($primary-dark, 0.5);
-    margin: 0rem 2rem;
+    margin: 0 $page-padding;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0 1rem;
 
-    font-family: var(--font);
     color: $text-light;
 
-    @media (max-width: 700px) {
-      margin: 2rem 1rem;
-    }
-
     .top-content {
-      padding: 1rem 1rem 0;
+      padding: 0 1rem 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -60,7 +54,7 @@
         font-weight: bold;
         color: $text-light;
 
-        font-family: var(--font);
+        font-family: $font;
 
         transition: color 100ms ease-in-out;
 
