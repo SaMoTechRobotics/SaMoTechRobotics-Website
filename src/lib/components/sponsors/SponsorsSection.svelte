@@ -7,13 +7,25 @@
 {#if !small}
 	<div class="wrapper">
 		<h1>Our Sponsors</h1>
+		<p>
+			We would like to thank our main sponsors of our 2023-2024 season, ZipRecruiter, Boeing, and Rotary Club of Santa
+			made SaMoTech possible and have allowed us to pursue our interests in robotics and engineering. We greatly
+			Monica along with supporting sponsors, Yahoo, Panasonic, and Czeh for their generous support. Your contributions
+			appreciate your belief in us and the opportunities you have provided.
+		</p>
 		<div class="logos">
-			<SponsorLogo to="https://www.ziprecruiter.com/" sponsor="ZipRecruiter" />
-			<SponsorLogo to="" sponsor="Boeing" />
-			<SponsorLogo to="" sponsor="RotaryClub-GEAR" />
-			<SponsorLogo to="" sponsor="Yahoo" />
-			<SponsorLogo to="https://www.na.panasonic.com/" sponsor="Panasonic" />
-			<SponsorLogo to="" sponsor="Czeh" />
+			<div>
+				<SponsorLogo to="https://www.ziprecruiter.com/" sponsor="ZipRecruiter" />
+			</div>
+			<div>
+				<SponsorLogo to="" sponsor="RotaryClub" />
+				<SponsorLogo to="" sponsor="Boeing" />
+			</div>
+			<div>
+				<SponsorLogo to="" sponsor="Yahoo" />
+				<SponsorLogo to="https://www.na.panasonic.com/" sponsor="Panasonic" />
+				<SponsorLogo to="" sponsor="Czeh" />
+			</div>
 		</div>
 	</div>
 {:else}
@@ -32,19 +44,57 @@
 
 <style lang="scss">
   .wrapper {
-    padding: 4rem 2rem;
+    padding: 0 2rem 4rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    color: $text-light;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
     .logos {
-      display: grid;
-      grid-template-columns: repeat(6, minmax(4rem, 1fr));
-      grid-gap: 2rem;
-      justify-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
+
+      gap: 4rem;
+
+      :first-child {
+        height: 10rem;
+      }
+
+      :nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        height: 6rem;
+
+        :global(> a) {
+          flex: 1;
+          height: 14rem;
+        }
+      }
+
+      :nth-child(3) {
+        margin: 4rem 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 3rem;
+      }
     }
   }
 
@@ -56,9 +106,14 @@
 
     h1 {
       font-size: 1.2rem;
+      color: $text;
     }
 
     .logos {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(4rem, 1fr));
+      justify-items: center;
+      align-items: center;
       grid-gap: 2rem;
     }
   }
