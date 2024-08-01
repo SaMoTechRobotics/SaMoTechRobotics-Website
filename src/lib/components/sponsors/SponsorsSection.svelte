@@ -116,5 +116,19 @@
       align-items: center;
       grid-gap: 2rem;
     }
+
+    @media (max-width: 768px) {
+      padding: 2rem 1rem;
+
+      h1 {
+        margin-bottom: 2rem;
+        margin-top: 0;
+      }
+
+      .logos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 4rem);
+      }
+    }
   }
 </style>

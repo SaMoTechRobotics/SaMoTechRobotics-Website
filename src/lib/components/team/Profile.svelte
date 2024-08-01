@@ -40,5 +40,16 @@
       margin-top: 0.5rem;
       color: $text-light;
     }
+
+    @media (max-width: 768px) {
+      img {
+        width: 6rem;
+        height: 6rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
   }
 </style>

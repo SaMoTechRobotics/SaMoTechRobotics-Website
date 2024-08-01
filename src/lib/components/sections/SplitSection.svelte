@@ -97,7 +97,7 @@
       }
     }
 
-    @media(max-width: 810px) {
+    @media(max-width: 1100px) {
       display: flex;
       flex-direction: column;
       justify-content: center;

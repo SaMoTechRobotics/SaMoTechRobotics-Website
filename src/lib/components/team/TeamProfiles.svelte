@@ -74,5 +74,21 @@
       gap: 1rem;
       justify-content: center;
     }
+
+    @media (max-width: 560px) {
+      text-align: center;
+      margin: 0 $mobile-padding;
+
+      .content {
+        padding: 0;
+      }
+
+      .profiles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+      }
+    }
   }
 </style>
