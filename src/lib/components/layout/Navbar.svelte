@@ -86,6 +86,8 @@
 
     z-index: 1000;
 
+    pointer-events: none;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +119,8 @@
       color: $text-light;
 
       height: $bar-height;
+
+      pointer-events: all;
 
       background-color: transparentize($primary-dark, 0.6);
       backdrop-filter: blur(2px);

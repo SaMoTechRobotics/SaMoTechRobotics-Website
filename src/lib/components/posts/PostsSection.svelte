@@ -1,34 +1,31 @@
-<script>
+<script lang="ts">
 	import PostsModal from '$lib/components/posts/PostsModal.svelte';
 	import { onMount } from 'svelte';
+	import type { PostDetails } from '$lib/types/Post';
 
 	let open = false;
+	let post: PostDetails;
 
-	function openPost() {
-		alert('open');
+	function openPost(e: CustomEvent) {
 		open = true;
+		post = e.detail;
 	}
 
 	onMount(() => {
+		// @ts-ignore
 		document.addEventListener('openPost', openPost);
 	});
 </script>
 
 <div class="wrapper">
-	<slot {openPost} />
-	<PostsModal open>
-		<slot />
-	</PostsModal>
+	<slot />
 </div>
+<PostsModal bind:open {post}>
+	<slot />
+</PostsModal>
 
 <style lang="scss">
   .wrapper {
-    //display: flex;
-    //flex-direction: row;
-    //flex-wrap: wrap;
-    //justify-content: center;
-    //align-items: center;
-
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-template-rows: auto;
