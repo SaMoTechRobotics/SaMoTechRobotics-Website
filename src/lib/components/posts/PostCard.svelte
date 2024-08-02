@@ -2,9 +2,13 @@
 	export let img: string = '';
 	export let title: string = '';
 	export let date: string = '';
+
+	function openPost() {
+		document.dispatchEvent(new CustomEvent('openPost', { detail: { img, title, date } }));
+	}
 </script>
 
-<a href="/">
+<button on:click={openPost}>
 	<div class="wrapper">
 		<img src={img} alt="" />
 		<h1>{title}</h1>
@@ -13,7 +17,7 @@
 			<slot />
 		</p>
 	</div>
-</a>
+</button>
 
 <style lang="scss">
   a {

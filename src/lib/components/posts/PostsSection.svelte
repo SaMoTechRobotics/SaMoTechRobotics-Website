@@ -1,5 +1,24 @@
+<script>
+	import PostsModal from '$lib/components/posts/PostsModal.svelte';
+	import { onMount } from 'svelte';
+
+	let open = false;
+
+	function openPost() {
+		alert('open');
+		open = true;
+	}
+
+	onMount(() => {
+		document.addEventListener('openPost', openPost);
+	});
+</script>
+
 <div class="wrapper">
-	<slot />
+	<slot {openPost} />
+	<PostsModal open>
+		<slot />
+	</PostsModal>
 </div>
 
 <style lang="scss">
