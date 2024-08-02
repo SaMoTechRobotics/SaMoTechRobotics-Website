@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { PostDetails } from '$lib/types/Post';
 	import PostCard from '$lib/components/posts/PostCard.svelte';
+	import Icon from '@iconify/svelte';
 
 	export let open: boolean;
 
@@ -11,14 +12,16 @@
 <div class="background" class:open on:click={() => open = false} />
 <div class="wrapper" class:open>
 	<div class="modal">
+		<Icon icon="material-symbols:keyboard-arrow-left" />
 		<div>
 			{#if post}
 				<PostCard big img={post.img} title={post.title} date={post.date}>{post.text}</PostCard>
 			{/if}
 		</div>
-		<div class="post-list">
-			<slot />
-		</div>
+		<Icon icon="material-symbols:keyboard-arrow-right" />
+		<!--		<div class="post-list">-->
+		<!--			<slot />-->
+		<!--		</div>-->
 	</div>
 </div>
 
@@ -63,9 +66,19 @@
 
     backdrop-filter: blur(2px);
 
-
     &.open {
       display: flex;
+
+      animation: modalOpen 150ms ease-in-out;
+    }
+
+    @keyframes modalOpen {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     .modal {
@@ -85,6 +98,10 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+
+      font-size: 10rem;
+      color: white;
 
       .post-list {
         width: 20rem;
