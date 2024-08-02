@@ -84,6 +84,8 @@
     width: calc(100vw - $page-padding);
     height: $navbar-height;
 
+    z-index: 1000;
+
     display: flex;
     justify-content: center;
     align-items: center;

@@ -4,12 +4,29 @@
 	import SponsorsSection from '$lib/components/sponsors/SponsorsSection.svelte';
 	import SupportSection from '$lib/components/sections/SupportSection.svelte';
 	import LinkButton from '$lib/components/layout/LinkButton.svelte';
-	import StatsSection from '$lib/components/sections/StatsSection.svelte';
+	import StatsSection from '$lib/components/competition/StatsSection.svelte';
+	import PostsSection from '$lib/components/posts/PostsSection.svelte';
+	import PostCard from '$lib/components/posts/PostCard.svelte';
 </script>
 
 <Hero title="SaMoTech Robotics" img="images/2024-25/Regionals_06_FinalQ.jpg" />
 
-<StatsSection />
+<!--<StatsSection />-->
+
+<PostsSection>
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp">
+		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
+	</PostCard>
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp">
+		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
+	</PostCard>
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp">
+		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
+	</PostCard>
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp">
+		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
+	</PostCard>
+</PostsSection>
 
 <SponsorsSection small />
 
@@ -60,6 +77,6 @@
 
 <style lang="scss">
   :global(.layout) {
-    background: linear-gradient(180deg, $primary-darker 0%, $primary 25%, $primary 32%, white 42%, white 72%, $primary 82%, darken($primary, 20) 88%, $primary-dark 95%, $primary-darker 100%);
+    background: linear-gradient(180deg, $primary-darker 0%, $primary 30%, $primary-dark 45%, $primary 82%, darken($primary, 20) 88%, $primary-dark 95%, $primary-darker 100%);
   }
 </style>
