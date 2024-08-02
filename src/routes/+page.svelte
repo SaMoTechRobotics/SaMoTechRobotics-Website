@@ -4,9 +4,12 @@
 	import SponsorsSection from '$lib/components/sponsors/SponsorsSection.svelte';
 	import SupportSection from '$lib/components/sections/SupportSection.svelte';
 	import LinkButton from '$lib/components/layout/LinkButton.svelte';
+	import StatsSection from '$lib/components/sections/StatsSection.svelte';
 </script>
 
 <Hero title="SaMoTech Robotics" img="images/2024-25/Regionals_06_FinalQ.jpg" />
+
+<StatsSection />
 
 <SponsorsSection small />
 
@@ -16,9 +19,13 @@
 	participation in FTC, we develop hands-on skills in engineering, robotics, and coding while improving life-skills like
 	teamwork and self-confidence.
 
+	<br />
+
 	SaMoTech currently has 9 members, aged 14-16, all hard-working and high-achieving students from diverse backgrounds
-	and with varied interests, each bringing a vital perspective necessary for our success. We students are responsible
-	for the design and construction of our robots, using a variety of tools and techniques, with guidance from our
+	and with varied interests, each bringing a vital perspective necessary for our success.
+	<br />
+	We students are responsible for the design and construction of our robots, using a variety of tools and techniques,
+	with guidance from our
 	volunteer coaches and mentors. We also collaborate on marketing and outreach efforts, helping to promote the team and
 	engage with our community. In particular, we dedicate many hours to helping other teams and schools.
 
@@ -53,6 +60,6 @@
 
 <style lang="scss">
   :global(.layout) {
-    background: linear-gradient(180deg, $primary-darker 0%, $primary 20%, $primary 26%, white 42%, white 72%, $primary 82%, darken($primary, 20) 88%, $primary-dark 95%, $primary-darker 100%);
+    background: linear-gradient(180deg, $primary-darker 0%, $primary 25%, $primary 32%, white 42%, white 72%, $primary 82%, darken($primary, 20) 88%, $primary-dark 95%, $primary-darker 100%);
   }
 </style>

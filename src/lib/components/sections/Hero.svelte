@@ -11,7 +11,7 @@
 
 <style lang="scss">
   .wrapper {
-    margin: 1rem 2rem;
+    margin: 1rem $page-padding;
     border-radius: 1rem;
     height: calc(100vh - $navbar-height - 4rem);
 
@@ -23,7 +23,7 @@
     &.img {
       background-size: cover;
       background-position: center;
-      //
+
       //&::before {
       //  content: '';
       //  z-index: 10;
@@ -31,7 +31,7 @@
       //  height: 100%;
       //  display: block;
       //  position: absolute;
-      //  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%);
+      //  //background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%);
       //}
     }
 
@@ -44,6 +44,10 @@
       h1 {
         font-size: 3rem;
       }
+    }
+
+    @media (max-width: 768px) {
+      margin: 1rem $mobile-padding;
     }
   }
 </style>

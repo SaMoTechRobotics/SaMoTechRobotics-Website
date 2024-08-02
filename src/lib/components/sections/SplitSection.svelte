@@ -28,6 +28,7 @@
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: 1fr;
 
+    margin-top: 1rem;
 
     background: transparent;
 
