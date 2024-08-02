@@ -14,16 +14,28 @@
 <!--<StatsSection />-->
 
 <PostsSection>
-	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp">
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp" date="2024-05-01">
 		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
 	</PostCard>
-	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp">
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp" date="2024-05-01">
 		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
 	</PostCard>
-	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp">
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp" date="2024-05-01">
 		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
 	</PostCard>
-	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp">
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp" date="2024-05-01">
+		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
+	</PostCard>
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp" date="2024-05-01">
+		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
+	</PostCard>
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp" date="2024-05-01">
+		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
+	</PostCard>
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp" date="2024-05-01">
+		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
+	</PostCard>
+	<PostCard title="Library Event" img="images/photos/samotech-winning1.webp" date="2024-05-01">
 		We had a great time at the library event. We showed off our robot and talked to kids about robotics.
 	</PostCard>
 </PostsSection>
