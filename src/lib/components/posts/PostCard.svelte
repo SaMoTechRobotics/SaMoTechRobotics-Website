@@ -9,21 +9,9 @@
 	export let date: string = '';
 
 	export let big = false;
-
-	function openPost() {
-		document.dispatchEvent(new CustomEvent<PostDetails>('openPost', {
-			detail: {
-				img,
-				title,
-				date,
-				text: text.innerText
-			}
-		}));
-	}
 </script>
 
-<!--svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions-->
-<div class="wrapper" on:click={openPost} class:big>
+<div class="wrapper" class:big>
 	<img src={img} alt="" />
 	<div class="content">
 		<h1>{title}</h1>
@@ -39,12 +27,14 @@
     background: transparentize($primary-dark, 0.4);
     backdrop-filter: blur(2px);
 
+    $img-height: 20rem;
+
     //display: flex;
     //flex-direction: column;
     //justify-content: start;
     //align-items: center;
     display: grid;
-    grid-template-rows: 10rem 20rem;
+    grid-template-rows: $img-height 20rem;
     grid-template-columns: 1fr;
 
 
@@ -56,6 +46,7 @@
 
     img {
       width: calc(100% - 2rem);
+      max-height: $img-height;
       padding: 1rem;
       object-fit: cover;
     }
@@ -63,11 +54,13 @@
     .content {
       padding: 1rem;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-      max-height: 100%;
+      //display: flex;
+      //flex-direction: column;
+      //justify-content: start;
+      //align-items: center;
+      //max-height: 100%;
+
+      overflow: hidden;
     }
 
     h1 {
@@ -87,6 +80,8 @@
       font-size: 1rem;
       font-weight: normal;
       padding: 0 $page-padding;
+
+      text-overflow: ellipsis;
     }
 
     &.big {
