@@ -4,7 +4,7 @@
 </script>
 <div class="wrapper" class:img={img !== ""} style={img ? `background-image: url(${img})` : ""}>
 	<div class="content">
-		<h1>{title}</h1>
+		<!--		<h1>{title}</h1>-->
 		<slot />
 	</div>
 </div>

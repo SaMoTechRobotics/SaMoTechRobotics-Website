@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PostDetails } from '$lib/types/Post';
+	import dayjs from 'dayjs';
 
 	let text: HTMLParagraphElement;
 
@@ -25,7 +26,7 @@
 <div class="wrapper" on:click={openPost} class:big>
 	<img src={img} alt="" />
 	<h1>{title}</h1>
-	<p>{date}</p>
+	<p class="date">{dayjs(date).format('MMMM D, YYYY')}</p>
 	<p bind:this={text}>
 		<slot />
 	</p>
@@ -39,7 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 
     border-radius: 1rem;
 
@@ -62,6 +63,12 @@
       text-align: left;
     }
 
+    .date {
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
     p {
       font-size: 1rem;
       font-weight: normal;
@@ -70,7 +77,8 @@
 
     &.big {
       img {
-        width: 10rem;
+        width: calc(100% - 20rem);
+        border-radius: 1rem;
       }
     }
   }

@@ -33,5 +33,9 @@
     gap: 2rem;
 
     padding: 2rem $page-padding;
+
+    @media (max-width: 810px) {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
