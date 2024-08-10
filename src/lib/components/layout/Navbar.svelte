@@ -47,9 +47,12 @@
 				<a href="/about" class:active={path==='about'}>
 					About Us
 				</a>
-				<a href="/competition" class:active={path==='competition'}>
-					Competition
+				<a href="/news" class:active={path==='news'}>
+					News
 				</a>
+				<!--				<a href="/competition" class:active={path==='competition'}>-->
+				<!--					Competition-->
+				<!--				</a>-->
 				<a href="/sponsors" class:active={path==='sponsors'}>
 					Sponsors
 				</a>

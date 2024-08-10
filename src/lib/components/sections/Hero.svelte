@@ -39,13 +39,18 @@
       text-align: center;
       margin-bottom: 2rem;
 
-      color: $text-light;
+      width: 100%;
+      backdrop-filter: blur(0.8px);
 
       h1 {
         font-size: 8rem;
+        color: $text-light;
+        padding: 0;
+        margin: 0;
         font-weight: bolder;
-        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
       }
+
     }
 
     @media (max-width: 768px) {

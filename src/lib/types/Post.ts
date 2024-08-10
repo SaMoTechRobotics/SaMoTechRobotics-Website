@@ -1,6 +1,6 @@
 export interface PostDetails {
 	title: string;
-	img: string;
+	images: string[];
 	date: string;
 	text: string;
 }

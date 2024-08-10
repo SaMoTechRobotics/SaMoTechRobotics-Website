@@ -20,7 +20,7 @@
 		</button>
 		<div>
 			{#if post}
-				<PostCard big img={post.img} title={post.title} date={post.date}>{post.text}</PostCard>
+				<!--				<PostCard big img={post.img} title={post.title} date={post.date}>{post.text}</PostCard>-->
 			{/if}
 		</div>
 		<button on:click={nextPost}>

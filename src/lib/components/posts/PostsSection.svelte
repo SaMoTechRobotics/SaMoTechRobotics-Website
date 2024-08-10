@@ -17,7 +17,7 @@
 
 <div class="wrapper">
 	{#each posts as post}
-		<PostCard img={post.img} title={post.title} date={post.date}>{post.text}</PostCard>
+		<PostCard img={post.images[0]} title={post.title} date={post.date}>{post.text}</PostCard>
 	{/each}
 </div>
 <!--<PostsModal bind:open {post}>-->
