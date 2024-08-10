@@ -1,28 +1,28 @@
 <script lang="ts">
-	import PostsModal from '$lib/components/posts/PostsModal.svelte';
-	import { onMount } from 'svelte';
-	import type { PostDetails } from '$lib/types/Post';
+	import { posts } from '$lib/ts/posts';
+	import PostCard from '$lib/components/posts/PostCard.svelte';
 
-	let open = false;
-	let post: PostDetails;
+	// let open = false;
+	// let post: PostDetails;
 
-	function openPost(e: CustomEvent) {
-		open = true;
-		post = e.detail;
-	}
+	// function openPost(e: CustomEvent) {
+	// 	open = true;
+	// 	post = e.detail;
+	// }
 
-	onMount(() => {
-		// @ts-ignore
-		document.addEventListener('openPost', openPost);
-	});
+	// onMount(() => {
+	// document.addEventListener('openPost', openPost);
+	// });
 </script>
 
 <div class="wrapper">
-	<slot />
+	{#each posts as post}
+		<PostCard img={post.img} title={post.title} date={post.date}>{post.text}</PostCard>
+	{/each}
 </div>
-<PostsModal bind:open {post}>
-	<slot />
-</PostsModal>
+<!--<PostsModal bind:open {post}>-->
+<!--	<slot />-->
+<!--</PostsModal>-->
 
 <style lang="scss">
   .wrapper {

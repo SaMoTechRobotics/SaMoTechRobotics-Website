@@ -4,7 +4,7 @@
 </script>
 <div class="wrapper" class:img={img !== ""} style={img ? `background-image: url(${img})` : ""}>
 	<div class="content">
-		<!--		<h1>{title}</h1>-->
+		<h1>{title}</h1>
 		<slot />
 	</div>
 </div>
@@ -42,7 +42,9 @@
       color: $text-light;
 
       h1 {
-        font-size: 3rem;
+        font-size: 8rem;
+        font-weight: bolder;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
       }
     }
 
