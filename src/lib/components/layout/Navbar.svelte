@@ -151,9 +151,14 @@
           width: 7.5rem;
         }
 
+        &.news > .glider {
+          transform: translateX(11rem);
+          width: 5rem;
+        }
+
         &.sponsors > .glider {
-          transform: translateX(18.5rem);
-          width: 6.4rem;
+          transform: translateX(16rem);
+          width: 6rem;
         }
 
         &.support > .glider {

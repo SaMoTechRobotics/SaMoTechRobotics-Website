@@ -25,11 +25,13 @@
 <!--svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions-->
 <div class="wrapper" on:click={openPost} class:big>
 	<img src={img} alt="" />
-	<h1>{title}</h1>
-	<p class="date">{dayjs(date).format('MMMM D, YYYY')}</p>
-	<p bind:this={text}>
-		<slot />
-	</p>
+	<div class="content">
+		<h1>{title}</h1>
+		<p class="date">{dayjs(date).format('MMMM D, YYYY')}</p>
+		<p bind:this={text}>
+			<slot />
+		</p>
+	</div>
 </div>
 
 <style lang="scss">
@@ -37,10 +39,14 @@
     background: transparentize($primary-dark, 0.4);
     backdrop-filter: blur(2px);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: start;
+    //align-items: center;
+    display: grid;
+    grid-template-rows: 10rem 20rem;
+    grid-template-columns: 1fr;
+
 
     border-radius: 1rem;
 
@@ -49,11 +55,19 @@
     color: $text-light;
 
     img {
-      width: 100%;
-      object-fit: cover;
-      //border-top-left-radius: 1rem;
-      //border-top-right-radius: 1rem;
+      width: calc(100% - 2rem);
       padding: 1rem;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      max-height: 100%;
     }
 
     h1 {
@@ -78,7 +92,6 @@
     &.big {
       img {
         width: calc(100% - 20rem);
-        border-radius: 1rem;
       }
     }
   }
