@@ -54,8 +54,12 @@
 				<h1>SaMoTech Robotics</h1>
 			</a>
 
-			<button class="menu" on:click={() => menuOpen = true}>
-				<Icon icon="ic:round-menu" />
+			<button class="menu" on:click={() => menuOpen = !menuOpen}>
+				{#if menuOpen}
+					<Icon icon="ic:round-close" />
+				{:else}
+					<Icon icon="ic:round-menu" />
+				{/if}
 			</button>
 
 			<div class="mobile-menu" class:open={menuOpen}>
@@ -71,6 +75,9 @@
 					</a>
 					<a href="/sponsors" class:active={path==='sponsors'}>
 						Sponsors
+					</a>
+					<a href="/support" class:active={path==='support'}>
+						Support
 					</a>
 				</div>
 			</div>
@@ -95,6 +102,10 @@
     left: 0;
     width: calc(100vw - $page-padding);
     height: $navbar-height;
+
+    :has(.mini) {
+      width: calc(100vw - $mobile-padding);
+    }
 
     z-index: 1000;
 
@@ -229,6 +240,8 @@
         justify-content: space-between;
         align-items: center;
 
+        box-shadow: none;
+
         .menu {
           background: transparent;
           border: none;
@@ -242,9 +255,6 @@
         }
       }
 
-      &.scrolled .mobile-menu {
-        background-color: transparentize($primary-dark, 0.1);
-      }
 
       .mobile-menu {
         display: none;
@@ -252,16 +262,33 @@
         position: fixed;
         top: $navbar-height - 1rem;
         left: 0;
-        background-color: transparentize($primary-dark, 0.6);
+        background: linear-gradient(transparentize($primary-dark, 0.6) 0%, transparentize($primary-dark, 0.1) 25%, transparentize($primary-dark, 0.05) 100%);
         backdrop-filter: blur(2px);
+
+        z-index: 30000;
+
+        width: 100%;
 
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
 
-        transition: background-color 300ms ease-in-out;
+        //transition: background 100ms ease-in-out;
 
         &.open {
           display: block;
+
+          //animation: slideIn 300ms ease-in-out;
+
+          @keyframes slideIn {
+            from {
+              transform: translateY(-100%);
+              opacity: 0;
+            }
+            to {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
         }
 
         .mobile-tabs {
@@ -270,10 +297,26 @@
           justify-content: start;
           align-items: center;
 
+          width: 100%;
+
+          padding-bottom: 2rem;
+
           a {
+            margin-left: auto;
+            margin-right: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
             text-decoration: none;
           }
         }
+      }
+    }
+
+    &.scrolled {
+      .mobile-menu {
+        background: transparentize($primary-dark, 0.1);
+        backdrop-filter: blur(2px);
+        top: $navbar-height - 1rem;
       }
     }
   }

@@ -53,11 +53,12 @@
       grid-template-columns: 1fr;
     }
 
-    .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem $page-padding;
-    }
+  }
+
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
