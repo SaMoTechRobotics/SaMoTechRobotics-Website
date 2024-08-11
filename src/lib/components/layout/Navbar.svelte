@@ -1,29 +1,13 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { onMount } from 'svelte';
-	import type { Snapshot } from '@sveltejs/kit';
+	import Icon from '@iconify/svelte';
 
 	let scrollY = -100;
-	let miniNav = false;
+	let innerWidth = 1000;
 
-	// onMount(() => {
-	// 	scrollY = window.scrollY;
-	// 	window.addEventListener('scroll', () => {
-	// 		scrollY = window.scrollY;
-	// 	});
-	//
-	// 	window.addEventListener('resize', () => {
-	// 		miniNav = window.innerWidth < 810;
-	// 	});
-	// });
+	let menuOpen = false;
 
-	export const snapshot: Snapshot = {
-		capture: () => scrollY,
-		restore: (value: number) => {
-			scrollY = value;
-			console.log('yay');
-		}
-	};
+	$: miniNav = innerWidth < 810;
 
 	$: path = $page.url.pathname.replace('/', '');
 </script>
@@ -66,11 +50,36 @@
 		</div>
 	{:else}
 		<div class="navbar mini">
+			<a href="/">
+				<h1>SaMoTech Robotics</h1>
+			</a>
+
+			<button class="menu" on:click={() => menuOpen = true}>
+				<Icon icon="ic:round-menu" />
+			</button>
+
+			<div class="mobile-menu" class:open={menuOpen}>
+				<div class="mobile-tabs">
+					<a href="/" class:active={path===''}>
+						Home
+					</a>
+					<a href="/about" class:active={path==='about'}>
+						About Us
+					</a>
+					<a href="/news" class:active={path==='news'}>
+						News
+					</a>
+					<a href="/sponsors" class:active={path==='sponsors'}>
+						Sponsors
+					</a>
+				</div>
+			</div>
 		</div>
 	{/if}
 </div>
 
-<svelte:window bind:scrollY />
+<svelte:window bind:scrollY bind:innerWidth />
+
 
 <style lang="scss">
   .spacer {
@@ -130,6 +139,10 @@
       box-shadow: $shadow;
 
       border-radius: 1rem;
+
+      &:has(.open) {
+        border-radius: 1rem 1rem 0 0;
+      }
 
       transition: background-color 200ms ease-in-out;
 
@@ -209,6 +222,58 @@
       h1 {
         font-size: 1rem;
         margin: 0;
+      }
+
+      &.mini {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu {
+          background: transparent;
+          border: none;
+          color: $text-light;
+          font-size: 1.5rem;
+          cursor: pointer;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &.scrolled .mobile-menu {
+        background-color: transparentize($primary-dark, 0.1);
+      }
+
+      .mobile-menu {
+        display: none;
+
+        position: fixed;
+        top: $navbar-height - 1rem;
+        left: 0;
+        background-color: transparentize($primary-dark, 0.6);
+        backdrop-filter: blur(2px);
+
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        transition: background-color 300ms ease-in-out;
+
+        &.open {
+          display: block;
+        }
+
+        .mobile-tabs {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+
+          a {
+            text-decoration: none;
+          }
+        }
       }
     }
   }

@@ -43,7 +43,8 @@
       backdrop-filter: blur(0.8px);
 
       h1 {
-        font-size: 8rem;
+        //font-size: 8rem;
+        font-size: min(10vw, 6rem);
         color: $text-light;
         padding: 0;
         margin: 0;
