@@ -41,7 +41,7 @@
       color: $text-light;
     }
 
-    @media(min-width: 810px) {
+    @media(min-width: 1100px) {
       &.reverse {
         grid-template-columns: 1fr 1fr;
 

@@ -12,7 +12,9 @@
 </script>
 
 <div class="wrapper" class:big>
-	<img src={img} alt="" />
+	<div class="image">
+		<img src={img} alt="" />
+	</div>
 	<div class="content">
 		<h1>{title}</h1>
 		<p class="date">{dayjs(date).format('MMMM D, YYYY')}</p>
@@ -34,7 +36,7 @@
     //justify-content: start;
     //align-items: center;
     display: grid;
-    grid-template-rows: $img-height 20rem;
+    grid-template-rows: $img-height 1fr;
     grid-template-columns: 1fr;
 
 
@@ -44,15 +46,21 @@
 
     color: $text-light;
 
-    img {
-      width: calc(100% - 2rem);
-      max-height: $img-height;
+    .image {
       padding: 1rem;
-      object-fit: cover;
+
+      img {
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 100%;
+        max-height: $img-height;
+        object-fit: cover;
+      }
     }
 
     .content {
-      padding: 1rem;
+      padding: 0 1rem;
+      margin: 0;
 
       //display: flex;
       //flex-direction: column;
@@ -67,13 +75,14 @@
       font-size: 2rem;
       margin-bottom: 0;
       padding: 0 $page-padding;
-      text-align: left;
+      text-align: center;
     }
 
     .date {
       font-size: 0.8rem;
       font-weight: bold;
       margin: 0;
+      text-align: center;
     }
 
     p {

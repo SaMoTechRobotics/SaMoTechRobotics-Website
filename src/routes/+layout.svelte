@@ -24,6 +24,9 @@
     background-color: $primary-dark;
     color: $text;
     font-family: $font;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100vw;
     line-height: 1.6;
   }
 

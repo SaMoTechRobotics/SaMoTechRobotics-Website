@@ -4,9 +4,7 @@
 	import SponsorsSection from '$lib/components/sponsors/SponsorsSection.svelte';
 	import SupportSection from '$lib/components/sections/SupportSection.svelte';
 	import LinkButton from '$lib/components/layout/LinkButton.svelte';
-	import StatsSection from '$lib/components/competition/StatsSection.svelte';
 	import PostsSection from '$lib/components/posts/PostsSection.svelte';
-	import PostCard from '$lib/components/posts/PostCard.svelte';
 </script>
 
 <Hero title="SaMoTech Robotics" img="images/2024-25/Regionals_06_FinalQ.jpg" />
@@ -17,7 +15,7 @@
 
 <SponsorsSection small />
 
-<SplitSection img="images/photos/samotech-winning1.webp" title="About Us" textSide="right">
+<SplitSection img="images/photos/samotech-winning1.webp" title="About Us" textSide="right" dark>
 	SaMoTech is a 501c3 community-based robotics team competing in the FIRST Tech Challenge (FTC). Based in Santa Monica,
 	CA, our mission is to inspire young people to be the science and technology leaders of the future. Through
 	participation in FTC, we develop hands-on skills in engineering, robotics, and coding while improving life-skills like
@@ -40,7 +38,7 @@
 </SplitSection>
 
 
-<SplitSection img="images/photos/samotech-winning1.webp" title="FIRST Tech Challenge" textSide="left">
+<SplitSection img="images/photos/samotech-winning1.webp" title="FIRST Tech Challenge" textSide="left" dark>
 	FIRST challenges teams of students, grades 7-12, to design, build, and program autonomous & driver-operated robots
 	that compete in head-to-head competitions. Each unique season concludes with inter-league, regional, and world
 	championships. Participants also gain access to education opportunities, exclusivescholarships, and potential dream
