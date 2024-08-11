@@ -19,6 +19,11 @@
   .wrapper {
     padding: 4rem $page-padding;
 
+    @media (max-width: 810px) {
+      padding: 4rem $mobile-padding;
+      padding-top: 0;
+    }
+
     color: $text-light;
 
     display: flex;

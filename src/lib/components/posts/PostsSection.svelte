@@ -6,11 +6,12 @@
 	export let home = false;
 </script>
 
-<div class="wrapper" class:home={home}>
-	{#each posts.slice(0, 4) as post}
-		<PostCard img={post.images[0]} title={post.title} date={post.date}>{post.text}</PostCard>
-	{/each}
-	<div class="spacer" />
+<div class="wrapper">
+	<div class="grid" class:home>
+		{#each posts.slice(0, 4) as post}
+			<PostCard img={post.images[0]} title={post.title} date={post.date}>{post.text}</PostCard>
+		{/each}
+	</div>
 </div>
 
 {#if home}
@@ -24,35 +25,47 @@
 
 <style lang="scss">
   .wrapper {
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
-    grid-template-rows: auto;
-
-    gap: 2rem;
-
-    padding: 2rem $page-padding;
+    padding-right: $page-padding * 2;
 
     @media (max-width: 810px) {
-      padding: 1rem $mobile-padding;
-      grid-template-columns: calc(100% - $mobile-padding * 4)
+      padding-right: $mobile-padding * 2;
     }
 
-    .spacer {
-      display: none;
+    &:has(.home) {
+      padding-right: 0;
+
+      .grid {
+        width: calc(100% + $page-padding);
+      }
     }
 
-    &.home {
-      @media (min-width: 810px) {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(24rem, 1fr)) 4rem;
-        grid-template-rows: 1fr;
-        gap: 2rem;
+    .grid {
+      width: 100%;
 
-        overflow: scroll;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+      grid-template-rows: auto;
 
-        scrollbar-width: none;
+      gap: 2rem;
+
+      padding: 2rem $page-padding;
+
+      @media (max-width: 810px) {
+        padding: 1rem $mobile-padding;
+        grid-template-columns: 100%;
+      }
+
+      &.home {
+        @media (min-width: 810px) {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(24rem, 1fr)) 4rem;
+          grid-template-rows: 1fr;
+          gap: 2rem;
+
+          overflow: scroll;
+
+          scrollbar-width: none;
+        }
       }
     }
   }

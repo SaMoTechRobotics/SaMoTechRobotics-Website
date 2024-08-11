@@ -2,9 +2,10 @@
 	import Card from '$lib/components/sections/SplitSection.svelte';
 	import TeamProfiles from '$lib/components/team/TeamProfiles.svelte';
 	import Profile from '$lib/components/team/Profile.svelte';
+	import AccomplishmentsSection from '$lib/components/sections/AccomplishmentsSection.svelte';
 </script>
 
-<Card img="images/photos/team/samotech-team1.jpg" title="About Us" textSide="right">
+<Card img="images/photos/team/samotech-team1.jpg" title="About Us" textSide="right" dark>
 	<p>
 		SaMoTech is a 501c3 community-based robotics team competing in the FIRST Tech Challenge (FTC). Based in Santa
 		Monica, CA, our mission is to inspire young people to be the science and technology leaders of the future. Through
@@ -18,6 +19,31 @@
 		and engage with our community. In particular, we dedicate many hours to helping other teams and schools.
 	</p>
 </Card>
+
+<AccomplishmentsSection>
+	<ul slot="competition">
+		<li>Undefeated through all regular season & interleague meets (current)</li>
+		<li>Our Autonomous Program ranks in the top 1% worldwide (current)</li>
+		<li>League W Champions (both years)</li>
+		<li>Inter-League Champion Alliance Captains (both years)</li>
+		<li>Regional Championship Semi-Finalists (both years)</li>
+		<li>Set 5 of the top 10 regional record scores in regular season (’23)</li>
+		<li>Ranked #1 in Los Angeles (170 teams) at the end of regular season (’22)</li>
+		<li>Interleague 3rd Place Inspire Winners (‘23)</li>
+	</ul>
+
+	<ul slot="outreach">
+		<li>Opening Presenters onstage at the Santa Monica Arts & Literary Festival 2024</li>
+		<li>Presented at the SMMUSD Summer Adventure Program 2024</li>
+		<li>Front Page News in the Santa Monica Daily Press 2024</li>
+		<li>Hosted an interactive booth at the Santa Monica Arts & Literary Festival 2024</li>
+		<li>Exhibitor at the Grant Elementary Steam Fair 2024</li>
+		<li>Volunteered to assist younger FTC Teams 2022-20024</li>
+		<li>Participated in multiple FTC team get-togethers outside of competition 2022-2024</li>
+		<li>Front Page News in the Santa Monica Daily Press 2023</li>
+		<li>Exhibitor at the Grant Elementary Steam Fair 2023</li>
+	</ul>
+</AccomplishmentsSection>
 
 <TeamProfiles>
 	<Profile name="Alexa">
@@ -71,6 +97,6 @@
 
 <style lang="scss">
   :global(.layout.about) {
-    background: linear-gradient(180deg, $primary-dark 0%, $primary 10%, $primary 30%, $primary-dark 60%, $primary-darker 100%);
+    background: linear-gradient(180deg, $primary-darker 0%, lighten($primary-dark, 8) 25%, darken($primary, 10) 36%, $primary-dark 60%, $primary-darker 100%);
   }
 </style>

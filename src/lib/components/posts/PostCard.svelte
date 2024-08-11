@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { PostDetails } from '$lib/types/Post';
 	import dayjs from 'dayjs';
 
 	let text: HTMLParagraphElement;
@@ -31,14 +30,9 @@
 
     $img-height: 20rem;
 
-    //display: flex;
-    //flex-direction: column;
-    //justify-content: start;
-    //align-items: center;
     display: grid;
     grid-template-rows: $img-height 1fr;
     grid-template-columns: 1fr;
-
 
     border-radius: 1rem;
 
@@ -61,12 +55,6 @@
     .content {
       padding: 0 1rem;
       margin: 0;
-
-      //display: flex;
-      //flex-direction: column;
-      //justify-content: start;
-      //align-items: center;
-      //max-height: 100%;
 
       overflow: hidden;
     }

@@ -41,7 +41,7 @@
       color: $text-light;
     }
 
-    @media(min-width: 1100px) {
+    @media(min-width: 1000px) {
       &.reverse {
         grid-template-columns: 1fr 1fr;
 
@@ -76,11 +76,12 @@
       h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
+        text-align: center;
       }
 
       p {
         margin-left: 1rem;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 1.8rem;
         text-align: left;
       }
@@ -98,7 +99,7 @@
       }
     }
 
-    @media(max-width: 1100px) {
+    @media(max-width: 1000px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
