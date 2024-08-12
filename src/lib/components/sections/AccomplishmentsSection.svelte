@@ -22,6 +22,10 @@
       font-size: 3rem;
       text-align: center;
       margin-bottom: 0;
+
+      @media (max-width: 810px) {
+        font-size: 2rem;
+      }
     }
 
     .grid {
@@ -30,10 +34,14 @@
       grid-template-rows: 1fr;
       gap: 2rem;
 
+      @media (max-width: 810px) {
+        grid-template-columns: 1fr;
+      }
+
       .split {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
 
 

@@ -15,7 +15,7 @@
 
 <SponsorsSection small />
 
-<SplitSection img="images/photos/samotech-winning1.webp" title="About Us" textSide="right" dark>
+<SplitSection img="images/2024-25/230909_Kickoff-Field.jpg" title="About Us" textSide="right" dark>
 	SaMoTech is a 501c3 community-based robotics team competing in the FIRST Tech Challenge (FTC). Based in Santa Monica,
 	CA, our mission is to inspire young people to be the science and technology leaders of the future. Through
 	participation in FTC, we develop hands-on skills in engineering, robotics, and coding while improving life-skills like
@@ -33,7 +33,7 @@
 
 	<div slot="buttons">
 		<LinkButton to="/support">Support Us</LinkButton>
-		<LinkButton to="/about" dark>Learn More</LinkButton>
+		<LinkButton to="/about" transparent>Learn More</LinkButton>
 	</div>
 </SplitSection>
 
@@ -47,7 +47,7 @@
 	sponsored by the likes of Amazon, Disney & NASA.
 
 	<div slot="buttons">
-		<LinkButton to="https://www.firstinspires.org/robotics/ftc" newTab dark>Learn More</LinkButton>
+		<LinkButton to="https://www.firstinspires.org/robotics/ftc" newTab transparent>Learn More</LinkButton>
 	</div>
 </SplitSection>
 
@@ -62,6 +62,6 @@
 
 <style lang="scss">
   :global(.layout) {
-    background: linear-gradient(180deg, $primary-darker 0%, $primary 30%, $primary-dark 45%, $primary 82%, darken($primary, 20) 88%, $primary-dark 95%, $primary-darker 100%);
+    background: linear-gradient(180deg, $primary-darker 0%, $primary 49%, darken($primary, 30) 60%, $primary-dark 80%, $primary-darker 100%);
   }
 </style>

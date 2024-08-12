@@ -12,6 +12,8 @@
 	$: path = $page.url.pathname.replace('/', '');
 </script>
 
+<title>SaMoTech Robotics{path === '' ? '' : ' » ' + path.charAt(0).toUpperCase() + path.slice(1)}</title>
+
 <div class="spacer" />
 
 <div class="wrapper" class:scrolled={scrollY > 30} class:loading={scrollY === -100}>

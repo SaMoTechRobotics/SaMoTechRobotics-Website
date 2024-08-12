@@ -5,7 +5,7 @@
 	import AccomplishmentsSection from '$lib/components/sections/AccomplishmentsSection.svelte';
 </script>
 
-<Card img="images/photos/team/samotech-team1.jpg" title="About Us" textSide="right" dark>
+<Card img="images/2024-25/SaMoTech-team_on-grass.jpg" title="About Us" textSide="right" dark>
 	<p>
 		SaMoTech is a 501c3 community-based robotics team competing in the FIRST Tech Challenge (FTC). Based in Santa
 		Monica, CA, our mission is to inspire young people to be the science and technology leaders of the future. Through

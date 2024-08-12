@@ -9,7 +9,7 @@
 <div class="wrapper">
 	<div class="grid" class:home>
 		{#each posts.slice(0, 4) as post}
-			<PostCard img={post.images[0]} title={post.title} date={post.date}>{post.text}</PostCard>
+			<PostCard img={post.images[0]} title={post.title} date={post.date}>{@html post.text}</PostCard>
 		{/each}
 	</div>
 </div>
@@ -33,6 +33,9 @@
 
     &:has(.home) {
       padding-right: 0;
+      @media (max-width: 810px) {
+        margin-right: 2rem + $mobile-padding * 2;
+      }
 
       .grid {
         width: calc(100% + $page-padding);
@@ -75,5 +78,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
   }
 </style>

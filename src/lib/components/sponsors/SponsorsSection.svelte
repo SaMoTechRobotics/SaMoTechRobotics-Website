@@ -15,14 +15,14 @@
 		</p>
 		<div class="logos">
 			<div>
-				<SponsorLogo to="https://www.ziprecruiter.com/" sponsor="ZipRecruiter" />
+				<SponsorLogo to="https://www.ziprecruiter.com/about" sponsor="ZipRecruiter" />
 			</div>
 			<div>
-				<SponsorLogo to="" sponsor="RotaryClub" />
-				<SponsorLogo to="" sponsor="Boeing" />
+				<SponsorLogo to="https://www.facebook.com/rotarysm/" sponsor="RotaryClub" />
+				<SponsorLogo to="https://www.boeing.com/" sponsor="Boeing" />
 			</div>
 			<div>
-				<SponsorLogo to="" sponsor="Yahoo" />
+				<SponsorLogo to="https://www.yahooinc.com/" sponsor="Yahoo" />
 				<SponsorLogo to="https://www.na.panasonic.com/" sponsor="Panasonic" />
 				<SponsorLogo to="" sponsor="Czeh" />
 			</div>
@@ -32,10 +32,10 @@
 	<div class="wrapper small">
 		<h1>Our Sponsors</h1>
 		<div class="logos">
-			<SponsorLogo to="https://www.ziprecruiter.com/" sponsor="ZipRecruiter" />
-			<SponsorLogo to="" sponsor="Boeing" />
-			<SponsorLogo to="" sponsor="RotaryClub" />
-			<SponsorLogo to="" sponsor="Yahoo" />
+			<SponsorLogo to="https://www.ziprecruiter.com/about" sponsor="ZipRecruiter" />
+			<SponsorLogo to="https://www.boeing.com/" sponsor="Boeing" />
+			<SponsorLogo to="https://www.facebook.com/rotarysm/" sponsor="RotaryClub" />
+			<SponsorLogo to="https://www.yahooinc.com/" sponsor="Yahoo" />
 			<SponsorLogo to="https://www.na.panasonic.com/" sponsor="Panasonic" />
 			<SponsorLogo to="" sponsor="Czeh" />
 		</div>

@@ -81,6 +81,11 @@
       text-overflow: ellipsis;
     }
 
+    :global(a) {
+      color: $primary;
+      font-weight: bold;
+    }
+
     &.big {
       img {
         width: calc(100% - 20rem);
