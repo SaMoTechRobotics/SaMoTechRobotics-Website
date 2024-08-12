@@ -1,1 +1,3 @@
-To be the new SaMoTech Robotics website, with a clean new design and fun features.
+The new SaMoTech Robotics website! Competition and robot pages coming later!
+
+![Website](static/images/website-screenshot.png)
