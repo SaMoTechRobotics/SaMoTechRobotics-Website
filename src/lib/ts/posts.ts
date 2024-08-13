@@ -2,12 +2,6 @@ import type { PostDetails } from '$lib/types/Post';
 
 export const posts: PostDetails[] = [
 	{
-		/*
-		FRONT PAGE NEWS
-May 30, 2024
-SaMoTech made the front page of our local newspaper! This is an amazing opportunity to share our vision of bringing robotics teams and FTC competitions to Santa Monica's public schools. Check out the full article in the Santa Monica Daily Press HERE!
-(embed link: https://smdp.com/2024/04/30/samotech-continues-supernova-ascent-to-top-of-robotics-field/)
-		 */
 		title: 'Front Page News',
 		date: '2024-05-30',
 		text: "SaMoTech made the front page of our local newspaper! This is an amazing opportunity to share our vision of bringing robotics teams and FTC competitions to Santa Monica's public schools. Check out the full article in the Santa Monica Daily Press <a href='https://smdp.com/2024/04/30/samotech-continues-supernova-ascent-to-top-of-robotics-field/'>HERE</a>!",
