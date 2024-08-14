@@ -4,24 +4,23 @@
 	import LinkButton from '$lib/components/layout/LinkButton.svelte';
 
 	export let home = false;
+
+	export let postsCount = -1;
 </script>
 
 <div class="wrapper">
 	<div class="grid" class:home>
-		{#each posts.slice(0, 4) as post}
-			<PostCard img={post.images[0]} title={post.title} date={post.date}>{@html post.text}</PostCard>
+		{#each (postsCount === -1 ? posts : posts.slice(0, postsCount)) as post}
+			<PostCard post={post} />
 		{/each}
 	</div>
 </div>
 
 {#if home}
 	<div class="button">
-		<LinkButton transparent to="/news">View More SaMoTech News</LinkButton>
+		<LinkButton to="/news">View More SaMoTech News</LinkButton>
 	</div>
 {/if}
-<!--<PostsModal bind:open {post}>-->
-<!--	<slot />-->
-<!--</PostsModal>-->
 
 <style lang="scss">
   .wrapper {

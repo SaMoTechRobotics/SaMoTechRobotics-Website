@@ -25,7 +25,7 @@
     }
 
     a {
-      @include button(true, true);
+      @include button();
     }
   }
 </style>

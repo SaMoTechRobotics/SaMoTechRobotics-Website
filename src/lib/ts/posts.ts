@@ -11,7 +11,10 @@ export const posts: PostDetails[] = [
 		title: 'Robot Festival Hosts!',
 		date: '2024-04-27',
 		text: "SaMoTech was thrilled to represent FIRST at the Santa Monica Arts & Literacy Festival, especially with this year's theme: ROBOTS! We kicked off the event with a mainstage presentation and hosted a booth where we connected with local kids, giving them hands-on experience driving our robots.",
-		images: ['images/2024-25/ArtsFest 2024/2024_04_ArtsFestival.png']
+		images: [
+			'images/2024-25/ArtsFest 2024/2024_04_ArtsFestival.png',
+			'images/2024-25/ArtsFest 2024/ArtsFest_BoothCrowd.jpg'
+		]
 	},
 	{
 		title: 'STEAM Expo Presenters',
