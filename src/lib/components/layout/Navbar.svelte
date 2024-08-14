@@ -167,29 +167,36 @@
       }
 
       .tabs {
-        &.about > .glider {
-          transform: translateX(5rem);
-          width: 6rem;
-        }
+        $home: 5rem;
+        $about: 6rem;
+        $news: 5rem;
+        $sponsors: 6rem;
+        $support: 5.8rem;
 
-        &.competition > .glider {
-          transform: translateX(11rem);
-          width: 7.5rem;
+
+        &.about > .glider {
+          transform: translateX($home);
+          width: $about;
         }
 
         &.news > .glider {
-          transform: translateX(11rem);
-          width: 5rem;
+          transform: translateX($home + $about);
+          width: $news;
+        }
+
+        &.competition > .glider {
+          transform: translateX($home + $about + $news);
+          width: 7.5rem;
         }
 
         &.sponsors > .glider {
-          transform: translateX(16rem);
-          width: 6rem;
+          transform: translateX($home + $about + $news);
+          width: $sponsors;
         }
 
         &.support > .glider {
-          transform: translateX(27.5rem);
-          width: 5.8rem;
+          transform: translateX($home + $about + $news + $sponsors + 2.9rem);
+          width: $support;
           opacity: 0;
         }
 
@@ -197,7 +204,7 @@
           position: absolute;
           top: 0.5rem;
           left: 14.4rem;
-          width: 5rem;
+          width: $home;
           height: $bar-height;
           border-radius: 0.5rem;
           z-index: -1;
@@ -228,7 +235,7 @@
 
         &.support {
           margin: 0 0 0 1rem;
-          @include button(false, true);
+          @include button(true);
         }
       }
 

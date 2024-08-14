@@ -2,11 +2,10 @@
 	export let to: string;
 	export let newTab: boolean = false;
 
-	export let dark: boolean = false;
-	export let transparent: boolean = false;
+	export let primary: boolean = false;
 </script>
 
-<a href={to} target={newTab ? '_blank' : ''} class:dark class:transparent>
+<a href={to} target={newTab ? '_blank' : ''} class:primary>
 	<slot />
 </a>
 
@@ -14,17 +13,12 @@
   a {
     margin: 0 0.5rem;
 
-    &:not(.transparent) {
-      @include button(false, true);
-    }
-
-    &.transparent {
+    &.primary {
       @include button(true);
     }
 
-    &.dark {
-      @include button(false, false);
+    &:not(.primary) {
+      @include button(false);
     }
-
   }
 </style>

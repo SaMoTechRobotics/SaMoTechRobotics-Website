@@ -11,7 +11,7 @@
 
 <!--<StatsSection />-->
 
-<PostsSection home />
+<PostsSection home postsCount={4} />
 
 <SponsorsSection small />
 
@@ -32,8 +32,8 @@
 	engage with our community. In particular, we dedicate many hours to helping other teams and schools.
 
 	<div slot="buttons">
-		<LinkButton to="/support">Support Us</LinkButton>
-		<LinkButton to="/about" transparent>Learn More</LinkButton>
+		<LinkButton to="/support" primary>Support Us</LinkButton>
+		<LinkButton to="/about">Learn More</LinkButton>
 	</div>
 </SplitSection>
 
@@ -47,7 +47,7 @@
 	sponsored by the likes of Amazon, Disney & NASA.
 
 	<div slot="buttons">
-		<LinkButton to="https://www.firstinspires.org/robotics/ftc" newTab transparent>Learn More</LinkButton>
+		<LinkButton to="https://www.firstinspires.org/robotics/ftc" newTab>Learn More</LinkButton>
 	</div>
 </SplitSection>
 

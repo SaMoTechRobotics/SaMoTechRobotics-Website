@@ -10,8 +10,9 @@
 	</p>
 
 	<div class="buttons">
-		<LinkButton to="https://www.paypal.com/donate/?hosted_button_id=6M6HKRXT9468Y" newTab>Donate via Paypal</LinkButton>
-		<LinkButton to="/support" transparent>Learn More</LinkButton>
+		<LinkButton to="https://www.paypal.com/donate/?hosted_button_id=6M6HKRXT9468Y" newTab primary>Donate via Paypal
+		</LinkButton>
+		<LinkButton to="/support">Learn More</LinkButton>
 	</div>
 </div>
 
