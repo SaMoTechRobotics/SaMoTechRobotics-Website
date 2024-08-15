@@ -3,6 +3,7 @@
 	import TeamProfiles from '$lib/components/team/TeamProfiles.svelte';
 	import Profile from '$lib/components/team/Profile.svelte';
 	import AccomplishmentsSection from '$lib/components/sections/AccomplishmentsSection.svelte';
+	import ImageGallery from '$lib/components/sections/ImageGallery.svelte';
 </script>
 
 <Card img="images/2024-25/SaMoTech-team_on-grass.jpg" title="About Us" textSide="right" dark>
@@ -94,6 +95,15 @@
 		scouting.
 	</Profile>
 </TeamProfiles>
+
+<ImageGallery images={[
+	'images/2023-24/ILT2_1st_Samo-Grp.jpg',
+	'images/2024-25/231202_Samo_Meet1_Practice.jpg',
+	'images/2024-25/Samo-CDs-Trophies_240316.jpg',
+	'images/2023-24/CAD-Seminar.jpg',
+	'images/2024-25/230909_MeetingTable2.jpg',
+	'images/2024-25/FTC_L-W_Meet2-1729.jpg'
+]} />
 
 <style lang="scss">
   :global(.layout.about) {
