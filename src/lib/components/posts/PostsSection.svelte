@@ -10,8 +10,8 @@
 
 <div class="wrapper">
 	<div class="grid" class:home>
-		{#each (postsCount === -1 ? posts : posts.slice(0, postsCount)) as post}
-			<PostCard post={post} />
+		{#each (postsCount === -1 ? posts : posts.slice(0, postsCount)) as post, i}
+			<PostCard post={post} index={i} />
 		{/each}
 	</div>
 </div>

@@ -4,6 +4,7 @@
 	import Icon from '@iconify/svelte';
 
 	export let post: PostDetails;
+	export let index: number;
 </script>
 
 <div class="wrapper">
