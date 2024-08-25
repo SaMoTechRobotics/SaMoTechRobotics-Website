@@ -29,16 +29,16 @@ export const posts: PostDetails[] = [
 		images: ['images/2024-25/231202_Samo_Meet1_Trophy.jpg']
 	},
 	{
-		title: 'Elementary School STEAM Expo',
-		date: '2023-03-25',
-		text: 'We were invited to the Grant Elementary STEAM Expo as presenters to represent the FTC community. Alongside Cyberdragons, we enjoyed showcasing STEAM innovations and inspiring young students to pursue robotics.',
-		images: ['images/2023-24/230405_GrantStemFair_02.jpg']
-	},
-	{
 		title: 'School District Recognition',
 		date: '2023-04-04',
 		text: "Thank you to our school district, SMMUSD for the article congratulating us on our amazing 2023 season. Please check out the article <a href='https://bit.ly/SaMoTechRobotics'>HERE</a>!",
 		images: ['images/Press/SMMUSD_Article.png']
+	},
+	{
+		title: 'Elementary School STEAM Expo',
+		date: '2023-03-25',
+		text: 'We were invited to the Grant Elementary STEAM Expo as presenters to represent the FTC community. Alongside Cyberdragons, we enjoyed showcasing STEAM innovations and inspiring young students to pursue robotics.',
+		images: ['images/2023-24/230405_GrantStemFair_02.jpg']
 	},
 	{
 		title: 'First Season Success!',
@@ -54,7 +54,7 @@ export const posts: PostDetails[] = [
 	},
 	{
 		title: 'Scrimmages with CyberDragons',
-		date: '2023-03-24',
+		date: '2023-01-11',
 		text: 'Our team hosted a scrimmage with Beyond Robotics (21380) and the two CyberDragons teams (20799 and 9887) to exchange ideas and get more practice driving. We assisted Cyberdragons throughout the season and collaborated with them to use their room to practice and discuss our diving strategies.',
 		images: ['images/2023-24/230107_JAMS_WS.jpg']
 	}
