@@ -19,6 +19,7 @@
 			</div>
 			<div>
 				<SponsorLogo to="https://www.facebook.com/rotarysm/" sponsor="RotaryClub" />
+				<SponsorLogo to="https://lenzcharging.com/" sponsor="Lenz" />
 				<SponsorLogo to="https://www.boeing.com/" sponsor="Boeing" />
 			</div>
 			<div>
@@ -33,6 +34,7 @@
 		<h1>Our Sponsors</h1>
 		<div class="logos">
 			<SponsorLogo to="https://www.ziprecruiter.com/about" sponsor="ZipRecruiter" />
+			<SponsorLogo to="https://lenzcharging.com/" sponsor="Lenz" />
 			<SponsorLogo to="https://www.boeing.com/" sponsor="Boeing" />
 			<SponsorLogo to="https://www.facebook.com/rotarysm/" sponsor="RotaryClub" />
 			<SponsorLogo to="https://www.yahooinc.com/" sponsor="Yahoo" />
@@ -87,6 +89,10 @@
           flex: 1;
           height: 14rem;
         }
+
+        :global(> a:nth-child(2)) {
+          transform: scale(0.7);
+        }
       }
 
       :nth-child(3) {
@@ -111,10 +117,14 @@
 
     .logos {
       display: grid;
-      grid-template-columns: repeat(6, minmax(4rem, 1fr));
+      grid-template-columns: repeat(7, minmax(4rem, 1fr));
       justify-items: center;
       align-items: center;
       grid-gap: 2rem;
+
+      :global(> a:nth-child(2)) {
+        transform: scale(0.5);
+      }
     }
 
     @media (max-width: 768px) {
