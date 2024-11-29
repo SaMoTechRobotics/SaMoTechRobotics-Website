@@ -43,7 +43,7 @@ export const posts: PostDetails[] = [
 	{
 		title: 'First Season Success!',
 		date: '2023-03-24',
-		text: 'After 27 consecutive wins throughout the entire regular and Interleague tournaments, our season finally came to an end at the Regional Championships. This year has been so incredible– our whe team learned so much and set so many high scores!',
+		text: 'After 27 consecutive wins throughout the entire regular and Interleague tournaments, our season finally came to an end at the Regional Championships. This year has been so incredible– our team learned so much and set so many high scores!',
 		images: ['images/2023-24/ILT2_1st_Samo-Grp.jpg']
 	},
 	{

@@ -8,10 +8,8 @@
 	<div class="wrapper">
 		<h1>Our Sponsors</h1>
 		<p>
-			We would like to thank our main sponsors of our 2023-2024 season, ZipRecruiter, Boeing, and Rotary Club of Santa
-			made SaMoTech possible and have allowed us to pursue our interests in robotics and engineering. We greatly
-			Monica along with supporting sponsors, Yahoo, Panasonic, and Czeh for their generous support. Your contributions
-			appreciate your belief in us and the opportunities you have provided.
+			Thank you to all our amazing sponsors who made SaMoTech possible and who help us to pursue our
+			interests in robotics and engineering!
 		</p>
 		<div class="logos">
 			<div>

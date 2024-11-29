@@ -41,7 +41,7 @@
 <SplitSection img="images/photos/samotech-winning1.webp" title="FIRST Tech Challenge" textSide="left" dark>
 	FIRST challenges teams of students, grades 7-12, to design, build, and program autonomous & driver-operated robots
 	that compete in head-to-head competitions. Each unique season concludes with inter-league, regional, and world
-	championships. Participants also gain access to education opportunities, exclusivescholarships, and potential dream
+	championships. Participants also gain access to educational opportunities, exclusive scholarships, and potential dream
 	employers.
 	FIRST organizes robotics competitions involving more than 600,000 students in over 100 countries through programs
 	sponsored by the likes of Amazon, Disney & NASA.
