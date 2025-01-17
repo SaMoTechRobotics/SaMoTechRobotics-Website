@@ -4,13 +4,19 @@
 </script>
 
 <SplitSection img="images/2024-25/SaMoTech_Garage.jpg" title="Support Us" textSide="left" dark>
-	Our costs for the 24/25 regular season are estimated at $8,700, with an additional $6,400 required if (when) we make
+	<!--Our costs for the 24/25 regular season are estimated at $8,700, with an additional $6,400 required if (when) we make
 	the World Championship in Texas. As all members of SaMoTech, including coaches and mentors, serve as unpaid
 	volunteers, every donation will be used to cover practical expenses such as robot components, control systems, tools,
 	registration fees, as well as marketing and travel/transport expenses. Any surplus funds will go to support SaMoTech’s
 	future FIRST seasons or will be donated to other FTC teams in need. Donations to SaMoTech can be made through SaMoTech
 	Booster Club, a 501c3 non-profit charity. Donations are typically 100% tax deductible in the US. Thank you for any
-	consideration you may give to supporting our team.
+	consideration you may give to supporting our team. 
+	-->
+	Our estimated costs for the current season are $14,000 to $20,000, depending on how far each team makes it in the season, and especially if
+	we qualify for Worlds. Our teams are volunteer run. Donations will be used to cover practical expenses such as robot components, control systems, tools,
+	registration fees, food at meets, and travel/transport expenses. Donations to SaMoTech can be made through SaMoTech
+	Booster Club, a 501c3 non-profit charity. Donations are typically 100% tax deductible in the US. Thank you for any
+	consideration you may give to supporting our team. 
 
 	<div slot="buttons">
 		<LinkButton to="https://www.paypal.com/donate/?hosted_button_id=6M6HKRXT9468Y" newTab>Donate via Paypal</LinkButton>
