@@ -1,0 +1,36 @@
+@use './_variables.scss' as *;
+
+@mixin button($type: false) {
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-align: center;
+
+  transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+
+  @if $type {
+    color: $text;
+    font-weight: 500;
+    background: linear-gradient(180deg, transparentize(lighten($primary, 20), 0.2), transparentize($primary, 0.1));
+
+    &:hover {
+      background-color: $primary;
+    }
+  } @else {
+    color: $text-light;
+    background-color: transparentize($primary-dark, 0.7);
+
+    &:hover {
+      background-color: transparentize(lighten($primary-dark, 5), 0.5);
+    }
+  }
+}
+
+@mixin image() {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
