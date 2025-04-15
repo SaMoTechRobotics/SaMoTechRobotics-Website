@@ -68,6 +68,6 @@
 
 <style lang="scss">
   :global(.layout):has(.homepage) {
-    background: linear-gradient(180deg, $primary-darker 0%, $primary-dark 30%, darken($primary, 0) 55%, darken($primary, 20) 70%, $primary-dark 80%, $primary-darker 100%);
+    background: linear-gradient(180deg, $primary-darker 0%, $primary-dark 24%, darken($primary, 0) 35%, darken($primary, 20) 70%, $primary-dark 80%, $primary-darker 100%);
   }
 </style>

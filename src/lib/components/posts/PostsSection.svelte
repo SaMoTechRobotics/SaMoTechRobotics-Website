@@ -39,11 +39,12 @@
       .grid {
         width: calc(100% + $page-padding);
       }
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
-    @media (max-width: 768px) {
-      display: none;
-    }
 
     .grid {
       width: 100%;

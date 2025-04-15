@@ -10,6 +10,18 @@
 	$: miniNav = innerWidth < 810;
 
 	$: path = $page.url.pathname.replace('/', '');
+
+	import { onDestroy } from 'svelte';
+
+	const unsubscribe = page.subscribe(() => {
+		if (miniNav && menuOpen) {
+			menuOpen = false;
+		}
+	});
+
+	onDestroy(() => {
+		unsubscribe();
+	});
 </script>
 
 <title>SaMoTech Robotics{path === '' ? '' : ' » ' + path.charAt(0).toUpperCase() + path.slice(1)}</title>
