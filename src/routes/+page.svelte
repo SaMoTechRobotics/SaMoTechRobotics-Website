@@ -8,11 +8,13 @@
 	import JoinSection from '$lib/components/sections/JoinSection.svelte';
 </script>
 
+<div class="homepage"></div>
+
 <Hero title="SaMoTech Robotics" img="images/2024-25/Regionals_06_FinalQ.jpg" />
 
 <!--<StatsSection />-->
 
-<JoinSection />
+<JoinSection homepage />
 
 <PostsSection home postsCount={4} />
 
@@ -65,7 +67,7 @@
 </SupportSection>
 
 <style lang="scss">
-  :global(.layout) {
+  :global(.layout):has(.homepage) {
     background: linear-gradient(180deg, $primary-darker 0%, $primary-dark 30%, darken($primary, 0) 55%, darken($primary, 20) 70%, $primary-dark 80%, $primary-darker 100%);
   }
 </style>

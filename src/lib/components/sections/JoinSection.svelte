@@ -1,5 +1,8 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import LinkButton from '$lib/components/layout/LinkButton.svelte';
+
+	export let homepage = false;
 
 	let copied = false;
 	const email = 'info@samotechrobotics.com';
@@ -40,13 +43,19 @@
 		August), or summer camps, so there's no time like the present to reach out and let us know what you'd like to be a
 		part of!
 
-		Read below to learn more!
+		{#if homepage}
+			Check out our middle school team page for more information!
+		{:else}
+			Read below to learn more!
+		{/if}
 
 	</p>
 
-	<!--	<div class="buttons">-->
-	<!--		<LinkButton to="mailto:info@samotechrobotics.com" primary>Email Us</LinkButton>-->
-	<!--	</div>-->
+	{#if homepage}
+		<div class="buttons">
+			<LinkButton to="/middleSchool" primary>Learn More</LinkButton>
+		</div>
+	{/if}
 </div>
 
 <style lang="scss">

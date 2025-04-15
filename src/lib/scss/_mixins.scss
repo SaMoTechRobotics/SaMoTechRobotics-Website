@@ -8,23 +8,26 @@
   font-size: 0.9rem;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 
-  transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 
   @if $type {
-    color: $text;
+    color: $primary-dark;
     font-weight: 500;
-    background: linear-gradient(180deg, transparentize(lighten($primary, 20), 0.2), transparentize($primary, 0.1));
+    //background: linear-gradient(180deg, transparentize(lighten($primary, 40), 0.2), transparentize($primary, 0.1));
+    background: $primary;
 
     &:hover {
-      background-color: $primary;
+      background-color: lighten($primary, 10);
+      //color: lighten($primary-dark, 10);
     }
   } @else {
     color: $text-light;
-    background-color: transparentize($primary-dark, 0.7);
+    background-color: transparentize($primary-dark, 0.5);
 
     &:hover {
-      background-color: transparentize(lighten($primary-dark, 5), 0.5);
+      background-color: transparentize(lighten($primary-dark, 10), 0.5);
     }
   }
 }
