@@ -56,7 +56,8 @@
 
     --bg-primary: #66DEF0;
     --bg-dark: #011f2c;
-    --bg-dark-transparent: rgba(3, 77, 91, 0.8);
+    --bg-dark-transparent: rgba(1, 31, 44, 0.5);
+    --bg-dark-transparentish: rgba(1, 31, 44, 0.8);
 
     --border: #0A627C;
 

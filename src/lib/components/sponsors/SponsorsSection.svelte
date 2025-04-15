@@ -109,8 +109,9 @@
     flex-direction: column;
 
     h1 {
-      font-size: 1.2rem;
-      color: $text;
+      font-size: 2rem;
+      font-weight: bold;
+      color: $text-light;
     }
 
     .logos {
@@ -135,7 +136,7 @@
 
       .logos {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 4rem);
+        grid-template-rows: repeat(6, minmax(4rem, 0.5fr));
       }
     }
   }

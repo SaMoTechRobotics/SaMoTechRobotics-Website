@@ -21,9 +21,19 @@
   }
 
   .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-template-rows: 1fr 1fr;
+    //display: grid;
+    //grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    //grid-auto-flow: dense;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    //grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-rows: repeat(auto-fill, minmax(20rem, 1fr));
+    //grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    //grid-template-rows: 1fr 1fr;
     grid-gap: 1rem;
   }
 
@@ -32,8 +42,11 @@
     justify-content: center;
     align-items: center;
 
+    flex: 1 1 30rem;
+
     img {
-      width: 20rem;
+      //width: 20rem;
+      width: 100%;
       height: auto;
       //object-fit: cover;
       border-radius: 1rem;

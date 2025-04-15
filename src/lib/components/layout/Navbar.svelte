@@ -36,7 +36,7 @@
 				<a href="/news" class:active={path==='news'}>
 					News
 				</a>
-        <a href="/middleSchool" class:active={path==='middleSchool'}>
+				<a href="/middleSchool" class:active={path==='middleSchool'}>
 					Middle School
 				</a>
 				<!--				<a href="/competition" class:active={path==='competition'}>-->
@@ -78,9 +78,9 @@
 					<a href="/news" class:active={path==='news'}>
 						News
 					</a>
-          <a href="/middleSchool" class:active={path==='middleSchool'}>
-            Middle School
-          </a>
+					<a href="/middleSchool" class:active={path==='middleSchool'}>
+						Middle School
+					</a>
 					<a href="/sponsors" class:active={path==='sponsors'}>
 						Sponsors
 					</a>
@@ -176,6 +176,7 @@
         $home: 5rem;
         $about: 6rem;
         $news: 5rem;
+        $middleSchool: 8.3rem;
         $sponsors: 6rem;
         $support: 5.8rem;
 
@@ -195,13 +196,18 @@
           width: 7.5rem;
         }
 
-        &.sponsors > .glider {
+        &.middleSchool > .glider {
           transform: translateX($home + $about + $news);
+          width: $middleSchool - 0.4rem;
+        }
+
+        &.sponsors > .glider {
+          transform: translateX($home + $about + $news + $middleSchool);
           width: $sponsors;
         }
 
         &.support > .glider {
-          transform: translateX($home + $about + $news + $sponsors + 2.9rem);
+          transform: translateX($home + $about + $news + $middleSchool + $sponsors + 2.9rem);
           width: $support;
           opacity: 0;
         }

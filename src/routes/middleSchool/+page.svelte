@@ -4,8 +4,11 @@
 	import Profile from '$lib/components/team/Profile.svelte';
 	import AccomplishmentsSection from '$lib/components/sections/AccomplishmentsSection.svelte';
 	import ImageGallery from '$lib/components/sections/ImageGallery.svelte';
+	import JoinSection from '$lib/components/sections/JoinSection.svelte';
 
 </script>
+
+<JoinSection />
 
 <Card img="images/middle-school/Middle-school-robot-in-pits-Jan2025.jpg" title="Middle School Program" textSide="right" dark>
 	
@@ -76,7 +79,7 @@
 ]} />
 
 <style lang="scss">
-  :global(.layout.about) {
+  :global(.layout.middleSchool) {
     background: linear-gradient(180deg, $primary-darker 0%, lighten($primary-dark, 8) 25%, darken($primary, 10) 36%, $primary-dark 60%, $primary-darker 100%);
   }
 </style>

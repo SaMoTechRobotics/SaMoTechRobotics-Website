@@ -41,6 +41,10 @@
       }
     }
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     .grid {
       width: 100%;
 
@@ -78,5 +82,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 </style>

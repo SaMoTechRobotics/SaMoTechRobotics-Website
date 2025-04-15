@@ -20,11 +20,11 @@
 	<div class="content">
 		<h1>{post.title}</h1>
 		<p class="date">{dayjs(post.date).format('MMMM D, YYYY')}
-			<span class="break-dot">&#x2022;</span>
-			<span class="icon">
-				<Icon icon="bi:image" inline />
-			</span>
-			{post.images.length}
+			<!--			<span class="break-dot">&#x2022;</span>-->
+			<!--			<span class="icon">-->
+			<!--				<Icon icon="bi:image" inline />-->
+			<!--			</span>-->
+			<!--{post.images.length}-->
 		</p>
 		<p>{@html post.text}</p>
 	</div>
@@ -79,11 +79,11 @@
 
         transition: color 200ms ease-in-out, background-color 200ms ease-in-out, backdrop-filter 200ms ease-in-out;
 
-        &:hover {
-          color: $text-light;
-          background-color: transparentize($primary-dark, 0.6);
-          backdrop-filter: blur(2px);
-        }
+        //&:hover {
+        //  color: $text-light;
+        //  background-color: transparentize($primary-dark, 0.6);
+        //  backdrop-filter: blur(2px);
+        //}
       }
 
       .images-count {
