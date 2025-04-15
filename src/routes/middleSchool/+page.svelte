@@ -15,9 +15,9 @@
 	<p>
 		For Samotech's 24/25 season we added a second team for younger students called the Samotech Cyberquakes (team 27299). They compete in FTC League W right alongside original Samotech, and they have done great!  Ranging in age from grades 6-8, they have been near the top of the standings in their league of 20-ish West LA teams, and they can't wait to make an even better robot next year.
 	</p>
-	<p>
-		If you have a child who will be in middle or high school next year who might be interested, <b>call or text Chris at 323-309-6687</b>. We may also have an off-season program as well (April thru August), or summer camps, so there's no time like the present to reach out and let us know what you'd like to be a part of!
-	</p>
+<!--	<p>-->
+<!--		If you have a child who will be in middle or high school next year who might be interested, <b>call or text Chris at 323-309-6687</b>. We may also have an off-season program as well (April thru August), or summer camps, so there's no time like the present to reach out and let us know what you'd like to be a part of!-->
+<!--	</p>-->
 </Card>
 <Card img="images/middle-school/JV-chatting-during-driver-meeting-meet-3.jpg" title="A Brief History of Cyberquakes" textSide="left" dark>
 	<p>

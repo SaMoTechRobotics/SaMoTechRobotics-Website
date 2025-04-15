@@ -70,7 +70,8 @@
     margin: 3rem $page-padding;
 
     @media (max-width: 810px) {
-      padding: 2.5rem $mobile-padding;
+      margin: 3rem $mobile-padding;
+      padding: 2.5rem 4rem;
     }
 
     h1 {
