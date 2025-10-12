@@ -5,7 +5,7 @@
 	export let homepage = false;
 
 	let copied = false;
-	const email = 'info@samotechrobotics.com';
+	const email = 'bebuckle@gmail.com';
 	const phone = '323-309-6687';
 
 	function copyEmail() {
@@ -20,12 +20,12 @@
 	<h1>SaMoTech Is Looking For New Team Members!</h1>
 
 	<p>
-		Our middle school team is looking to recruit for next year! If you have a child who will be in
-		middle or starting
+		Our middle school team is looking for new recruits! If you have a child who is in
+		middle school or
 		high school
-		next year who might be interested call or text Chris, our
+		who might be interested call or text Chris, our
 		head mentor, at
-		<span class="accent">{phone}</span> or email us at
+		<span class="accent">{phone}</span> or email him at
 		<a href="mailto:{email}" class="accent email-link">{email}</a>
 		<button class="copy-button" on:click={copyEmail} aria-label="Copy email">
 			{#if copied}
@@ -38,10 +38,6 @@
 	</p>
 
 	<p>
-		We may also have an
-		off-season program as well (April thru
-		August), or summer camps, so there's no time like the present to reach out and let us know what you'd like to be a
-		part of!
 
 		{#if homepage}
 			Check out our middle school team page for more information!
