@@ -72,6 +72,9 @@
           overflow: scroll;
 
           scrollbar-width: none;
+
+          /* Make the horizontal posts row a bit taller on the main page */
+          min-height: 28rem;
         }
       }
     }

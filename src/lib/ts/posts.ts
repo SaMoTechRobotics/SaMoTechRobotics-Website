@@ -2,6 +2,24 @@ import type { PostDetails } from '$lib/types/Post';
 
 export const posts: PostDetails[] = [
 	{
+		title: 'BREAKING NEWS: Qualifying for Worlds at SoCal Regionals',
+		date: '2026-03-7',
+		text: 'For the first time in SaMoTech history, we are playing in the 2026 World Championships. At Regionals, we were the Winning Alliance Captain and went a perfect 9-0. We also won the 2nd-place Control Award. We are so grateful for our sponsors and all the help we have received over the years to make this possible.',
+		images: ['images/News/2026Regionals.jpg']
+	},
+	{
+		title: 'Winning Alliance at ILT',
+		date: '2026-02-15',
+		text: 'For the 4th consecutive season, we qualified for the SoCal Regional Championships. We were the Winning Alliance and also won the 1st-place Control Award. We are looking forward to competing in the SoCal Regionals!',
+		images: ['images/News/ILT6.jpg']
+	},
+	{
+		title: 'Record Numbers at Franklin Elementary Science Club',
+		date: '2026-02-10',
+		text: 'We had the outstanding opportunity to host one of Franklin Elementary School’s Science Club meetings for the second time, where a record number of students and parents attended. We shared our FIRST experience and encouraged them to reach out to the district and our team to get involved.',
+		images: ['images/News/Franklin 2.jpg']
+	},
+	{
 		title: '3rd Season Success!',
 		date: '2025-03-08',
 		text: "We were so grateful to make it to the Interleague meets and earn a spot at the Regional Championships! There, our season ended, just shy of Worlds. However, we had fun, learned lots, and we're looking forward to next season!",

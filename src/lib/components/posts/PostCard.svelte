@@ -35,7 +35,8 @@
     background: transparentize($primary-dark, 0.4);
     backdrop-filter: blur(2px);
 
-    $img-height: 20rem;
+    // Increased image height so the full image can be seen
+    $img-height: 28rem;
 
     display: grid;
     grid-template-rows: $img-height 1fr;
@@ -49,13 +50,15 @@
 
     .image {
       padding: 1rem;
+      position: relative; // ensure absolute overlays are positioned correctly
 
       img {
         border-radius: 0.5rem;
         width: 100%;
         height: 100%;
         max-height: $img-height;
-        object-fit: cover;
+        object-fit: contain; // show full image without cropping
+        background-color: transparentize($primary-darker, 0.6);
       }
 
       .image-overlay {
