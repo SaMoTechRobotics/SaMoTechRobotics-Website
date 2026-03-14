@@ -120,21 +120,16 @@
 
     .background {
       position: absolute;
-      inset: 0;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: center;
+      height: auto;
       opacity: 0;
-      transform: scale(1.03);
-      transition:
-        opacity 800ms ease,
-        transform 6s ease;
+      transition: opacity 800ms ease;
     }
 
     .background.active {
       opacity: 1;
-      transform: scale(1);
     }
 
     .overlay {
