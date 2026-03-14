@@ -30,8 +30,7 @@
 	also welcome any discussion on how else we could show our thanks.
 
 	<div slot="buttons">
-		<LinkButton to="mailto:samotechrobotics@gmail.com" newTab transparent>Contact us at samotechrobotics@gmail.com
-		</LinkButton>
+		<LinkButton to="mailto:samotechrobotics@gmail.com" newTab>Contact us at samotechrobotics@gmail.com</LinkButton>
 	</div>
 </SplitSection>
 

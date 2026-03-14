@@ -5,16 +5,27 @@
 	import SupportSection from '$lib/components/sections/SupportSection.svelte';
 	import LinkButton from '$lib/components/layout/LinkButton.svelte';
 	import PostsSection from '$lib/components/posts/PostsSection.svelte';
-	import JoinSection from '$lib/components/sections/JoinSection.svelte';
+
+	const heroImages = [
+		'images/Hero/2026Regionals.jpg',
+		'images/Hero/Franklin 2.jpg',
+		'images/Hero/ILT6.jpg',
+		'images/Hero/Regionals_06_FinalQ.jpg'
+	];
 </script>
 
 <div class="homepage"></div>
 
-<Hero title="SaMoTech Robotics" img="images/2024-25/Regionals_06_FinalQ.jpg" />
+<Hero title="SaMoTech Robotics Is Going To Worlds!"
+			imgs={heroImages}
+			interval={5000}>
+	<h2 class="subtitle">Winning Alliance Captain</h2>
+</Hero>
 
 <!--<StatsSection />-->
 
-<JoinSection homepage />
+<!-- Temporarily commented out new team member banner -->
+<!-- <JoinSection homepage /> -->
 
 <PostsSection home postsCount={4} />
 
@@ -69,5 +80,14 @@
 <style lang="scss">
   :global(.layout):has(.homepage) {
     background: linear-gradient(180deg, $primary-darker 0%, $primary-dark 24%, darken($primary, 0) 35%, darken($primary, 20) 70%, $primary-dark 80%, $primary-darker 100%);
+  }
+
+  /* Subtitle style for the hero slot */
+  .subtitle {
+    font-size: min(4vw, 2rem);
+    color: $text-light;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.6);
   }
 </style>
