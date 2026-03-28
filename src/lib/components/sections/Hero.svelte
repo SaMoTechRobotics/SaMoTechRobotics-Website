@@ -123,7 +123,9 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       opacity: 0;
       transition: opacity 800ms ease;
     }
@@ -212,6 +214,7 @@
 
     @media (max-width: 768px) {
       margin: 1rem $mobile-padding;
+      height: min(68vh, 30rem);
 
       .content {
         padding-inline: 1rem;

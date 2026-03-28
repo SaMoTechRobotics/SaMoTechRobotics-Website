@@ -1,5 +1,6 @@
 <script>
 	import Hero from '$lib/components/sections/Hero.svelte';
+	import ChampionshipSupportSection from '$lib/components/sections/ChampionshipSupportSection.svelte';
 	import SplitSection from '$lib/components/sections/SplitSection.svelte';
 	import SponsorsSection from '$lib/components/sponsors/SponsorsSection.svelte';
 	import SupportSection from '$lib/components/sections/SupportSection.svelte';
@@ -21,6 +22,8 @@
 			interval={5000}>
 	<h2 class="subtitle">Winning Alliance Captain</h2>
 </Hero>
+
+<ChampionshipSupportSection />
 
 <!--<StatsSection />-->
 
