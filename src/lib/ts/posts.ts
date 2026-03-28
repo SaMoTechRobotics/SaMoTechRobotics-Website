@@ -2,6 +2,16 @@ import type { PostDetails } from '$lib/types/Post';
 
 export const posts: PostDetails[] = [
 	{
+		title: 'Going to Worlds! Front Page News!',
+		date: '2026-03-28',
+		text: "SaMoTech was featured in the Santa Monica Daily Press after winning the Southern California Regional Championship and qualifying for the FIRST Tech Challenge World Championship. Read the full article <a href='https://www.smdp.com/santa-monica-teen-robotics-team-wins-socal-regional-title-heads-to-world-championship/'>HERE</a>.",
+		images: ['images/News/FrontPageNews.jpg']
+		// ctaLabel: 'Read Article',
+		// ctaTo:
+		// 'https://www.smdp.com/santa-monica-teen-robotics-team-wins-socal-regional-title-heads-to-world-championship/'
+		// ctaNewTab: true
+	},
+	{
 		title: 'BREAKING NEWS: Qualifying for Worlds at SoCal Regionals',
 		date: '2026-03-7',
 		text: 'For the first time in SaMoTech history, we are playing in the 2026 World Championships. At Regionals, we were the Winning Alliance Captain and went a perfect 9-0. We also won the 2nd-place Control Award. We are so grateful for our sponsors and all the help we have received over the years to make this possible.',

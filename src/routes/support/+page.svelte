@@ -20,24 +20,91 @@
 
 	<div class="details">
 		<div class="panel">
-			<h2>About Donations</h2>
+			<h2>Budget for Worlds</h2>
 			<p>
-				Our estimated costs for the current season are $14,000 to $20,000, depending on how far the
-				team advances and especially if we qualify for Worlds. As all members of SaMoTech, including
-				coaches and mentors, serve as unpaid volunteers, every donation goes directly toward
-				practical team expenses. Donations are made through SaMoTech Booster Club, a 501c3
-				non-profit charity, and are typically 100% tax deductible in the US.
+				Attending the World Championship will cost our team more than $20,000—more than double our
+				usual expenses for an entire season. Most of these costs are unavoidable, since all
+				competitors must stay in event-sanctioned hotels near the venue, and with tens of thousands
+				of people attending, travel and lodging are at a premium. Because SaMoTech is entirely
+				volunteer-run, including our coaches and mentors, every donation goes directly toward
+				essential team expenses like robot upgrades, registration fees, flights, hotels, and meals
+				for 10 teenagers for nearly a week. Donations are made through the SaMoTech Booster Club, a
+				501(c)(3) nonprofit organization, and are generally 100% tax-deductible in the U.S.
 			</p>
+
+			<div class="budget-list" aria-label="World Championship budget breakdown">
+				<div class="budget-row">
+					<span>Registration & Entry Fees (FIRST)</span>
+					<strong>$2,500</strong>
+				</div>
+				<div class="budget-row">
+					<span>Flights (12 x $400)</span>
+					<strong>$4,800</strong>
+				</div>
+				<div class="budget-row">
+					<span>Hotel near competition (9 x $250 x 5 nights)</span>
+					<strong>$11,250</strong>
+				</div>
+				<div class="budget-row">
+					<span>Van rental / fuel (2 x $90 x 5 days)</span>
+					<strong>$900</strong>
+				</div>
+				<div class="budget-row">
+					<span>Practice field / space rental</span>
+					<strong>$1,000</strong>
+				</div>
+				<div class="budget-row">
+					<span>Meals & Snacks (12 x $45 x 5 days)</span>
+					<strong>$2,700</strong>
+				</div>
+				<div class="budget-row">
+					<span>Transport robot & gear / pit supplies</span>
+					<strong>$600</strong>
+				</div>
+				<div class="budget-row">
+					<span>Robot upgrades</span>
+					<strong>$600</strong>
+				</div>
+				<div class="budget-row total">
+					<span>Total</span>
+					<strong>$24,350</strong>
+				</div>
+			</div>
 		</div>
 
 		<div class="panel">
-			<h2>About Sponsorships</h2>
+			<h2>Sponsorship Levels</h2>
 			<p>
-				We would be proud to include your company’s name or logo on promotional materials including
-				our website, social media, team banner, and team shirts worn at competitions. Sponsor
-				recognition will reflect relative contributions, and we are happy to discuss other ways we
-				can show our thanks and highlight your support.
+				We would be proud to recognize sponsors across our engineering portfolio, pit station,
+				website, social media, team shirts, and robot. We are also happy to discuss custom support
+				options for businesses or organizations interested in partnering with the team.
 			</p>
+			<p class="deadline">Sponsorship deadline: April 10, 2026.</p>
+
+			<div class="sponsorship-levels" aria-label="Sponsorship levels">
+				<div class="level">
+					<h3>$500</h3>
+					<p>
+						Logo / company name in team engineering portfolio, in our pit station, and on our
+						website.
+					</p>
+				</div>
+				<div class="level">
+					<h3>$1,000</h3>
+					<p>
+						Logo / company name on team shirts, shout out on social media, and all benefits in the
+						above level.
+					</p>
+				</div>
+				<div class="level">
+					<h3>$2,500</h3>
+					<p>Standard-size logo on the robot, plus all benefits above.</p>
+				</div>
+				<div class="level">
+					<h3>$5,000</h3>
+					<p>Large logo on the robot, plus all above benefits.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -149,6 +216,75 @@
 		}
 	}
 
+	.deadline {
+		margin-top: 0.8rem;
+		font-weight: 700;
+		color: $text-light;
+	}
+
+	.budget-list,
+	.sponsorship-levels {
+		margin-top: 1.4rem;
+	}
+
+	.budget-list {
+		display: grid;
+		gap: 0.65rem;
+	}
+
+	.budget-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 1.5rem;
+		padding-bottom: 0.65rem;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+		font-size: 1.06rem;
+		color: rgba(255, 255, 255, 0.9);
+
+		strong {
+			color: $text-light;
+			font-size: 1.08rem;
+			white-space: nowrap;
+		}
+
+		&.total {
+			margin-top: 0.3rem;
+			padding-top: 0.5rem;
+			border-top: 1px solid rgba(255, 255, 255, 0.18);
+			border-bottom: 0;
+			font-size: 1.2rem;
+
+			strong {
+				font-size: 1.3rem;
+			}
+		}
+	}
+
+	.sponsorship-levels {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1rem 1.25rem;
+	}
+
+	.level {
+		padding: 1rem 1.1rem;
+		border: 1px solid rgba(255, 255, 255, 0.12);
+		border-radius: 0.9rem;
+		background: rgba(255, 255, 255, 0.04);
+
+		h3 {
+			margin: 0 0 0.35rem;
+			font-size: 1.45rem;
+			color: $text-light;
+		}
+
+		p {
+			font-size: 1rem;
+			line-height: 1.6;
+		}
+	}
+
 	.spacer {
 		height: 4rem;
 	}
@@ -185,6 +321,16 @@
 			& + .panel {
 				margin-top: 1.25rem;
 			}
+		}
+
+		.budget-row {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.3rem;
+		}
+
+		.sponsorship-levels {
+			grid-template-columns: 1fr;
 		}
 
 		.spacer {

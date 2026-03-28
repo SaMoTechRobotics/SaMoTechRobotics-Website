@@ -2,6 +2,7 @@
 	import dayjs from 'dayjs';
 	import type { PostDetails } from '$lib/types/Post';
 	import Icon from '@iconify/svelte';
+	import LinkButton from '$lib/components/layout/LinkButton.svelte';
 
 	export let post: PostDetails;
 	export let index: number;
@@ -27,6 +28,11 @@
 			<!--{post.images.length}-->
 		</p>
 		<p>{@html post.text}</p>
+		{#if post.ctaLabel && post.ctaTo}
+			<div class="actions">
+				<LinkButton to={post.ctaTo} newTab={post.ctaNewTab} primary>{post.ctaLabel}</LinkButton>
+			</div>
+		{/if}
 	</div>
 </div>
 
@@ -115,7 +121,9 @@
     .content {
       padding: 0 1rem;
       margin: 0;
-
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
       overflow: hidden;
     }
 
@@ -148,6 +156,18 @@
       padding: 0 $page-padding;
 
       text-overflow: ellipsis;
+    }
+
+    .actions {
+      margin-top: auto;
+      padding: 0 $page-padding;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+
+    .actions :global(a) {
+      margin: 1rem 0 0;
     }
 
     :global(a) {

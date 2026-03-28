@@ -4,9 +4,16 @@
 	import Card from '$lib/components/sections/SplitSection.svelte';
 </script>
 
-<Card img="images/Hero/2026Regionals.jpg" title="About Us" textSide="right" dark>
+<Card img="images/Hero/ILT6.jpg" title="About Us" textSide="right" dark>
 	<p>
-		SaMoTech is a 501c3 community-based robotics program competing in the FIRST Tech Challenge
+		SaMoTech is a student-led, all-volunteer 501(c)(3) nonprofit community team founded in 2022 by
+		six freshmen at Santa Monica High School. Now with ten members, ages 15–18, working out of a
+		family garage, SaMoTech has fought its way to the #1 ranking in the SoCal region, competing
+		against teams backed by schools with paid coaches and dedicated workspaces. Beyond learning
+		engineering and robotics through competition, we regularly support other teams and promote
+		robotics and STEM education in our local community. Here are just some highlights of SaMoTech’s
+		journey so far:
+		<!-- SaMoTech is a 501c3 community-based robotics program competing in the FIRST Tech Challenge
 		(FTC). Based in Santa Monica, CA, our mission is to inspire young people to be the science and
 		technology leaders of the future. Through participation in FTC, we develop hands-on skills in
 		engineering, robotics, and coding while improving life-skills like teamwork and self-confidence.
@@ -16,32 +23,27 @@
 		perspective to the team. We students are responsible for the design and construction of our
 		robots, using a variety of tools and techniques, with guidance from our coaches and mentors. We
 		also collaborate on marketing and outreach efforts, helping to promote the team and engage with
-		our community. In particular, we dedicate many hours to helping other teams and schools.
+		our community. In particular, we dedicate many hours to helping other teams and schools. -->
 	</p>
 </Card>
 
 <AccomplishmentsSection>
 	<ul slot="competition">
-		<li>Undefeated through all regular season & interleague meets (current)</li>
-		<li>Our Autonomous Program ranks in the top 1% worldwide (current)</li>
-		<li>League W Champions (both years)</li>
-		<li>Inter-League Champion Alliance Captains (both years)</li>
-		<li>Regional Championship Semi-Finalists (both years)</li>
-		<li>Set 5 of the top 10 regional record scores in regular season (’23)</li>
-		<li>Ranked #1 in Los Angeles (170 teams) at the end of regular season (’22)</li>
-		<li>Interleague 3rd Place Inspire Winners (‘23)</li>
+		<li>2026 SoCal Regional Champions</li>
+		<li>Achieved #1 Autonomous Program worldwide, 2025</li>
+		<li>1st Place Inspire - ILT7, 2025. FIRST's highest award</li>
+		<li>League Champions (3 years in a row)</li>
+		<li>Achieved #1 ranking in SoCal (2024-2026)</li>
+		<li>Consistently ranks in the top 1% worldwide</li>
 	</ul>
 
 	<ul slot="outreach">
-		<li>Opening Presenters onstage at the Santa Monica Arts & Literary Festival 2024</li>
-		<li>Presented at the SMMUSD Summer Adventure Program 2024</li>
-		<li>Front Page News in the Santa Monica Daily Press 2024</li>
-		<li>Hosted an interactive booth at the Santa Monica Arts & Literary Festival 2024</li>
-		<li>Exhibitor at the Grant Elementary Steam Fair 2024</li>
-		<li>Volunteered to assist younger FTC Teams 2022-20024</li>
-		<li>Participated in multiple FTC team get-togethers outside of competition 2022-2024</li>
-		<li>Front Page News in the Santa Monica Daily Press 2023</li>
-		<li>Exhibitor at the Grant Elementary Steam Fair 2023</li>
+		<li>Helped launch & mentor 2 new FTC teams</li>
+		<li>Presenters: Franklin Elementary Science Club '25 & '26</li>
+		<li>Exhibitors: Grant Elementary STEAM Fair 2023-2025</li>
+		<li>Presenters: SMMUSD Summer Adventure Program 2025</li>
+		<li>Opening Presenters: Santa Monica Arts Festival '24</li>
+		<li>Exhibitors at the 2024 Innovation Hub in Santa Monica</li>
 	</ul>
 </AccomplishmentsSection>
 
@@ -91,13 +93,22 @@
 
 <ImageGallery
 	images={[
-		'images/Hero/2026Regionals.jpg',
-		'images/Hero/Franklin 2.jpg',
-		'images/Hero/ILT6.jpg',
-		'images/Hero/Regionals_06_FinalQ.jpg',
-		'images/2023-24/ILT2_1st_Samo-Grp.jpg',
+		// 'images/Hero/ILT6.jpg',
+		// 'images/2025-26/FTC-Champs2026-team.jpg',
+		'images/2025-26/FTC-Champs2026-stands.jpg',
+		'images/2025-26/ILT6-8807.jpg',
+		'images/2025-26/Franklin 2.jpg',
+		'images/2025-26/FTC_Regionals_2025-4688.jpg',
+		'images/2025-26/FTC_Regionals_2025-9035.jpg',
+		'images/2025-26/ND7_2691-Edit-57.jpg',
+		'images/2025-26/ND7_0724.jpg',
+		// 'images/2025-26/ILT6-8708.jpg',
+		'images/2025-26/FTC-Champs2026-repairs.jpg',
+		'images/2025-26/IMG_8469-5.jpg',
 		'images/News/Promenade.jpg',
+		'images/News/Rockwell.jpg',
 		'images/News/InnovationHub.jpg',
+		'images/Hero/Regionals_06_FinalQ.jpg',
 		'images/2024-25/231202_Samo_Meet1_Practice.jpg',
 		'images/2024-25/Samo-CDs-Trophies_240316.jpg',
 		'images/2023-24/CAD-Seminar.jpg',

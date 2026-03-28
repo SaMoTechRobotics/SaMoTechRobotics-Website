@@ -125,7 +125,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
+      object-position: center top;
       opacity: 0;
       transition: opacity 800ms ease;
     }
