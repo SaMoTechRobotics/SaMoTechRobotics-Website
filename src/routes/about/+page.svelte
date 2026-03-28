@@ -2,8 +2,6 @@
 	import AccomplishmentsSection from '$lib/components/sections/AccomplishmentsSection.svelte';
 	import ImageGallery from '$lib/components/sections/ImageGallery.svelte';
 	import Card from '$lib/components/sections/SplitSection.svelte';
-	import Profile from '$lib/components/team/Profile.svelte';
-	import TeamProfiles from '$lib/components/team/TeamProfiles.svelte';
 </script>
 
 <Card img="images/2024-25/SaMoTech-team_on-grass.jpg" title="About Us" textSide="right" dark>
@@ -47,15 +45,12 @@
 	</ul>
 </AccomplishmentsSection>
 
-<TeamProfiles>
+<!-- <TeamProfiles>
 	<Profile name="Alexa">
 		Outside of robotics, I enjoy reading and writing. I contribute to the team by organizing our
 		outreach and portfolio, and by strategizing. My favorite thing about FTC is supporting and
 		coaching my teammates during the matches.
 	</Profile>
-	<!--	<Profile name="Andrew">-->
-	<!--		...-->
-	<!--	</Profile>-->
 	<Profile name="Ari">
 		I enjoy video games, soccer, rock climbing, writing, and math. I contribute to the team by 3D
 		printing the claw and beacon. In FTC, I like that you can iterate through meets, and see how
@@ -92,7 +87,7 @@
 		swimming, programming, and algorithmic trading. My favorite part about our robotics competition
 		is the excitement of competition and team scouting.
 	</Profile>
-</TeamProfiles>
+</TeamProfiles> -->
 
 <ImageGallery
 	images={[

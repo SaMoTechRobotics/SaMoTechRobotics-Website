@@ -1,6 +1,8 @@
 <script>
 	import LinkButton from '$lib/components/layout/LinkButton.svelte';
 
+	export let large = false;
+
 	const cards = [
 		{
 			title: 'Make a Tax-Deductible Donation',
@@ -39,7 +41,7 @@
 	}
 </script>
 
-<section class="wrapper" aria-label="World Championship support options">
+<section class="wrapper" class:large aria-label="World Championship support options">
 	<div class="cards">
 		{#each cards as card}
 			<article class="card">
@@ -137,6 +139,41 @@
     margin: 2rem;
   }
 
+  .wrapper.large {
+    .cards {
+      gap: 2rem;
+    }
+
+    .image-frame {
+      aspect-ratio: 16 / 10;
+    }
+
+    .content {
+      padding: 2rem 2rem 2.2rem;
+
+      h2 {
+        font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+      }
+
+      p {
+        font-size: 1.18rem;
+        line-height: 1.72;
+      }
+    }
+
+    .primary-button,
+    .actions :global(a) {
+      min-height: 3.2rem;
+      padding: 0.72rem 1.25rem;
+      font-size: 1.05rem;
+    }
+
+    .inline-email {
+      margin-left: 0.45rem;
+      padding: 0.22rem 0.7rem;
+    }
+  }
+
   .cards {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -150,6 +187,8 @@
     background: linear-gradient(180deg, rgba(3, 25, 34, 0.9) 0%, rgba(7, 41, 52, 0.96) 100%);
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.24);
     backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
   }
 
   .image-frame {
@@ -168,6 +207,9 @@
   .content {
     padding: 1.5rem 1.5rem 1.75rem;
     color: $text-light;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 
     h2 {
       margin: 0 0 0.75rem;
@@ -184,7 +226,8 @@
   }
 
   .actions {
-    margin-top: 1.5rem;
+    margin-top: auto;
+    padding-top: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.85rem;
@@ -195,10 +238,23 @@
     }
   }
 
+  .actions :global(a) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+  }
+
   .primary-button {
     @include button(true);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: 0;
     cursor: pointer;
+    text-align: center;
+    line-height: 1.2;
   }
 
   .inline-email {
@@ -261,6 +317,37 @@
 
     .cards {
       grid-template-columns: 1fr;
+    }
+
+    .actions {
+      width: 100%;
+    }
+
+    .actions :global(a),
+    .actions .primary-button {
+      width: 100%;
+      min-height: 3.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 1.1rem;
+      font-size: 1rem;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .wrapper.large {
+      .content {
+        padding: 1.65rem 1.35rem 1.8rem;
+
+        h2 {
+          font-size: 1.7rem;
+        }
+
+        p {
+          font-size: 1.08rem;
+        }
+      }
     }
   }
 </style>

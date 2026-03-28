@@ -2,8 +2,6 @@
 	import ImageGallery from '$lib/components/sections/ImageGallery.svelte';
 	import JoinSection from '$lib/components/sections/JoinSection.svelte';
 	import Card from '$lib/components/sections/SplitSection.svelte';
-	import Profile from '$lib/components/team/Profile.svelte';
-	import TeamProfiles from '$lib/components/team/TeamProfiles.svelte';
 </script>
 
 <JoinSection />
@@ -83,7 +81,7 @@
 		dark
 	></Card>
 </a>
-
+<!-- 
 <TeamProfiles yearsEnabled={false}>
 	<Profile name="Jackson">
 		I am 12 years old, and this is my second year of FTC. I enjoy programming and 3d modeling.
@@ -96,7 +94,7 @@
 	<Profile name="David">
 		I am twelve years old, this is my first year in FTC. I enjoy Fencing.
 	</Profile>
-</TeamProfiles>
+</TeamProfiles> -->
 
 <ImageGallery
 	images={[

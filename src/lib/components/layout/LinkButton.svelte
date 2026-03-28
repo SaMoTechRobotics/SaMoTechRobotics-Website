@@ -10,15 +10,15 @@
 </a>
 
 <style lang="scss">
-  a {
-    margin: 0 0.5rem;
+	a {
+		margin: 0 0.5rem;
 
-    &.primary {
-      @include button(true);
-    }
+		&.primary {
+			@include button(true);
+		}
 
-    &:not(.primary) {
-      @include button(false);
-    }
-  }
+		&:not(.primary) {
+			@include button(false);
+		}
+	}
 </style>

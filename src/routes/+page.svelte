@@ -3,7 +3,8 @@
 	import ChampionshipSupportSection from '$lib/components/sections/ChampionshipSupportSection.svelte';
 	import SplitSection from '$lib/components/sections/SplitSection.svelte';
 	import SponsorsSection from '$lib/components/sponsors/SponsorsSection.svelte';
-	import SupportSection from '$lib/components/sections/SupportSection.svelte';
+	// Legacy homepage support block kept commented out below for reference.
+	// import SupportSection from '$lib/components/sections/SupportSection.svelte';
 	import LinkButton from '$lib/components/layout/LinkButton.svelte';
 	import PostsSection from '$lib/components/posts/PostsSection.svelte';
 
@@ -71,6 +72,9 @@
 	</div>
 </SplitSection>
 
+<div class="bottom-spacer" />
+
+<!--
 <SupportSection>
 	As all members of SaMoTech, including coaches and mentors, serve as unpaid volunteers, every donation will be used to
 	cover practical expenses such as robot components, control systems, tools, registration fees, as well as marketing and
@@ -79,6 +83,7 @@
 	Donations are typically 100% tax deductible in the US. Thank you for any consideration you may give to supporting our
 	team.
 </SupportSection>
+-->
 
 <style lang="scss">
   :global(.layout):has(.homepage) {
@@ -92,5 +97,9 @@
     margin-top: 0.5rem;
     font-weight: 600;
     text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.6);
+  }
+
+  .bottom-spacer {
+    height: 2.5rem;
   }
 </style>
