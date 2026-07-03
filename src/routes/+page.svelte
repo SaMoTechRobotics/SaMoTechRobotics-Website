@@ -23,7 +23,7 @@
 </Hero>
 
 <section class="support-intro">
-	<h2>Support SaMoTech's Journey to the World Championship</h2>
+	<h2>Support SaMoTech</h2>
 </section>
 
 <ChampionshipSupportSection />
