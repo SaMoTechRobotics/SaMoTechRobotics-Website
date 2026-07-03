@@ -18,7 +18,7 @@
 
 <div class="homepage"></div>
 
-<Hero title="SaMoTech Went To Worlds!" imgs={heroImages} interval={5000}>
+<Hero title="SaMoTech Went To Worlds!" imgs={heroImages} interval={5000}><!-- -->
 	<h2 class="subtitle">Winning Alliance Captain</h2>
 </Hero>
 
