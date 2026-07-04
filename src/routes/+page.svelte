@@ -23,7 +23,7 @@
 </Hero>
 
 <section class="support-intro">
-	<h2>Support SaMoTech</h2>
+	<h2>Support SaMoTech 11:14</h2>
 </section>
 
 <ChampionshipSupportSection />
