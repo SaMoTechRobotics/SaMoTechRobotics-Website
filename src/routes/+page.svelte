@@ -9,7 +9,7 @@
 	import PostsSection from '$lib/components/posts/PostsSection.svelte';
 
 	const heroImages = [
-		'images/Hero/Worlds pit decorations.jpeg'
+		'images/Hero/Worlds pit decorations.jpeg',
 		'images/Hero/2026Regionals.jpg',
 		'images/Hero/Franklin 2.jpg',
 		'images/Hero/ILT6.jpg',
