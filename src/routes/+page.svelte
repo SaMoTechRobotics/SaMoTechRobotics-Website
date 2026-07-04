@@ -9,6 +9,7 @@
 	import PostsSection from '$lib/components/posts/PostsSection.svelte';
 
 	const heroImages = [
+		'images/Hero/Worlds pit decorations.jpeg'
 		'images/Hero/2026Regionals.jpg',
 		'images/Hero/Franklin 2.jpg',
 		'images/Hero/ILT6.jpg',
@@ -18,7 +19,7 @@
 
 <div class="homepage"></div>
 
-<Hero title="SaMoTech Went To Worlds!" imgs={heroImages} interval={5000}><!-- 10:58  -->
+<Hero title="SaMoTech Went To Worlds!" imgs={heroImages} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
 	<h2 class="subtitle">Winning Alliance Captain</h2>
 </Hero>
 
