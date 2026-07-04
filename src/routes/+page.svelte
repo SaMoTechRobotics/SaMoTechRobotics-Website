@@ -8,8 +8,18 @@
 	import LinkButton from '$lib/components/layout/LinkButton.svelte';
 	import PostsSection from '$lib/components/posts/PostsSection.svelte';
 
-	const heroImages = [
+	const heroImagesWorlds = [
 		'images/Hero/Worlds pit decorations.jpeg',
+		'images/Hero/Cameron and Brandon tuning camera on main field morning of elims.jpg',
+		'images/Hero/6-7 goofing around.jpg',
+		'images/Hero/Brandon close-up on jumbotron.jpg',
+		'images/Hero/close-up of bot sponsors at end of elims match on main field.jpg',
+		'images/Hero/2026Regionals.jpg',
+		'images/Hero/Franklin 2.jpg',
+		'images/Hero/ILT6.jpg',
+		'images/Hero/Regionals_06_FinalQ.jpg'
+	];
+		const heroImagesRegionals = [
 		'images/Hero/2026Regionals.jpg',
 		'images/Hero/Franklin 2.jpg',
 		'images/Hero/ILT6.jpg',
@@ -19,8 +29,12 @@
 
 <div class="homepage"></div>
 
-<Hero title="SaMoTech Went To Worlds!" imgs={heroImages} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
-	<h2 class="subtitle">Winning Alliance Captain</h2>
+<Hero title="SaMoTech Went To Worlds!" imgs={heroImagesWorlds} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
+	<h2 class="subtitle">We are a club team, not affilicated with Samohi or SMMUSD</h2>
+</Hero>
+
+<Hero title="SaMoTech is SoCal Champs!" imgs={heroImagesRegionals} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
+	<h2 class="subtitle">After knocking on the door for 3 years</h2>
 </Hero>
 
 <section class="support-intro">
