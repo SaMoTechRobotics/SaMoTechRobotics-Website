@@ -13,11 +13,7 @@
 		'images/Hero/Cameron and Brandon tuning camera on main field morning of elims.jpg',
 		'images/Hero/6-7 goofing around.jpg',
 		'images/Hero/Brandon close-up on jumbotron.jpg',
-		'images/Hero/close-up of bot sponsors at end of elims match on main field.jpg',
-		'images/Hero/2026Regionals.jpg',
-		'images/Hero/Franklin 2.jpg',
-		'images/Hero/ILT6.jpg',
-		'images/Hero/Regionals_06_FinalQ.jpg'
+		'images/Hero/close-up of bot sponsors at end of elims match on main field.jpg'
 	];
 		const heroImagesRegionals = [
 		'images/Hero/2026Regionals.jpg',
