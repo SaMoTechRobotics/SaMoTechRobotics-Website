@@ -31,6 +31,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     width: 100vw;
+    max-width: 1200px;
     line-height: 1.6;
   }
 
