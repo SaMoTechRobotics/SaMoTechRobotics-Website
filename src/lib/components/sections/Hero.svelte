@@ -104,6 +104,7 @@
 	  height: auto;
     /* height: calc(100vh - $navbar-height - 4rem); */
     display: flex;
+    max-width: 1200px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
