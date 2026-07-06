@@ -100,7 +100,9 @@
   .wrapper {
     margin: 1rem $page-padding;
     border-radius: 1rem;
-    height: calc(100vh - $navbar-height - 4rem);
+    aspect-ratio: 4 / 3;  // pick to match your images' real shape
+	  height: auto;
+    /* height: calc(100vh - $navbar-height - 4rem); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
