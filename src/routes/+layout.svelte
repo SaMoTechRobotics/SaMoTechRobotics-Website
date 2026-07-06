@@ -23,7 +23,7 @@
 
 <style lang="scss">
   :global(body) {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: $primary-dark;
     color: $text;
