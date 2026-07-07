@@ -9,10 +9,11 @@
 	import PostsSection from '$lib/components/posts/PostsSection.svelte';
 
 	const heroImagesWorlds = [
-		'images/Hero/Worlds pit decorations.jpeg',
+		
 		'images/Hero/Cameron and Brandon tuning camera on main field morning of elims.jpg',
-		'images/Hero/6-7 goofing around.jpg',
+		'images/Hero/Worlds pit decorations.jpeg',
 		'images/Hero/Brandon close-up on jumbotron.jpg',
+		'images/Hero/6-7 goofing around.jpg',
 		'images/Hero/close-up of bot sponsors at end of elims match on main field.jpg'
 	];
 		const heroImagesRegionals = [
@@ -21,96 +22,91 @@
 		'images/Hero/ILT6.jpg',
 		'images/Hero/Regionals_06_FinalQ.jpg'
 	];
+		const coolDrawing = [
+		'images/Hero/robot-spotlight.png'
+	];
 </script>
+<link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
 <div class="homepage"></div>
+<SplitSection img="images/Hero/robot-spotlight.png" title="" textSide="left" dark>
+	
+	 <h1 style="color:#66DEF0; font-family: Outfit; font-size: 50px; line-height: 1.1em;">Samotech Robotics</h1>
+
+	<h3 style="font-style: italic;" id="programs">Building young innovators in Santa Monica since 2022</h3>
+          <p>Unaffiliated with any school, we welcome kids from all over the west side to have fun with robotics and compete on one of 
+			our award-winning robotics teams (<a style="color: rgba(0, 200, 255, 1);" href="#Worlds">SoCal Champs 2026!</a>), regardless of what school they attend.</p>
+		<p id="programs">Our organization currently has multiple programs going into the 2026/27 season: </p>
+			<ul>
+				<li>SaMoTech 21536 - our high school teams</li>
+				<li>Cyberquakes 27299 - our middle school team</li>
+				<li>Samotech Bricks - our FLL Lego Challenge team, grades 4-6</li>
+				<li>Summer programs for FTC, CAD, 3d printing, and more!</li>
+			</ul>
+			<p><i><b>For more information about robotics and camps, please email Coach Chris at bebuckle@gmail.com. Camps run through August, and all teams are currently accepting applications for the upcoming season. </b></i></p>
+	</SplitSection>
+	<SplitSection img="images/Hero/Cameron and Brandon tuning camera on main field morning of elims.jpg" title="" textSide="right" dark>
+	
+	<h3>Why FTC robotics?</h3>
+          <p>Robotics competitions - especially FIRST Tech Challenge (FTC) - have emerged as a super fun way for young people to get hands-on experience with technology and engineering: coding, 3d printing, CAD, motion planning, servo motors, PID control, computer vision, and more. <i>(In case you're wondering, this is not BattleBots where they destroy each other, it's more like a game.)</i></p>
+          <p>Robotics teams also foster real world skills like team building, project management, and collaborative problem-solving, skills that will be important no matter how AI shapes the world ahead. Like youth sports, robotics builds character and teaches kids to deal with adversity. </p>
+		  <p>LAUSD and private schools have embraced FTC, but Santa Monica schools have not. Luckily we have Samotech. We offer championship-level robotics teams, taught by a Stanford-trained mechanical engineer, without the scheduling or budget limitations of a school environment. We have fun building, and we build to win.</p>      
+
+	<div slot="buttons">
+		<LinkButton to="#programs" primary>See our programs</LinkButton>
+		<LinkButton to="/support" >Sponsor Us</LinkButton>
+	</div>
+</SplitSection>
+
+
+
 
 <Hero title="SaMoTech Went To Worlds!" imgs={heroImagesWorlds} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
-	<h2 class="subtitle">We are a club team, not affilicated with Samohi or SMMUSD</h2>
+	<h2 id="Worlds" class="subtitle">We were big dogs amongst the biggest dogs, going 8 wins 2 losses at the FTC World Championships in Houston, May 2026</h2>
 </Hero>
 
-<Hero title="SaMoTech is SoCal Champs!" imgs={heroImagesRegionals} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
-	<h2 class="subtitle">After knocking on the door for 3 years</h2>
-</Hero>
 
-<section class="support-intro">
-	<h2>Support SaMoTech 11:14</h2>
-</section>
 
-<ChampionshipSupportSection />
+<!--<ChampionshipSupportSection /> -->
 
 <!--<StatsSection />-->
 
 <!-- Temporarily commented out new team member banner -->
 <!-- <JoinSection homepage /> -->
 
-<PostsSection home postsCount={4} />
+<!--<PostsSection home postsCount={4} /> -->
 
 <SponsorsSection small />
 
-<SplitSection img="images/2024-25/230909_Kickoff-Field.jpg" title="About Us" textSide="right" dark>
-	SaMoTech is a student-led, all-volunteer 501(c)(3) nonprofit community team founded in 2022 by six
-	freshmen at Santa Monica High School. Now with ten members, ages 15–18, working out of a family
-	garage, SaMoTech has fought its way to the #1 ranking in the SoCal region, competing against teams
-	backed by schools with paid coaches and dedicated workspaces. Beyond learning engineering and
+<SplitSection title="Watch us in action" youtube="WQUBVjbh-hM?si=UcOmOXhCwHD9-Nai&amp;start=6567" textSide="right" dark>
+	SaMoTech is 501(c)(3) nonprofit community team founded in 2022 by a motly crew of mostly ninth graders and a couple dads. Working out of a family
+	garage, SaMoTech has fought its way to the #1 ranking in the SoCal region, and with most of the original members in their final senior year of high school,
+	we finally won FTC Socal Regionals and went to worlds! Beyond learning engineering and
 	robotics through competition, we regularly support other teams and promote robotics and STEM
 	education in our local community.
-	<!-- SaMoTech is a 501c3 community-based robotics program competing in the FIRST Tech Challenge (FTC). Based in Santa
-	Monica, CA, our mission is to inspire young people to be the science and technology leaders of the future. Through
-	participation in FTC, we develop hands-on skills in engineering, robotics, and coding while improving life-skills like
-	teamwork and self-confidence.
-
-	<br />
-
-	SaMoTech currently has two teams with 15 members total: 10 members on SaMoTech and 5 members on Cyberquakes, ranging
-	in age from 13 to 18. Our hard-working and high-achieving students come from diverse backgrounds and bring varied
-	interests, with each member contributing a vital perspective to the team.
-	<br />
-	We students are responsible for the design and construction of our robots, using a variety of tools and techniques,
-	with guidance from our volunteer coaches and mentors. We also collaborate on marketing and outreach efforts, helping
-	to promote the team and engage with our community. In particular, we dedicate many hours to helping other teams and
-	schools. -->
-
-	<div slot="buttons">
-		<LinkButton to="/support" primary>Support Us</LinkButton>
-		<LinkButton to="/about">Learn More</LinkButton>
-	</div>
 </SplitSection>
 
-<SplitSection
-	img="images/photos/samotech-winning1.webp"
-	title="FIRST Tech Challenge"
-	textSide="left"
-	dark
->
-	FIRST challenges teams of students, grades 7-12, to design, build, and program autonomous &
-	driver-operated robots that compete in head-to-head competitions. Each unique season concludes
-	with Inter-league, Regional, and World Championships. FIRST competitions involve more than 600,000
-	students in over 50 countries thanks to sponsors like NASA, Google, and Apple.
-	<!-- FIRST challenges teams of students, grades 7-12, to design, build, and program autonomous &
-	driver-operated robots that compete in head-to-head competitions. Each unique season concludes
-	with inter-league, regional, and world championships. Participants also gain access to educational
-	opportunities, exclusive scholarships, and potential dream employers. FIRST organizes robotics
-	competitions involving more than 600,000 students in over 100 countries through programs sponsored
-	by the likes of Amazon, Disney & NASA. -->
-
-	<div slot="buttons">
-		<LinkButton to="https://www.firstinspires.org/robotics/ftc" newTab>Learn More</LinkButton>
-	</div>
+<SplitSection title="Coaching Makes a Difference" youtube="kuJhER0P9zs?si=Na7c7tETP8chtfzo" textSide="left" dark>
+    <p>All Samotech programs are led by the award-winning head coach of Samotech, Chris Rowe, who very much wishes that robotics competitions had existed when he was a lad!</p>
+	<p>This video was the team's surprise submission nominating Coach Chris as Socal Coach of the Year (aka the Compass Award) at 2025 Socal FTC Championship. We didn't make Worlds that year, sadly, but Chris was shocked and humbled by the lovely award.</p>
 </SplitSection>
+
+
+<section class="support-intro">
+	<h2>Support SaMoTech</h2>
+	<p>Does this p text show up as part of a photo-free section?</p>
+</section>
+
+<Hero title="SaMoTech is SoCal Champs!" imgs={heroImagesRegionals} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
+	<h2 class="subtitle">After knocking on the door for 3 years</h2>
+</Hero>
 
 <div class="bottom-spacer" />
 
-<!--
-<SupportSection>
-	As all members of SaMoTech, including coaches and mentors, serve as unpaid volunteers, every donation will be used to
-	cover practical expenses such as robot components, control systems, tools, registration fees, as well as marketing and
-	travel/transport expenses. Any surplus funds will go to support SaMoTech’s future FIRST seasons or will be donated to
-	other FTC teams in need. Donations to SaMoTech can be made through SaMoTech Booster Club, a 501c3 non-profit charity.
-	Donations are typically 100% tax deductible in the US. Thank you for any consideration you may give to supporting our
-	team.
-</SupportSection>
--->
+
 
 <style lang="scss">
 	:global(.layout):has(.homepage) {

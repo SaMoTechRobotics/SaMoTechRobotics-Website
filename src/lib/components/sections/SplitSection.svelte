@@ -1,5 +1,6 @@
 <script lang="ts">
-	export let img: string;
+	export let img: string = '';
+	export let youtube: string = ''; // YouTube video ID, e.g. "dQw4w9WgXcQ"
 	export let title: string;
 	export let textSide: 'right' | 'left' = 'right';
 	export let dark: boolean = false;
@@ -7,7 +8,19 @@
 
 <div class="wrapper" class:reverse={textSide === 'left'} class:dark>
 	<div class="img">
-		<img src={img} alt="" />
+		{#if youtube}
+			<div class="video-wrapper">
+				<iframe
+					src="https://www.youtube.com/embed/{youtube}"
+					title={title}
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+		{:else if img}
+			<img src={img} alt="" />
+		{/if}
 	</div>
 	<div class="text">
 		<h1>{title}</h1>
@@ -59,9 +72,28 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			width: 100%;
 
 			img {
 				@include image();
+			}
+
+			.video-wrapper {
+				position: relative;
+				width: 100%;
+				max-width: 1200px;
+				aspect-ratio: 16 / 9;
+				border-radius: 1rem;
+				overflow: hidden;
+
+				iframe {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border: none;
+				}
 			}
 		}
 

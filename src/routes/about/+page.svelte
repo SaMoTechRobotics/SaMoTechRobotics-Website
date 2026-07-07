@@ -6,13 +6,7 @@
 
 <Card img="images/Hero/ILT6.jpg" title="About Us" textSide="right" dark>
 	<p>
-		SaMoTech is a student-led, all-volunteer 501(c)(3) nonprofit community team founded in 2022 by
-		six freshmen at Santa Monica High School. Now with ten members, ages 15–18, working out of a
-		family garage, SaMoTech has fought its way to the #1 ranking in the SoCal region, competing
-		against teams backed by schools with paid coaches and dedicated workspaces. Beyond learning
-		engineering and robotics through competition, we regularly support other teams and promote
-		robotics and STEM education in our local community. Here are just some highlights of SaMoTech’s
-		journey so far:
+		Samotech was founded by some Jams alums and their parents in 2022. Here is a fun look back at our first couple years:
 		<!-- SaMoTech is a 501c3 community-based robotics program competing in the FIRST Tech Challenge
 		(FTC). Based in Santa Monica, CA, our mission is to inspire young people to be the science and
 		technology leaders of the future. Through participation in FTC, we develop hands-on skills in
@@ -29,7 +23,8 @@
 
 <AccomplishmentsSection>
 	<ul slot="competition">
-		<li>2026 SoCal Regional Champions</li>
+		<li>2026 SoCal Regional Champions!</li>
+		<li>2026 Worlds, baby!</li>
 		<li>Achieved #1 Autonomous Program worldwide, 2025</li>
 		<li>1st Place Inspire - ILT7, 2025. FIRST's highest award</li>
 		<li>League Champions (3 years in a row)</li>

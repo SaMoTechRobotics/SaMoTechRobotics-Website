@@ -20,7 +20,7 @@
 	<h1>SaMoTech Is Looking For New Team Members!</h1>
 
 	<p>
-		Our middle school team is looking for new recruits! If you have a child who is in
+		Our middle school and high school teams are looking for new recruits, and we offer high-tech summer camps (where kids actually do stuff) July thru June! If you have a child who is in
 		middle school or
 		high school
 		who might be interested call or text Chris, our
