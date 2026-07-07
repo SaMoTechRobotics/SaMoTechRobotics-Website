@@ -7,6 +7,7 @@
 	// import SupportSection from '$lib/components/sections/SupportSection.svelte';
 	import LinkButton from '$lib/components/layout/LinkButton.svelte';
 	import PostsSection from '$lib/components/posts/PostsSection.svelte';
+	import Page from './about/+page.svelte';
 
 	const heroImagesWorlds = [
 		
@@ -53,7 +54,8 @@
 	<h3>Why FTC robotics?</h3>
           <p>Robotics competitions - especially FIRST Tech Challenge (FTC) - have emerged as a super fun way for young people to get hands-on experience with technology and engineering: coding, 3d printing, CAD, motion planning, servo motors, PID control, computer vision, and more. <i>(In case you're wondering, this is not BattleBots where they destroy each other, it's more like a game.)</i></p>
           <p>Robotics teams also foster real world skills like team building, project management, and collaborative problem-solving, skills that will be important no matter how AI shapes the world ahead. Like youth sports, robotics builds character and teaches kids to deal with adversity. </p>
-		  <p>LAUSD and private schools have embraced FTC, but Santa Monica schools have not. Luckily we have Samotech. We offer championship-level robotics teams, taught by a Stanford-trained mechanical engineer, without the scheduling or budget limitations of a school environment. We have fun building, and we build to win.</p>      
+		  <p>LAUSD and many private schools have embraced robotics, but Santa Monica schools have not. Luckily the west side has Samotech. We offer championship-level robotics teams, taught by a <a style="color: #ddd;" href="#Chris">Stanford-trained mechanical engineer</a>, without the scheduling or budget limitations of a school environment. We have fun building, and we build to win.</p>      
+     
 
 	<div slot="buttons">
 		<LinkButton to="#programs" primary>See our programs</LinkButton>
@@ -64,8 +66,8 @@
 
 
 
-<Hero title="SaMoTech Went To Worlds!" imgs={heroImagesWorlds} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
-	<h2 id="Worlds" class="subtitle">We were big dogs amongst the biggest dogs, going 8 wins 2 losses at the FTC World Championships in Houston, May 2026</h2>
+<Hero title="BIG NEWS: SaMoTech Went To Worlds!" imgs={heroImagesWorlds} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
+	<h2 id="Worlds" class="subtitle" style="color: #ddd;">We were big dogs amongst the biggest dogs, going 8 wins 2 losses at the FTC World Championships in Houston, May 2026</h2>
 </Hero>
 
 
@@ -82,16 +84,16 @@
 <SponsorsSection small />
 
 <SplitSection title="Watch us in action" youtube="WQUBVjbh-hM?si=UcOmOXhCwHD9-Nai&amp;start=6567" textSide="right" dark>
-	SaMoTech is 501(c)(3) nonprofit community team founded in 2022 by a motly crew of mostly ninth graders and a couple dads. Working out of a family
+	<p>SaMoTech is 501(c)(3) nonprofit community team founded in 2022 by a motly crew of mostly ninth graders and a couple dads. Working out of a family
 	garage, SaMoTech has fought its way to the #1 ranking in the SoCal region, and with most of the original members in their final senior year of high school,
 	we finally won FTC Socal Regionals and went to worlds! Beyond learning engineering and
 	robotics through competition, we regularly support other teams and promote robotics and STEM
-	education in our local community.
+	education in our local community.</p><p id="Chris"></p>
 </SplitSection>
 
 <SplitSection title="Coaching Makes a Difference" youtube="kuJhER0P9zs?si=Na7c7tETP8chtfzo" textSide="left" dark>
-    <p>All Samotech programs are led by the award-winning head coach of Samotech, Chris Rowe, who very much wishes that robotics competitions had existed when he was a lad!</p>
-	<p>This video was the team's surprise submission nominating Coach Chris as Socal Coach of the Year (aka the Compass Award) at 2025 Socal FTC Championship. We didn't make Worlds that year, sadly, but Chris was shocked and humbled by the lovely award.</p>
+	<p id="Chris">All Samotech programs are led by the award-winning head coach of Samotech, Chris Rowe, who very much wishes that robotics competitions had existed when he was a lad!</p>
+	<p>This video was the team's secretly made surprise submission nominating Coach Chris as Socal Coach of the Year (aka the Compass Award) at 2025 Socal FTC Championship. We didn't make Worlds that year, sadly, but Chris was flumoxed and a bit tearful from the incredible honor, mostly because of the kind words of the kids speaking from their hearts. If he could have nominated them the best kids of the year, he would have!</p>
 </SplitSection>
 
 
