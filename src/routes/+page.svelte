@@ -81,7 +81,7 @@
 
 <!--<PostsSection home postsCount={4} /> -->
 
-<SponsorsSection small />
+<!--<SponsorsSection small /> -->
 
 <SplitSection title="Watch us in action" youtube="WQUBVjbh-hM?si=UcOmOXhCwHD9-Nai&amp;start=6567" textSide="right" dark>
 	<p>SaMoTech is 501(c)(3) nonprofit community team founded in 2022 by a motly crew of mostly ninth graders and a couple dads. Working out of a family
@@ -97,10 +97,10 @@
 </SplitSection>
 
 
-<section class="support-intro">
+<!--<section class="support-intro">
 	<h2>Support SaMoTech</h2>
 	<p>Does this p text show up as part of a photo-free section?</p>
-</section>
+</section>-->
 
 <Hero title="SaMoTech is SoCal Champs!" imgs={heroImagesRegionals} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
 	<h2 class="subtitle">After knocking on the door for 3 years</h2>

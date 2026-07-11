@@ -1,12 +1,12 @@
 <div class="wrapper">
-	<h1>Accomplishments</h1>
+	<h1></h1>
 	<div class="grid">
 		<div class="split">
-			<h1>Competition</h1>
+			<h2>Competition</h2>
 			<slot name="competition" />
 		</div>
 		<div class="split">
-			<h1>Outreach</h1>
+			<h2>Outreach</h2>
 			<slot name="outreach" />
 		</div>
 	</div>

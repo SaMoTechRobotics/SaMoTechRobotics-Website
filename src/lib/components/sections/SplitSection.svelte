@@ -23,7 +23,7 @@
 		{/if}
 	</div>
 	<div class="text">
-		<h1>{title}</h1>
+		<h2>{title}</h2>
 		<p>
 			<slot />
 		</p>
@@ -98,7 +98,7 @@
 		}
 
 		.text {
-			padding: 0 2rem;
+			padding: 0 .5rem;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -106,8 +106,8 @@
 
 			h1 {
 				font-size: 3rem;
-				margin-bottom: 1rem;
-				text-align: center;
+				margin-bottom: .4rem !important;
+				padding: 8px auto;
 			}
 
 			p {
@@ -118,6 +118,9 @@
 			}
 		}
 
+		h1 {
+			margin: 10px auto;
+		}
 		.buttons {
 			margin-top: 1rem;
 			margin-bottom: 4rem;
@@ -133,15 +136,12 @@
 		@media (max-width: 1000px) {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
 			gap: 0;
 
 			padding: 0 $mobile-padding;
 
 			.text {
-				padding: 2rem 0;
+				padding: .4rem 0;
 
 				h1 {
 					margin-top: 0;
@@ -149,13 +149,13 @@
 
 				p {
 					margin-left: 0;
-					text-align: center;
 				}
 			}
 
 			.buttons {
 				margin-bottom: 1rem;
 			}
+			
 		}
 	}
 </style>

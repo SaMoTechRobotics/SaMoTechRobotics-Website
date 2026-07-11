@@ -5,8 +5,13 @@
 </script>
 
 <Card img="images/Hero/ILT6.jpg" title="About Us" textSide="right" dark>
-	<p>
-		Samotech was founded by some Jams alums and their parents in 2022. Here is a fun look back at our first couple years:
+	<p>For many years, John Adams Middle School had a parent-founded and parent-run FTC robotics team, but there was no robotics team
+	to join in high school, and Samohi had no interest in starting one, even if parents did all the work.</p>
+	
+	<p>So in 2022 a group of ex-Jams robotics kids and parents founded Samotech in our lead mentor's garage. That first group of kids graduated high school 
+	in 2026, but the Samotech program continues, hosted by our lead technical mentor and co-founder, Chris Rowe, still out of his front room and garage.</p>
+
+	<p>We now have two FTC teams - one middle school and one high school - in addition to an FLL team for grades 4-6. Here is a fun look back at our first couple years:</p>
 		<!-- SaMoTech is a 501c3 community-based robotics program competing in the FIRST Tech Challenge
 		(FTC). Based in Santa Monica, CA, our mission is to inspire young people to be the science and
 		technology leaders of the future. Through participation in FTC, we develop hands-on skills in
@@ -18,16 +23,15 @@
 		robots, using a variety of tools and techniques, with guidance from our coaches and mentors. We
 		also collaborate on marketing and outreach efforts, helping to promote the team and engage with
 		our community. In particular, we dedicate many hours to helping other teams and schools. -->
-	</p>
 </Card>
 
 <AccomplishmentsSection>
 	<ul slot="competition">
-		<li>2026 SoCal Regional Champions!</li>
-		<li>2026 Worlds, baby!</li>
+		<li>2026 SoCal Regional Champions (finally!)</li>
+		<li>Qualified and participated in the 2026 World Championships in Houston</li>
 		<li>Achieved #1 Autonomous Program worldwide, 2025</li>
-		<li>1st Place Inspire - ILT7, 2025. FIRST's highest award</li>
-		<li>League Champions (3 years in a row)</li>
+		<li>1st Place Inspire Award - ILT7, 2025. FIRST's highest award</li>
+		<li>League Champions (4 years in a row)</li>
 		<li>Achieved #1 ranking in SoCal (2024-2026)</li>
 		<li>Consistently ranks in the top 1% worldwide</li>
 	</ul>
