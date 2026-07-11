@@ -42,19 +42,19 @@
 			our award-winning robotics teams (<a style="color: rgba(0, 200, 255, 1);" href="#Worlds">SoCal Champs 2026!</a>), regardless of what school they attend.</p>
 		<p id="programs">Our organization currently has multiple programs going into the 2026/27 season: </p>
 			<ul>
-				<li>SaMoTech 21536 - our high school teams</li>
-				<li>Cyberquakes 27299 - our middle school team</li>
-				<li>Samotech Bricks - our FLL Lego Challenge team, grades 4-6</li>
+				<li>High School FTC team - SaMoTech 21536</li>
+				<li>Middle School FTC Team - Cyberquakes 27299</li>
+				<li>FLL Lego Challenge team - grades 4-6</li>
 				<li>Summer programs for FTC, CAD, 3d printing, and more!</li>
 			</ul>
-			<p><i><b>For more information about robotics and camps, please email Coach Chris at bebuckle@gmail.com. Camps run through August, and all teams are currently accepting applications for the upcoming season. </b></i></p>
+			<p><i><b>For more information about robotics teams and camps, please email Coach Chris at bebuckle@gmail.com. Camps are available through July and August, and all teams are currently accepting applications for the upcoming season. </b></i></p>
 	</SplitSection>
 	<SplitSection img="images/Hero/Cameron and Brandon tuning camera on main field morning of elims.jpg" title="" textSide="right" dark>
 	
 	<h3>Why FTC robotics?</h3>
-          <p>Robotics competitions - especially FIRST Tech Challenge (FTC) - have emerged as a super fun way for young people to get hands-on experience with technology and engineering: coding, 3d printing, CAD, motion planning, servo motors, PID control, computer vision, and more. <i>(In case you're wondering, this is not BattleBots where they destroy each other, it's more like a game.)</i></p>
-          <p>Robotics teams also foster real world skills like team building, project management, and collaborative problem-solving, skills that will be important no matter how AI shapes the world ahead. Like youth sports, robotics builds character and teaches kids to deal with adversity. </p>
-		  <p>LAUSD and many private schools have embraced robotics, but Santa Monica schools have not. Luckily the west side has Samotech. We offer championship-level robotics teams, taught by a <a style="color: #ddd;" href="#Chris">Stanford-trained mechanical engineer</a>, without the scheduling or budget limitations of a school environment. We have fun building, and we build to win.</p>      
+          <p>Like team sports, robotics teams foster real world skills like team building, resilience, and collaborative problem-solving, skills that will be important no matter how AI shapes the world ahead. </p>
+          <p>Additionally, robotics competitions - especially FTC (FIRST Tech Challenge) - have emerged as a super fun way for young people to get hands-on experience with technology and engineering: coding, 3d printing, CAD, motion planning, servo motors, PID control, computer vision, and more. <i>(This is not like BattleBots where they destroy each other, it's a game played 2-on-2 with 4 random bots on the field at once.)</i></p>
+		  <p>LAUSD and many private schools have embraced robotics, but Santa Monica schools have not. That's why we have Samotech. We offer championship-level robotics teams, taught by a <a style="color: #ddd;" href="#Chris">Stanford-trained mechanical engineer</a>, without the scheduling or budget limitations of a school environment. We have fun building, and we build to win.</p>      
      
 
 	<div slot="buttons">
