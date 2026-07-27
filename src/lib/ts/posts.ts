@@ -38,7 +38,7 @@ export const posts: PostDetails[] = [
 	{
 		title: 'Record Numbers at Franklin Elementary Science Club',
 		date: '2026-02-10',
-		text: 'We had the outstanding opportunity to host one of Franklin Elementary School’s Science Club meetings for the second time, where a record number of students and parents attended. We shared our FIRST experience and encouraged them to reach out to the district and our team to get involved.',
+		text: "We had the outstanding opportunity to host one of Franklin Elementary School’s Science Club meetings for the second time, where a record number of students and parents attended. We shared our FIRST experience and encouraged them to reach out to the district and our team to get involved.",
 		images: ['images/News/Franklin 2.jpg']
 	},
 	{

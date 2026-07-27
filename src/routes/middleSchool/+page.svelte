@@ -12,10 +12,12 @@
 	dark
 >
 	<p>
-		For Samotech's 2024/25 season we added a second team for middle school students called the Samotech
-		Cyberquakes (team 27299). Cyberquakes compete in FTC League W right alongside the Samotech high school team, and
-		they have done great! 
+		Samotech's team for middle school students is called the Samotech Cyberquakes (FTC team 27299). The Cyberquakes compete in FTC League W right alongside the Samotech high school team, and even beat them at a league meet when Samotech was still getting their act together earlier in the season! 
 	</p>
+	<p>
+		Cyberquakes are younger and less experienced than Samotech but have access to the same technology and supplies, so theoretically they could beat them in any given year's overall standings. Maybe this will be the year with your child's help.
+	</p>
+	
 	
 	<!--	<p>-->
 	<!--		If you have a child who will be in middle or high school next year who might be interested, <b>call or text Chris at 323-309-6687</b>. We may also have an off-season program as well (April thru August), or summer camps, so there's no time like the present to reach out and let us know what you'd like to be a part of!-->
@@ -27,9 +29,9 @@
 	textSide="left"
 	dark
 >
-	<p>In Cyberquakes second season, we exceeded our goals. First we rocked the ILT tournament to qualify for the highest FTC tournament in SoCal, the SoCal Regional Championship, which we had failed to do our rookie year. </p>
-		<p>At Regionals, we did okay but importantly won the presitigious Innovate Award for our unique levetating-robot design (see photo above/right) which uses our robot's unique spindexer platter to raise the robot up into the air at the end of the match.</p>
-	<p>Capping a great season, our Regionals performance qualified us for the prestigious Western Edge Premiere Event in Long Beach, a tournament with amazing robots from all over the USA and even the world. Amazingly, Cyberquakes went 7-3 and was almost an alliance captain, and we got the first place Innovate Award for our levitating spindexer design.</p>
+	<p>In Cyberquakes second season, 2025/26, we exceeded our goals. First we rocked the ILT tournament to qualify for the highest FTC tournament in SoCal, the SoCal Regional Championship, which we had failed to do our rookie year. </p>
+		<p>At Regionals, we did okay but importantly won the presitigious Innovate Award for our levetating-robot design (see photo above/right), which uses our robot's unique spindexer platter to raise the robot up into the air at the end of the match.</p>
+	<p>Capping a great season, our Regionals performance qualified us for the prestigious Western Edge Premiere Event in Long Beach, a tournament with amazing robots from all over the USA and even the world. Amazingly, Cyberquakes went 7-3 and was almost an alliance captain, and we got the first place Innovate Award for our levitating spindexer design once again. Judges love that thing.</p>
 </Card>
 
 <JoinSection />
