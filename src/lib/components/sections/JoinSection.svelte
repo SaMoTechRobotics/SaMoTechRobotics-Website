@@ -17,14 +17,12 @@
 </script>
 
 <div class="join-wrapper">
-	<h1>SaMoTech Is Looking For New Team Members!</h1>
+	<h1>Join Samotech or Cyberquakes!</h1>
 
 	<p>
-		Our middle school and high school teams are looking for new recruits, and we offer high-tech summer camps (where kids actually do stuff) July thru June! If you have a child who is in
-		middle school or
-		high school
-		who might be interested call or text Chris, our
-		head mentor, at
+		Samotech is a community team with no relationship to any school or district, and it is open to everyone. Both our teams are usually looking for new recruits. </p><p>We also offer high-tech summer camps (FTC Robotics Boot Camp, CAD & 3d Printing, and Coding) in July and August! 
+    </p>
+    <p>If you have a child who is in who might be interested, call or text Chris at
 		<span class="accent">{phone}</span> or email him at
 		<a href="mailto:{email}" class="accent email-link">{email}</a>
 		<button class="copy-button" on:click={copyEmail} aria-label="Copy email">
@@ -34,7 +32,7 @@
 				<Icon icon="mdi:content-copy" width="18" />
 			{/if}
 		</button>
-		.
+.
 	</p>
 
 	<p>
@@ -42,7 +40,7 @@
 		{#if homepage}
 			Check out our middle school team page for more information!
 		{:else}
-			Read below to learn more!
+
 		{/if}
 
 	</p>
@@ -62,7 +60,7 @@
     border-radius: 1.5rem;
     border: 2px solid var(--bg-primary);
     box-shadow: var(--box-shadow);
-    text-align: center;
+    text-align: left;
     margin: 3rem $page-padding;
 
     @media (max-width: 810px) {

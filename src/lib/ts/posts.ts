@@ -2,7 +2,25 @@ import type { PostDetails } from '$lib/types/Post';
 
 export const posts: PostDetails[] = [
 	{
-		title: 'Going to Worlds! Front Page News!',
+		title: 'Cyberquakes win Innovate Award First Place at Western Edge Premiere Event!',
+		date: '2026-05-1',
+		text: 'What an honor! After winning the Innovate Award at both ILT and Regionals, Cyberquakes unexpectedly won the Innovate Award at an even higher level in Long Beach for our levetating robot design! If you look at the photo above, the robot cleverly uses its ball-sorting platter ("spindexer", short for spinning indexer) to raise itself off the ground at the end of the match, thus squeezing into a small parking space. The judges were impressed by the originality! In their final match, the team finished off by levetating in the air <i>then</i> firing a shot. That and going 7W-3L at such a tough tournament were a super fun way to finish a great season!',
+		images: ['images/middle-school/Cyberquakes_levetating_Long_Beach_Premiere_Event.jpg']
+	},
+	{
+		title: 'Samotech does awesome at Worlds!',
+		date: '2026-05-3',
+		text: 'It took us a while to qualify for Worlds, and we made the most of it! We went 8W-2L in qualification matches against the best of the best (similar to group stage in FIFA), then were part of the #2 alliance going into eliminations. We held our own, did great, and showed that we were truly one of the best robotics teams in the world.',
+		images: ['images/Hero/Georgia close-up on jumbotron.jpg', 'images/middle-school/Cyberquakes_levetating_Long_Beach_Premiere_Event.jpg']
+	},
+	{
+		title: 'Cyberquakes going to Long Beach Premiere Event!',
+		date: '2026-03-7',
+		text: 'Cyberquakes, our middle school team, has already had an amazing sophomore season: qualifying for Regionals and winning the Innovate Award at ILT. Now they qualified for an even bigger tournament, the Western Edge Premiere Event in Long Beach, in late May! While the tournament happens to be nearby, it will be attended by teams from all over the world, many of them at the same competitive level as the teams that will be competing against Samotech at Worlds in April.',
+		images: ['images/middle-school/Cyberquakes_levetating_Long_Beach_Premiere_Event.jpg']
+	},
+	{
+		title: 'Samotech Wins SoCal Regionals, going to Worlds! Front Page News!',
 		date: '2026-03-28',
 		text: "SaMoTech was featured in the Santa Monica Daily Press after winning the Southern California Regional Championship and qualifying for the FIRST Tech Challenge World Championship. Read the full article <a href='https://www.smdp.com/santa-monica-teen-robotics-team-wins-socal-regional-title-heads-to-world-championship/'>HERE</a>.",
 		images: ['images/News/FrontPageNews.jpg']
@@ -12,15 +30,9 @@ export const posts: PostDetails[] = [
 		// ctaNewTab: true
 	},
 	{
-		title: 'BREAKING NEWS: Qualifying for Worlds at SoCal Regionals',
-		date: '2026-03-7',
-		text: 'For the first time in SaMoTech history, we are playing in the 2026 World Championships. At Regionals, we were the Winning Alliance Captain and went a perfect 9-0. We also won the 2nd-place Control Award. We are so grateful for our sponsors and all the help we have received over the years to make this possible.',
-		images: ['images/News/2026Regionals.jpg']
-	},
-	{
 		title: 'Winning Alliance at ILT',
 		date: '2026-02-15',
-		text: 'For the 4th consecutive season, we qualified for the SoCal Regional Championships. We were the Winning Alliance and also won the 1st-place Control Award. We are looking forward to competing in the SoCal Regionals!',
+		text: 'For the 4th consecutive season, we qualified for the SoCal Regional Championships after dominating our league all season. We were the Winning Alliance and also won the 1st-place Control Award. We are looking forward to competing in the SoCal Regionals!',
 		images: ['images/News/ILT6.jpg']
 	},
 	{
