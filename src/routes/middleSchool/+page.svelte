@@ -31,7 +31,7 @@
 >
 	<p>In Cyberquakes second season, 2025/26, we exceeded our goals. First we rocked the ILT tournament to qualify for the highest FTC tournament in SoCal, the SoCal Regional Championship, which we had failed to do our rookie year. </p>
 		<p>At Regionals, we did okay but importantly won the presitigious Innovate Award for our levetating-robot design (see photo above/right), which uses our robot's unique spindexer platter to raise the robot up into the air at the end of the match.</p>
-	<p>Capping a great season, our Regionals performance qualified us for the prestigious Western Edge Premiere Event in Long Beach, a tournament with amazing robots from all over the USA and even the world. Amazingly, Cyberquakes went 7-3 and was almost an alliance captain, and we got the first place Innovate Award for our levitating spindexer design once again. Judges love that thing.</p>
+	<p>Capping a great season, our Regionals performance qualified us for the prestigious Western Edge Premiere Event in Long Beach, a tournament with amazing robots from all over the USA and even the world. Amazingly, Cyberquakes went 7-3 and was almost an alliance captain, and we got the first place Innovate Award for our levitating spindexer design once again. Judges love that thing. </p>
 </Card>
 
 <JoinSection />
