@@ -38,6 +38,7 @@
 			<SponsorLogo to="https://www.yahooinc.com/" sponsor="Yahoo" />
 			<SponsorLogo to="https://www.na.panasonic.com/" sponsor="Panasonic" />
 			<SponsorLogo to="" sponsor="Czeh" />
+      
 		</div>
 	</div>
 {/if}
