@@ -12,9 +12,7 @@
 			interests in robotics and engineering!
 		</p>
 		<div class="logos">
-			<div>
-				<SponsorLogo to="https://www.ziprecruiter.com/about" sponsor="ZipRecruiter" />
-			</div>
+		
 			<div>
 				<SponsorLogo to="https://www.facebook.com/rotarysm/" sponsor="RotaryClub" />
 				<SponsorLogo to="https://lenzcharging.com/" sponsor="Lenz" />
