@@ -51,10 +51,10 @@
 	</SplitSection>
 	<SplitSection img="images/Hero/Cameron and Brandon tuning camera on main field morning of elims.jpg" title="" textSide="right" dark>
 	
-	<h3>Why FTC robotics?</h3>
-          <p>Like team sports, robotics teams foster real world skills like team building, resilience, and collaborative problem-solving, skills that will be important no matter how AI shapes the world ahead. </p>
-          <p>Additionally, robotics competitions - especially FTC (FIRST Tech Challenge) - have emerged as a super fun way for young people to get hands-on experience with technology and engineering: coding, 3d printing, CAD, motion planning, servo motors, PID control, computer vision, and more. <i>(This is not like BattleBots where they destroy each other, it's a game played 2-on-2 with 4 random bots on the field at once.)</i></p>
-		  <p>LAUSD and many private schools have embraced robotics, but Santa Monica schools have not. That's why we have Samotech. We offer championship-level robotics teams, taught by a <a style="color: #ddd;" href="#Chris">Stanford-trained mechanical engineer</a>, without the scheduling or budget limitations of a school environment. We have fun building, and we build to win.</p>      
+	<h3>Why should my kid do robotics?</h3>
+          <p>Like team sports, robotics teams foster real world skills like team building, resilience, and collaborative problem-solving, skills that will be important no matter how AI shapes the world ahead. <i>(A lot of people ask if this is like BattleBots. It's not - we play a different game each year and we're not allowed to damage the other robots.)</i></p>
+          <p>Additionally, robotics competitions - especially FTC (FIRST Tech Challenge) - offer hands-on experience with cutting edge technology and engineering: coding, 3d printing, CAD, motion planning, servos, PID control, computer vision, AI and more. </p>
+		  <p>LAUSD and many private schools have embraced robotics, but Santa Monica schools (SMMUSD) have not. That's why we started Samotech. We offer championship-level robotics teams taught by a <a style="color: #ddd;" href="#Chris">Stanford-trained mechanical engineer</a>, without the scheduling or budget limitations of a school environment. </p>      
      
 
 	<div slot="buttons">
@@ -66,9 +66,6 @@
 
 
 
-<Hero title="BIG NEWS: SaMoTech Went To Worlds!" imgs={heroImagesWorlds} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
-	<h2 id="Worlds" class="subtitle" style="color: #ddd;">We were big dogs amongst the biggest dogs, going 8 wins 2 losses at the FTC World Championships in Houston, May 2026</h2>
-</Hero>
 
 
 
@@ -84,6 +81,7 @@
 <!--<SponsorsSection small /> -->
 
 <SplitSection title="Watch us in action" youtube="WQUBVjbh-hM?si=UcOmOXhCwHD9-Nai&amp;start=6567" textSide="right" dark>
+	<p>This video is from the FTC World Championships in Houston, TX in May 2026. In the video, our robot is the one taking long shots into the red goal while our partner shoots from close up. This very high-scoring match is on our way to the semifinals of our division at Worlds, where we were in approximately the top 25 of teams worldwide. 400 points in one match is huge!</p>
 	<p>SaMoTech is 501(c)(3) nonprofit community team founded in 2022 by a motly crew of mostly ninth graders and a couple dads. Working out of a family
 	garage, SaMoTech has fought its way to the #1 ranking in the SoCal region, and with most of the original members in their final senior year of high school,
 	we finally won FTC Socal Regionals and went to worlds! Beyond learning engineering and
@@ -92,17 +90,21 @@
 </SplitSection>
 
 <SplitSection title="Coaching Makes a Difference" youtube="kuJhER0P9zs?si=Na7c7tETP8chtfzo" textSide="left" dark>
-	<p id="Chris">All Samotech programs are led by the award-winning head coach of Samotech, Chris Rowe, who very much wishes that robotics competitions had existed when he was a lad!</p>
-	<p>This video was the team's secretly made surprise submission nominating Coach Chris as Socal Coach of the Year (aka the Compass Award) at 2025 Socal FTC Championship. We didn't make Worlds that year, sadly, but Chris was flumoxed and a bit tearful from the incredible honor, mostly because of the kind words of the kids speaking from their hearts. If he could have nominated them the best kids of the year, he would have!</p>
+	<p id="Chris">All Samotech programs are led by the award-winning head coach of Samotech, Chris Rowe, a Stanford mechanical engineering graduate who very much wishes that robotics competitions had existed when he was a lad! Chris has been in STEM education for over 20 years, first as a math and science tutor and robotics coach, and then as an edtech website entrepreneur.</p>
+	<p>This video was the team's secretly made surprise submission nominating Coach Chris as Socal Coach of the Year (aka the Compass Award Winner) at 2025 Socal FTC Championship Tournament. We didn't make Worlds that year, sadly, but Chris was in tears anyway from the honor of the Compass Award, mostly because of the kind words of the kids speaking from their hearts. If he could have nominated them as the best robotics kids of the year, he would have!</p>
 </SplitSection>
 
+
+<Hero title="BIG NEWS: SaMoTech Went To Worlds!" imgs={heroImagesWorlds} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
+	<h2 id="Worlds" class="subtitle" style="color: #ddd;">We were big dogs amongst the biggest dogs, going 8 wins 2 losses at the FTC World Championships in Houston, May 2026</h2>
+</Hero>
 
 <!--<section class="support-intro">
 	<h2>Support SaMoTech</h2>
 	<p>Does this p text show up as part of a photo-free section?</p>
 </section>-->
 
-<Hero title="SaMoTech is SoCal Champs!" imgs={heroImagesRegionals} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
+<Hero title="SaMoTech wins Socal Championship!" imgs={heroImagesRegionals} interval={5000}><!-- heroImages is defined above on line 11, so just put file names there  -->
 	<h2 class="subtitle">After knocking on the door for 3 years</h2>
 </Hero>
 
