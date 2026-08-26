@@ -82,7 +82,7 @@
 
 <SplitSection title="Watch us in action" youtube="WQUBVjbh-hM?si=UcOmOXhCwHD9-Nai&amp;start=6567" textSide="right" dark>
 	<p>This video is from the FTC World Championships in Houston, TX in May 2026. In the video, our robot is the one taking long shots into the red goal while our partner shoots from close up. This very high-scoring match is on our way to the semifinals of our division at Worlds, where we were in approximately the top 25 of teams worldwide. 400 points in one match is huge!</p>
-	<p>SaMoTech is 501(c)(3) nonprofit community team founded in 2022 by a motly crew of mostly ninth graders and a couple dads. Working out of a family
+	<p>SaMoTech is 501(c)(3) nonprofit community team founded in 2022 by a motley crew of mostly ninth graders and a couple dads. Working out of a family
 	garage, SaMoTech has fought its way to the #1 ranking in the SoCal region, and with most of the original members in their final senior year of high school,
 	we finally won FTC Socal Regionals and went to worlds! Beyond learning engineering and
 	robotics through competition, we regularly support other teams and promote robotics and STEM
