@@ -40,14 +40,14 @@
 	<h3 style="font-style: italic;" id="programs">Building young innovators in Santa Monica since 2022</h3>
           <p>Unaffiliated with any school, we welcome kids from all over the west side to have fun with robotics and compete on one of 
 			our award-winning robotics teams (<a style="color: rgba(0, 200, 255, 1);" href="#Worlds">SoCal Champs 2026!</a>), regardless of what school they attend.</p>
-		<p id="programs">Our organization currently has multiple programs going into the 2026/27 season: </p>
+		<p id="programs">Our organization currently has multiple programs for the 2026/27 season: </p>
 			<ul>
 				<li>High School FTC team - SaMoTech 21536</li>
 				<li>Middle School FTC Team - Cyberquakes 27299</li>
 				<li>FLL Lego Challenge team - grades 4-6</li>
 				<li>Summer programs for FTC, CAD, 3d printing, and more!</li>
 			</ul>
-			<p><i><b>For more information about robotics teams and camps, please email Coach Chris at bebuckle@gmail.com. Camps are available through July and August, and all teams are currently accepting applications for the upcoming season. </b></i></p>
+			<p><i>The seasons for FTC and FLL start in September, and we have limited openings in all programs! <b>For more information, please email <span style="color: orange;">Coach Chris at bebuckle@gmail.com</span>. </b></i></p>
 	</SplitSection>
 	<SplitSection img="images/Hero/Cameron and Brandon tuning camera on main field morning of elims.jpg" title="" textSide="right" dark>
 	
