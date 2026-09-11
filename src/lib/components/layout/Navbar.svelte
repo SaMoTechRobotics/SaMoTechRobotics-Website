@@ -51,9 +51,10 @@
 				<a href="/sponsors" class:active={path === 'sponsors'}> Sponsors </a>
 			</div>
 
+			<!-- ######################### REMOVING WORLDS FUNDRAISING PAGE FROM NAV (separate nav below for mobile)
 			<div class="divider" />
 
-			<a href="/support" class="support"> Support </a>
+			<a href="/support" class="support"> Support </a> -->
 		</div>
 	{:else}
 		<div class="navbar mini">
@@ -76,7 +77,7 @@
 					<a href="/news" class:active={path === 'news'}> News </a>
 					<a href="/middleSchool" class:active={path === 'middleSchool'}> Middle School </a>
 					<a href="/sponsors" class:active={path === 'sponsors'}> Sponsors </a>
-					<a href="/support" class:active={path === 'support'}> Support </a>
+<!-- ###### REMMOVING WORLDS SUPPORT TAB FROM NAV:	<a href="/support" class:active={path === 'support'}> Support </a> -->
 				</div>
 			</div>
 		</div>

@@ -6,11 +6,19 @@
 
 {#if !small}
 	<div class="wrapper">
-		<h1>Our Sponsors</h1>
+		<h1>Sponsorship</h1>
+    <p>
+    SaMoTech is 501(c)(3) nonprofit community team founded in 2022. Working out of a family garage, SaMoTech has fought its way from rookie to the #1 ranking in the SoCal region and going to Worlds in 2026. Beyond learning engineering and robotics through competition, we regularly support other teams and promote robotics and STEM education in our local community.
+    </p>
+    <p>
+      If you or your company would like to be a part of our amazing program and get your logo on a few t-shirts (and maybe even the robot), please don't hesitate to reach out to Marc or Chris at samotechrobotics@gmail.com.
+    </p>
+    		<h1>Our Wonderful Sponsors</h1>
 		<p>
 			Thank you to all our amazing sponsors who made SaMoTech possible and who help us to pursue our
 			interests in robotics and engineering!
-		</p>
+		</p> 
+
 		<div class="logos">
 		
 			<div>

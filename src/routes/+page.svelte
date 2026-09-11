@@ -52,14 +52,15 @@
 	<SplitSection img="images/Hero/Cameron and Brandon tuning camera on main field morning of elims.jpg" title="" textSide="right" dark>
 	
 	<h3>Why should my kid do robotics?</h3>
-          <p>Like team sports, robotics teams foster real world skills like team building, resilience, and collaborative problem-solving, skills that will be important no matter how AI shapes the world ahead. <i>(A lot of people ask if this is like BattleBots. It's not - we play a different game each year and we're not allowed to damage the other robots.)</i></p>
+          <p>Like team sports, robotics teams foster real world skills like team building, resilience, and collaborative problem-solving, skills that will be important no matter how AI shapes the world ahead.</p>
           <p>Additionally, robotics competitions - especially FTC (FIRST Tech Challenge) - offer hands-on experience with cutting edge technology and engineering: coding, 3d printing, CAD, motion planning, servos, PID control, computer vision, AI and more. </p>
-		  <p>LAUSD and many private schools have embraced robotics, but Santa Monica schools (SMMUSD) have not. That's why we started Samotech. We offer championship-level robotics teams taught by a <a style="color: #ddd;" href="#Chris">Stanford-trained mechanical engineer</a>, without the scheduling or budget limitations of a school environment. </p>      
-     
+		  <p>LAUSD and many private schools have embraced robotics, but Santa Monica schools (SMMUSD) have not. That's why we started Samotech. We offer championship-level robotics teams taught by a <a style="color: #ddd;" href="#Chris">Stanford-trained engineer</a>, without the scheduling or budget limitations of a school environment. </p>      
+		<p><i>(A lot of people ask about AI: We use it occasionally to debug, but it has caused more problems than it has solved the last couple years. We're open to anything, but FTC is a classic 80/20 problem: you get 80% of your results from your first 20% of effort, but that last 20% is what separates the good teams from the barely-rans. So however you get that easy 20% - AI or copying last year's design or using a starter bot from the internet - what really matters is the fine-tuning of mechanical and electrical designs, and practice practice practice so you can execute on game day.)</i></p>
+
 
 	<div slot="buttons">
 		<LinkButton to="#programs" primary>See our programs</LinkButton>
-		<LinkButton to="/support" >Sponsor Us</LinkButton>
+		<!--  <LinkButton to="/support" >Sponsor Us</LinkButton> -->
 	</div>
 </SplitSection>
 
@@ -82,11 +83,9 @@
 
 <SplitSection title="Watch us in action" youtube="WQUBVjbh-hM?si=UcOmOXhCwHD9-Nai&amp;start=6567" textSide="right" dark> 
 	<p>This video is from the FTC World Championships in Houston, TX in May 2026. In the video, our robot is the one taking long shots into the red goal while our partner shoots from close up. This very high-scoring match is on our way to the semifinals of our division at Worlds, where we were in approximately the top 25 of teams worldwide. 400 points in one match is huge!</p>
-	<p>SaMoTech is 501(c)(3) nonprofit community team founded in 2022 by a motley crew of mostly ninth graders and a couple dads. Working out of a family
-	garage, SaMoTech has fought its way to the #1 ranking in the SoCal region, and with most of the original members in their final senior year of high school,
-	we finally won FTC Socal Regionals and went to worlds! Beyond learning engineering and
-	robotics through competition, we regularly support other teams and promote robotics and STEM
-	education in our local community.</p><p id="Chris" style=""></p>
+	<p>    SaMoTech is 501(c)(3) nonprofit community team founded in 2022. Working out of a family garage, SaMoTech has fought its way from rookie to the #1 ranking in the SoCal region and going to Worlds in 2026. Beyond learning engineering and robotics through competition, we regularly support other teams and promote robotics and STEM education in our local community.
+</p>
+<p id="Chris" style=""></p>
 </SplitSection>
 
 <SplitSection title="Coaching Makes a Difference" youtube="kuJhER0P9zs?si=Na7c7tETP8chtfzo" textSide="left" dark>
